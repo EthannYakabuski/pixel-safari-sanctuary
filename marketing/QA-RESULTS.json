@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-20T06:01:59.318556+00:00",
+  "game": "Pixel Safari Sanctuary",
+  "checks": {
+    "title_max_30": true,
+    "short_max_80": true,
+    "long_max_4000": true,
+    "achievements_exact_catalog_keys": true,
+    "achievements_actual_names": true,
+    "leaderboards_exact_catalog_keys": true,
+    "leaderboards_actual_names": true,
+    "all_manifest_hashes": true,
+    "all_png_decoders_and_icon_sizes": true,
+    "app_icon_size": true,
+    "feature_size": true
+  },
+  "image_count": 34,
+  "short_chars": 79,
+  "long_chars": 1184,
+  "visual_review": "All three feature graphics, app icons and representative achievement/leaderboard icons inspected; Pixel Safari sprite scale corrected.",
+  "screenshots": "pending actual build captures; illustrative graphics not substituted"
+}

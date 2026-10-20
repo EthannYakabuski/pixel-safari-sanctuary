@@ -1,0 +1,5 @@
+Creature artwork: Kenney Creature Mixer output, supplied by the project owner in KennyMonsters_spritesheets.
+Source: https://kenney.itch.io/creature-mixer
+Commercial-use rights were reviewed by the owner before this workflow began.
+Marketing extracts use the first complete 192x192 animation frame, with only transparent margins removed.
+Original sprite authorship remains with its credited source.

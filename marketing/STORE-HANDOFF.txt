@@ -1,0 +1,29 @@
+STORE / WEBSITE HANDOFF - Pixel Safari Sanctuary
+
+PREPARED IN THIS PACKAGE
+- App title, short description (verified <=80 characters), long description, category and suggested tags.
+- Full-square 512x512 RGB app icon and 192x192 launcher preview.
+- 1024x500 RGB feature graphic, explicitly original brand illustration.
+- Individual 512x512 achievement and leaderboard icons, aligned to the symbolic game catalog.
+- Website introduction, three selling cards, technical paragraph and one future-content concept.
+- Source provenance/notices, asset dimensions/checksums and a repeatable offline generator.
+
+ACTUAL GAME CAPTURES
+Capture actual implemented home/management, active gameplay, and progress/collection states.
+Suggested filenames: screenshots/phone-home.png, phone-play.png, phone-progress.png;
+tablet-7-home.png, tablet-7-play.png; tablet-10-home.png, tablet-10-play.png.
+Record source build/commit, platform, viewport, game state/fixture, file hash and visual review
+in screenshots/capture-manifest.json. Do not present editor/Web captures as Android hardware captures.
+Artwork in feature-graphic-1024x500.png is not a substitute for these screenshots.
+
+OWNER'S FINAL PLAY CONSOLE / BACKEND ITEMS
+- Final public support contact and privacy-policy URL.
+- Final package/version/release artifacts and signing setup supplied by the build/release handoff.
+- Real Play Games app/achievement/leaderboard IDs and production AdMob IDs/account configuration.
+- Final audience, content rating, ads declaration, privacy/Data safety answers and SDK disclosures
+  based on the final app/dependencies and the owner's actual configuration; do not infer "no data"
+  merely from the game's local-save support.
+- Final real-service/device testing and Google Play submission/publication by the owner.
+
+These are the agreed final human publication/configuration responsibilities, not a new prototype
+approval gate. No store listing has been submitted or published by this generator.

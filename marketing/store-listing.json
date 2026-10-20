@@ -1,0 +1,195 @@
+{
+  "title": "Pixel Safari Sanctuary",
+  "short_description": "Catch curious creatures, grow a cozy sanctuary, and discover rare family trees.",
+  "long_description": "Make a home for the wonderfully unusual.\n\nPixel Safari Sanctuary is a cozy creature-collecting game about short expeditions and the little sanctuary waiting when you return. Take your lures into the wild, time a capture, and bring your newest companion back to an enclosure of its own.\n\nBuild your collection across common, uncommon, rare, endangered, and extinct rarity tiers. Improve your pens, collect their income, and earn player experience as your sanctuary grows. Away for a while? Local progress and capped offline earnings keep the rhythm gentle.\n\nSome discoveries begin at home. Explore a breeding tree with specific parent pairings and unlock creatures that an ordinary safari cannot reveal. A seven-day login reward cycle gives you another small reason to check in.\n\nChoose a quick outing or spend a quiet moment with your collection. Your progress saves locally, and the core game remains playable offline.\n\nThe Android edition supports optional rewarded ads and ads at natural breaks. Online achievements and leaderboards depend on Google Play Games sign-in and configuration. The Web edition keeps local play available with graceful fallbacks for Android-only services.",
+  "category": "GAME_SIMULATION",
+  "suggested_tags": [
+    "Casual",
+    "Simulation",
+    "Collecting",
+    "Single player",
+    "Offline"
+  ],
+  "orientation": "portrait",
+  "developer": "EthannYakabuski",
+  "target_platforms": [
+    "Android",
+    "Web where feasible"
+  ],
+  "feature_graphic": "feature-graphic-1024x500.png",
+  "app_icon": "app-icon-512.png",
+  "achievement_icons": [
+    {
+      "key": "first_friend",
+      "name": "A New Friend",
+      "description": "Discover your first species.",
+      "file": "achievements/first_friend.png"
+    },
+    {
+      "key": "collection_10",
+      "name": "Pocket Field Guide",
+      "description": "Discover 10 species.",
+      "file": "achievements/collection_10.png"
+    },
+    {
+      "key": "collection_25",
+      "name": "Wild at Heart",
+      "description": "Discover 25 species.",
+      "file": "achievements/collection_25.png"
+    },
+    {
+      "key": "collection_50",
+      "name": "A Living Rainbow",
+      "description": "Discover 50 species.",
+      "file": "achievements/collection_50.png"
+    },
+    {
+      "key": "collection_100",
+      "name": "Sanctuary Scholar",
+      "description": "Discover 100 species.",
+      "file": "achievements/collection_100.png"
+    },
+    {
+      "key": "collection_200",
+      "name": "Every Little Wonder",
+      "description": "Discover all 200 species.",
+      "file": "achievements/collection_200.png"
+    },
+    {
+      "key": "first_safari",
+      "name": "Out the Gate",
+      "description": "Return from one safari outing.",
+      "file": "achievements/first_safari.png"
+    },
+    {
+      "key": "safari_5",
+      "name": "Trail Regular",
+      "description": "Return from 5 outings.",
+      "file": "achievements/safari_5.png"
+    },
+    {
+      "key": "safari_25",
+      "name": "Over the Horizon",
+      "description": "Return from 25 outings.",
+      "file": "achievements/safari_25.png"
+    },
+    {
+      "key": "safari_100",
+      "name": "Seasoned Explorer",
+      "description": "Return from 100 outings.",
+      "file": "achievements/safari_100.png"
+    },
+    {
+      "key": "rare_keeper",
+      "name": "Rare Company",
+      "description": "Discover 3 rare species.",
+      "file": "achievements/rare_keeper.png"
+    },
+    {
+      "key": "endangered_keeper",
+      "name": "Safe Haven",
+      "description": "Welcome an endangered species.",
+      "file": "achievements/endangered_keeper.png"
+    },
+    {
+      "key": "extinct_revival",
+      "name": "Back From Legend",
+      "description": "Breed an extinct species.",
+      "file": "achievements/extinct_revival.png"
+    },
+    {
+      "key": "first_breed",
+      "name": "New Beginnings",
+      "description": "Hatch your first nursery egg.",
+      "file": "achievements/first_breed.png"
+    },
+    {
+      "key": "breeder_10",
+      "name": "Family Tree",
+      "description": "Hatch 10 eggs.",
+      "file": "achievements/breeder_10.png"
+    },
+    {
+      "key": "breeder_25",
+      "name": "Keeper of Wonders",
+      "description": "Hatch 25 eggs.",
+      "file": "achievements/breeder_25.png"
+    },
+    {
+      "key": "income_500",
+      "name": "Open for Visitors",
+      "description": "Collect 500 enclosure coins.",
+      "file": "achievements/income_500.png"
+    },
+    {
+      "key": "income_10000",
+      "name": "Bustling Sanctuary",
+      "description": "Collect 10,000 enclosure coins.",
+      "file": "achievements/income_10000.png"
+    },
+    {
+      "key": "income_100000",
+      "name": "Wildlife Destination",
+      "description": "Collect 100,000 enclosure coins.",
+      "file": "achievements/income_100000.png"
+    },
+    {
+      "key": "level_5",
+      "name": "Apprentice Keeper",
+      "description": "Reach keeper level 5.",
+      "file": "achievements/level_5.png"
+    },
+    {
+      "key": "level_10",
+      "name": "Senior Keeper",
+      "description": "Reach keeper level 10.",
+      "file": "achievements/level_10.png"
+    },
+    {
+      "key": "level_20",
+      "name": "Sanctuary Steward",
+      "description": "Reach keeper level 20.",
+      "file": "achievements/level_20.png"
+    },
+    {
+      "key": "seven_days",
+      "name": "A Week of Wonders",
+      "description": "Claim login rewards on 7 different days.",
+      "file": "achievements/seven_days.png"
+    }
+  ],
+  "leaderboard_icons": [
+    {
+      "key": "collection",
+      "name": "Field Guide",
+      "description": "Unique species discovered",
+      "file": "leaderboards/collection.png"
+    },
+    {
+      "key": "player_level",
+      "name": "Keeper Level",
+      "description": "Your keeper level",
+      "file": "leaderboards/player_level.png"
+    },
+    {
+      "key": "safari_captures",
+      "name": "Safari Friends",
+      "description": "Lifetime safari captures",
+      "file": "leaderboards/safari_captures.png"
+    },
+    {
+      "key": "total_income",
+      "name": "Sanctuary Income",
+      "description": "Lifetime collected enclosure revenue",
+      "file": "leaderboards/total_income.png"
+    },
+    {
+      "key": "breeding_master",
+      "name": "Family Tree",
+      "description": "Lifetime eggs hatched",
+      "file": "leaderboards/breeding_master.png"
+    }
+  ],
+  "copy_validation": "Draft aligned to the game brief; confirm against actual implemented build before store submission.",
+  "external_services": "Google Play Games IDs/backend and production AdMob account configuration/final tests are supplied by the owner. First-pass ads use test IDs."
+}

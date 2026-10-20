@@ -1,0 +1,33 @@
+INITIAL VECTOR PROMPT - Pixel Safari Sanctuary
+Date: 2026-10-20. Apply current Instructions.txt in full; these are implementation choices within the seeded brief, not new approval gates.
+
+ASSET REVIEW CONTEXT
+Use the supplied 200 Kenney creature-mixer sprite sheets with compatible tiny-farm/nature/UI/audio assets. Review their frames and retain notices. Generate original interface/icon work only where assets do not cover it.
+
+MARKET REVIEW AND OPTIONS
+Pocket Frogs demonstrates a collection/breeding/exploration loop in its own store description: https://play.google.com/store/apps/details?id=com.nimblebit.pocketfrogs . This establishes an existing genre, not demand or a revenue forecast for this app.
+Considered: collection-only album, passive enclosure manager, and active safari plus deterministic breeding-tree sanctuary. Selected the third because it fulfills the human brief and gives rare creatures a clear discovery route, with shorter meaningful outings and a visible home-base payoff.
+
+INITIAL PROMPT
+Create Pixel Safari Sanctuary, a cozy portrait creature-collection game. Build a fully playable safari-to-sanctuary loop with capture skill, all five rarity tiers, enclosure income and upgrades, specific-parent breeding recipes including breeding-only species, creature collection, player XP/level, achievements and leaderboards for collection/outings/income/level, and a seven-day login reward. Integrate the full global A-E package immediately. Menus should make the next outing, enclosure upgrade, and breed discovery obvious. Use test ads with an interstitial every couple of completed outings, optional rewarded assistance, and a nonintrusive home banner. Produce the complete store/Web marketing package, offline saves, Android and Web behavior, tests, Apache2.0 public source and hosted CI/Pages. Human final backend IDs/config/testing and Play publication remain separate.
+
+HUMAN SEED DETAILS (PRESERVED)
+Pixel Safari
+ - kenny monster gen (feel free to use the existing 200 monsters in [private asset workspace]\KennyMonsters_spritesheets or generate new ones here: https://kenney.itch.io/creature-mixer)
+ - establish common, uncommon, rare, endangered, extinct rarity tiers
+ - manage enclosures and breeding
+ - collect revenue from monsters enclosures
+ - go on safari mini game to capture new monsters and bring them back to your home base
+ - achievements should revolve around creature collection, safari outages, income and others
+ - leaderboards should revolve around creature collection, player level and others
+ - interstitial ad should be generated after safari outages
+ - game should be cozy/casual
+ - game should be vertical
+ - game should have 1-7 daily login rewards at least
+ - after catching new monsters in the safari you can bring them back to your base 
+ - there is a breeding mechanism where monsters can be bred with each other to create new rarer ones
+ - implement a breeding tree, with some monsters only unlockable via breeding specific types together (this goes hand in hand with rarity tiers mentioned above)
+
+
+FUTURE DLC CONCEPT
+Future DLC concept: Moonlit Wetlands, a new safari habitat with bioluminescent creatures and a second breeding branch; document only, not required for the initial package.

@@ -1,0 +1,308 @@
+[
+  {
+    "file": "achievements/breeder_10.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "aaaf60e55027ab462243fc239f429846ba2c6fb3541ca80ed07e29a2e3d90869"
+  },
+  {
+    "file": "achievements/breeder_25.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "6f3ac11ac84edcf3a185a932859e320b45a06f19dacb458e87a85e8d16958e24"
+  },
+  {
+    "file": "achievements/collection_10.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "ecaa11454231e99221d895d98ee6170e311962f9e57d56165faa479338951ec5"
+  },
+  {
+    "file": "achievements/collection_100.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "3cb8604a33adab52f6912d5d6439cd59ea7d3f22c05a6deb3aff96ca76c422cc"
+  },
+  {
+    "file": "achievements/collection_200.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "b4605709de05074ccdea54846a562c655807d711206c7a5e6e2c1bde3c83414c"
+  },
+  {
+    "file": "achievements/collection_25.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "cc989debd46a8071d8b9188ba68dfcb6b93569964e8b90265732f2a610254557"
+  },
+  {
+    "file": "achievements/collection_50.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "7a5db98174399f277e4d936ea6683dd631b91a771ba97a7084d4d7fc46e282b2"
+  },
+  {
+    "file": "achievements/endangered_keeper.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "c18183fe21451caf78bb376ef2f7b99e90c0b8434d68d73e2d97b499345a01b6"
+  },
+  {
+    "file": "achievements/extinct_revival.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "0a180301e3cbcd4e6b9b30816dab8608b49b336c5b3fa3c70bd1965038610858"
+  },
+  {
+    "file": "achievements/first_breed.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "0a180301e3cbcd4e6b9b30816dab8608b49b336c5b3fa3c70bd1965038610858"
+  },
+  {
+    "file": "achievements/first_friend.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "c18183fe21451caf78bb376ef2f7b99e90c0b8434d68d73e2d97b499345a01b6"
+  },
+  {
+    "file": "achievements/first_safari.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "6649b07520d60a829cfc92ad17627943d420b5158cbe9fc406861d0af00f9f48"
+  },
+  {
+    "file": "achievements/income_10000.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "b57c1077f185556f955a71fd1470732c5edec8ce480fb9e4b6d32039bb6de08e"
+  },
+  {
+    "file": "achievements/income_100000.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "e25931f2f23cbbb515ab4efce9a78584c0aef0ea9a6fa8167abfa1a6919582cc"
+  },
+  {
+    "file": "achievements/income_500.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "98f90bbbe0be93f4b451c132c1a76868ebed5ef6b3394e650ec3fbc2323857d7"
+  },
+  {
+    "file": "achievements/level_10.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "d1933c2a046e1754824aa1a8cd054eee7189b4291693081d5fb9fa08251cb6c9"
+  },
+  {
+    "file": "achievements/level_20.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "8457127e20127d253a4d94337ed9474efd8febaa719adf2a6adfeb884830bf84"
+  },
+  {
+    "file": "achievements/level_5.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "500fd6656bf8cc2c571b18e8f3b86d8c1d0b849c7bc9e8c64d5444e3c3b609e9"
+  },
+  {
+    "file": "achievements/rare_keeper.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "c18183fe21451caf78bb376ef2f7b99e90c0b8434d68d73e2d97b499345a01b6"
+  },
+  {
+    "file": "achievements/safari_100.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "00fd6b3f3114e33aac3005e7247f3a4fb6978cbcc45c60884850154c036aa495"
+  },
+  {
+    "file": "achievements/safari_25.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "d3a7cb7879e8493736562a2a290963b42817fba9f7e3830bc8dcb1dd85ec896d"
+  },
+  {
+    "file": "achievements/safari_5.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "86d1a1e995a07390bf0610d905bc9706f377b198d3c031a3c6ac732202674abe"
+  },
+  {
+    "file": "achievements/seven_days.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "8aeb3197a09b9a0c39798b1f6798dce01cfcb68252a9b855e0ce829c0083da07"
+  },
+  {
+    "file": "app-icon-192.png",
+    "dimensions": [
+      192,
+      192
+    ],
+    "mode": "RGB",
+    "sha256": "7386f2681877834c9b84cad0e38a8b95104f691541ca5ee516ff928c11c42159"
+  },
+  {
+    "file": "app-icon-512.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "4db56401f4adba38ce26b45e2185aa282e95197a4be3200f63813b4e889ad705"
+  },
+  {
+    "file": "feature-graphic-1024x500.png",
+    "dimensions": [
+      1024,
+      500
+    ],
+    "mode": "RGB",
+    "sha256": "f8eed9d96964f9298881fbe62819d6031ef885970513e5cf4cea2105c59081a6"
+  },
+  {
+    "file": "leaderboards/breeding_master.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "2245f69b3a38c48be54a40878cee259a71c75c9af4e1855020a6bffaa5a198e0"
+  },
+  {
+    "file": "leaderboards/collection.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "438d82d56c0454a3fc8716145c3b721a2560ea929b82d6ff3e7b12af54e8cbe1"
+  },
+  {
+    "file": "leaderboards/player_level.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "f5ea2cd922e52273b9ed774febad72fe367a07578ce5e81c2fbe36474961bc02"
+  },
+  {
+    "file": "leaderboards/safari_captures.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "1376655811c16284bceb28f26bc48d733d42018ed81adefaa0dde17cd1f5c71c"
+  },
+  {
+    "file": "leaderboards/total_income.png",
+    "dimensions": [
+      512,
+      512
+    ],
+    "mode": "RGB",
+    "sha256": "c4749120d935fad120e76189f3127b7ff27ebe5ab4aae551d3254b2bfb10f067"
+  },
+  {
+    "file": "source_art/companion_1.png",
+    "dimensions": [
+      192,
+      176
+    ],
+    "mode": "RGBA",
+    "sha256": "829e1bc6ec5ca5244b3a5bf2f70e63cbf993a07841e21cb5749848119a2a6981"
+  },
+  {
+    "file": "source_art/companion_2.png",
+    "dimensions": [
+      192,
+      160
+    ],
+    "mode": "RGBA",
+    "sha256": "07e39a52f19178107336e4f548956cf073fa23449ff58e145092807a3aab390a"
+  },
+  {
+    "file": "source_art/hero_creature.png",
+    "dimensions": [
+      192,
+      176
+    ],
+    "mode": "RGBA",
+    "sha256": "0073e19302c983af4aa8c80914b4da8b376aa50b97e762e501c347bc3ca3d6fc"
+  }
+]

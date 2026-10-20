@@ -1,0 +1,14 @@
+{
+  "generated_at_utc": "2026-10-20T06:01:04.903762+00:00",
+  "catalog_present": true,
+  "catalog_source": "../game/catalog.json",
+  "app_icon": "ready",
+  "feature_graphic": "ready_illustrative_brand_art",
+  "achievement_icons": 23,
+  "leaderboard_icons": 5,
+  "phone_screenshots": "pending_actual_build_capture",
+  "tablet_7_screenshots": "pending_actual_build_capture",
+  "tablet_10_screenshots": "pending_actual_build_capture",
+  "production_services": "pending_owner_configuration_and_final_testing",
+  "gameplay_claims": "pending_core_agent_implementation_confirmation"
+}

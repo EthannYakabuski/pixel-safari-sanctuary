@@ -1,0 +1,12 @@
+Pixel Safari Sanctuary core verification
+Godot: 4.5.1.stable.official.f62fdbde1; Compatibility renderer.
+MODEL_TESTS assertions=143 failures=0 (exit 0)
+UI_TESTS assertions=17 failures=0 (exit 0)
+Model coverage: roster/rarities, acyclic fixed recipes, nursery exclusivity, income/8h cap/clock rollback, daily streak/reset/duplicate prevention, deterministic safari/lures/banking/empty-return anti-farming, exact-parent breeding/parent retention/timer/capacity, pen assignment/upgrades/expansion, quest, XP, achievement idempotence, save roundtrip and corruption recovery.
+UI coverage: home/daily modal, habitat menu, mouse/touch creature selection, complete six-lure outing+return summary, pen management, breeding+hatching, all five journal tiers, milestones/leaderboards/settings, unavailable rewarded-video safety.
+Actual rendered viewport QA: home/safari/nursery/journal captured successfully at540x960 with Godot's OpenGL3 Compatibility runtime, NVIDIA GeForce GT1030; visual inspection completed. These are desktop-hosted development viewport frames, NOT Android-device screenshots. Captures use reachable QAfixturegame state and never write live progress.
+Capture arguments: --capture=home|safari|nursery|journal --capture-path=ABSOLUTE.png
+Tests: Godot --headless --path PROJECT --script res://tests/model_test.gd
+       Godot --headless --path PROJECT --script res://tests/ui_test.gd -- --test-mode
+Native AdMob/Play Games adapter, Android build/install/launch, Web export/browser QA, CI/Pages/public push, and final human backend verification remain with root/integration workflow. No production integration success is claimed here.
+Fixed during QA: JSON semantic-number save comparison; quiet corrupt-primary backup recovery; zero-attempt safari reward farming; headless audio playback leak; habitat canopy clipped away from adjacent text.

@@ -1,0 +1,2 @@
+Creature artwork: Kenney Creature Mixer / supplied KennyMonsters_spritesheets library, https://kenney.itch.io/creature-mixer and https://kenney.nl. Supplied assets were reviewed by the project owner for commercial redistribution. Original creature sheets preserved without alteration (four 192x192 frames each).
+Original game code, procedural habitat illustrations, icon, and synthesized audio: Apache-2.0. Native-plugin licenses and other distribution notices are retained separately by the packaging workflow.

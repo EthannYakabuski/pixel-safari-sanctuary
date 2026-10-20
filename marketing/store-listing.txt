@@ -1,0 +1,26 @@
+Pixel Safari Sanctuary
+
+SHORT DESCRIPTION (79/80 characters)
+Catch curious creatures, grow a cozy sanctuary, and discover rare family trees.
+
+LONG DESCRIPTION
+Make a home for the wonderfully unusual.
+
+Pixel Safari Sanctuary is a cozy creature-collecting game about short expeditions and the little sanctuary waiting when you return. Take your lures into the wild, time a capture, and bring your newest companion back to an enclosure of its own.
+
+Build your collection across common, uncommon, rare, endangered, and extinct rarity tiers. Improve your pens, collect their income, and earn player experience as your sanctuary grows. Away for a while? Local progress and capped offline earnings keep the rhythm gentle.
+
+Some discoveries begin at home. Explore a breeding tree with specific parent pairings and unlock creatures that an ordinary safari cannot reveal. A seven-day login reward cycle gives you another small reason to check in.
+
+Choose a quick outing or spend a quiet moment with your collection. Your progress saves locally, and the core game remains playable offline.
+
+The Android edition supports optional rewarded ads and ads at natural breaks. Online achievements and leaderboards depend on Google Play Games sign-in and configuration. The Web edition keeps local play available with graceful fallbacks for Android-only services.
+
+CATEGORY
+GAME_SIMULATION
+
+SUGGESTED TAGS
+Casual, Simulation, Collecting, Single player, Offline
+
+PUBLICATION NOTE
+This is store copy for the implemented candidate, not a claim of publication or production-service verification. Check feature claims against the final build before uploading. The owner completes backend configuration, final testing, privacy/Data safety declarations, audience/content-rating questionnaires, support/privacy URLs, and Google Play publication.

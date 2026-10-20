@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "admob": {
+    "test_mode": true,
+    "app_id": "ca-app-pub-3940256099942544~3347511713",
+    "banner_unit_id": "ca-app-pub-3940256099942544/6300978111",
+    "interstitial_unit_id": "ca-app-pub-3940256099942544/1033173712",
+    "rewarded_unit_id": "ca-app-pub-3940256099942544/5224354917",
+    "tag_for_under_age_of_consent": false
+  },
+  "play_games": {
+    "enabled": false,
+    "game_id": "",
+    "achievements": {
+      "first_friend": "",
+      "collection_10": "",
+      "collection_25": "",
+      "collection_50": "",
+      "collection_100": "",
+      "collection_200": "",
+      "first_safari": "",
+      "safari_5": "",
+      "safari_25": "",
+      "safari_100": "",
+      "rare_keeper": "",
+      "endangered_keeper": "",
+      "extinct_revival": "",
+      "first_breed": "",
+      "breeder_10": "",
+      "breeder_25": "",
+      "income_500": "",
+      "income_10000": "",
+      "income_100000": "",
+      "level_5": "",
+      "level_10": "",
+      "level_20": "",
+      "seven_days": ""
+    },
+    "leaderboards": {
+      "collection": "",
+      "player_level": "",
+      "safari_captures": "",
+      "total_income": "",
+      "breeding_master": ""
+    }
+  }
+}

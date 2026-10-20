@@ -1,0 +1,20 @@
+Pixel Safari Sanctuary
+A little sanctuary. A world of curious creatures.
+
+Pixel Safari Sanctuary is a cozy creature-collecting game about short expeditions and the little sanctuary waiting when you return. Take your lures into the wild, time a capture, and bring your newest companion back to an enclosure of its own.
+
+THREE SELLING CARDS
+One more curious face
+Take a short safari and bring a new companion home. Every rarity has a place in your collection.
+
+A sanctuary that grows with you
+Improve your enclosures, collect income, and make room for a thriving creature community.
+
+Discover the family tree
+Pair specific parents to uncover creatures you cannot find on an ordinary outing.
+
+TECHNICAL INFORMATION
+Made with Godot 4.5.1 Compatibility. Portrait Android is primary; a Web build is provided where feasible. Local saves support offline core play. Android services have graceful Web fallbacks. Original code is Apache-2.0; source-asset/plugin notices are preserved. Google Play Games and production ads require the owner's final configuration.
+
+FUTURE CONTENT IDEA (NOT IMPLEMENTED)
+A seasonal wetland expedition with new family-tree branches and sanctuary decorations.
