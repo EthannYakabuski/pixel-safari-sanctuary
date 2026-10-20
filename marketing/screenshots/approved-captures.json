@@ -1,0 +1,224 @@
+{
+  "schema": 2,
+  "source_apk_sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
+  "approved_views": 9,
+  "review_scope": "AI operator inspected actual game frames; human acceptance remains unverified.",
+  "captures": [
+    {
+      "key": "phone-home",
+      "file": "phone-home.png",
+      "sha256": "335765c2d71658f8d4d118c505ee9ab9cd3b403f4a4a10416807fbc35d811f04",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/phone-home.png",
+      "raw_sha256": "e93e6841cb7154c78a0c0e23d08cc8d4ca7647040ee358b5dae4532de6a72ac3",
+      "raw_dimensions": [
+        1920,
+        1080
+      ],
+      "game_state": "Normal offline home view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+      "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+      "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+      "role": "home",
+      "platform": "Android11/API30 emulator",
+      "network_mode": "offline",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+    },
+    {
+      "key": "phone-play",
+      "file": "phone-play.png",
+      "sha256": "c20671279ae5dc72cda641cce906f197feec71993c88f6c63783dd6274cef5c7",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/phone-play.png",
+      "raw_sha256": "cb42d0b3ad63a74811efb3e4b8a514c77cb8cb2aceddf8b82147023b75f2817a",
+      "raw_dimensions": [
+        1920,
+        1080
+      ],
+      "game_state": "Normal offline play view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+      "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+      "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+      "role": "play",
+      "platform": "Android11/API30 emulator",
+      "network_mode": "offline",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+    },
+    {
+      "key": "phone-collection",
+      "file": "phone-collection.png",
+      "sha256": "2264b9ba2478e5129d70c4b0d89fe7598c113f82b0732ae9da9259be66b55829",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/phone-collection.png",
+      "raw_sha256": "1e6aa92246981cb007f3ba4695d837c3587d3fbfb603e69f7f0492beb132d991",
+      "raw_dimensions": [
+        1920,
+        1080
+      ],
+      "game_state": "Normal offline collection view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+      "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+      "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+      "role": "collection",
+      "platform": "Android11/API30 emulator",
+      "network_mode": "offline",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+    },
+    {
+      "key": "tablet-7-home",
+      "file": "tablet-7-home.png",
+      "sha256": "a466646462760cc98b72c936512f1de1df1dd7df899d408b6e29fc3ee2ccbd03",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/tablet-7-home.png",
+      "raw_sha256": "e7f20a526a2f366f7f5e6c610f80bebf22c5e05416b042c8d6cf807f973ab4b8",
+      "raw_dimensions": [
+        1920,
+        1080
+      ],
+      "game_state": "Normal offline home view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+      "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+      "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+      "role": "home",
+      "platform": "Android11/API30 emulator",
+      "network_mode": "offline",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+    },
+    {
+      "key": "tablet-7-play",
+      "file": "tablet-7-play.png",
+      "sha256": "4188279e9f453cfed1ba98f9fbaaae8be49ddac3304021adb38e9ecd3dea5cd2",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/tablet-7-play.png",
+      "raw_sha256": "b1720838dfbace5e6dc8da72003f9246bf84dfc5d994d50d84120e8d85273c43",
+      "raw_dimensions": [
+        1920,
+        1080
+      ],
+      "game_state": "Normal offline play view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+      "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+      "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+      "role": "play",
+      "platform": "Android11/API30 emulator",
+      "network_mode": "offline",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+    },
+    {
+      "key": "tablet-7-collection",
+      "file": "tablet-7-collection.png",
+      "sha256": "ce84e2a132db8159a4d0d6a17e68580b4d2869e4fcfada75e39639e575fd5b5a",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/tablet-7-collection.png",
+      "raw_sha256": "4867143c49f93bc5dcbb29166e72cc77eb05cf2b754626faf2419b26b122ac51",
+      "raw_dimensions": [
+        1920,
+        1080
+      ],
+      "game_state": "Normal offline collection view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+      "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+      "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+      "role": "collection",
+      "platform": "Android11/API30 emulator",
+      "network_mode": "offline",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+    },
+    {
+      "key": "tablet-10-home",
+      "file": "tablet-10-home.png",
+      "sha256": "a411f52fe127e52f6d4c503b29012ea9d51831be3a76f6bf90dc18a29a55f73e",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/tablet-10-home.png",
+      "raw_sha256": "d4a7534ec5ab81e3deddc43d8bb00c8ddf3ac134b5b0bd4d89cea3eb44853826",
+      "raw_dimensions": [
+        1920,
+        1080
+      ],
+      "game_state": "Normal offline home view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+      "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+      "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+      "role": "home",
+      "platform": "Android11/API30 emulator",
+      "network_mode": "offline",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+    },
+    {
+      "key": "tablet-10-play",
+      "file": "tablet-10-play.png",
+      "sha256": "d4bab68d8d1e08505d1911121085739b97e38915c6d47092e63cb23ab514c58e",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/tablet-10-play.png",
+      "raw_sha256": "419561ff5e89c8fefa26a85b4191fe5033f8d49a2b2c461a3bc39bd6129c193f",
+      "raw_dimensions": [
+        1920,
+        1080
+      ],
+      "game_state": "Normal offline play view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+      "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+      "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+      "role": "play",
+      "platform": "Android11/API30 emulator",
+      "network_mode": "offline",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+    },
+    {
+      "key": "tablet-10-collection",
+      "file": "tablet-10-collection.png",
+      "sha256": "b28324852d36691ad5f80a793284beb47a0ab397d1be9d662cc772b14d3799ff",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/tablet-10-collection.png",
+      "raw_sha256": "7bb8d60c62cb03297267f476169bdcd84a842058062897870ac765b0d7bc8d03",
+      "raw_dimensions": [
+        1920,
+        1080
+      ],
+      "game_state": "Normal offline collection view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+      "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+      "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+      "role": "collection",
+      "platform": "Android11/API30 emulator",
+      "network_mode": "offline",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+    }
+  ]
+}

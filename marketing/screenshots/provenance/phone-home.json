@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "package": "com.ethannyakabuski.pixelsafari",
+  "source_apk_sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
+  "key": "phone-home",
+  "file": "phone-home.png",
+  "sha256": "335765c2d71658f8d4d118c505ee9ab9cd3b403f4a4a10416807fbc35d811f04",
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "raw_file": "raw/phone-home.png",
+  "raw_sha256": "e93e6841cb7154c78a0c0e23d08cc8d4ca7647040ee358b5dae4532de6a72ac3",
+  "raw_dimensions": [
+    1920,
+    1080
+  ],
+  "game_state": "Normal offline home view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+  "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+  "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+  "role": "home",
+  "platform": "Android11/API30 emulator",
+  "network_mode": "offline",
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+}

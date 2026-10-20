@@ -1,0 +1,47 @@
+PIXEL SAFARI SANCTUARY - LOCAL TEST HANDOFF
+Status: READY FOR OWNER LOCAL TEST REVIEW (2026-10-20T09:14:25.267994+00:00).
+
+Open build/android/pixel-safari-sanctuary-test-package.zip for the debug APK plus
+its accompanying license notices. Keep LICENSES with redistributed binaries.
+APK: build/android/game-debug.apk (184,014,475 bytes)
+SHA256: 6163796d0d2327881a77d4725ab861b44dd5dadf75e4e3c0e20482b588b94b5e
+The supplied test build contains ARM64 and x86, minimum API24/target35.
+Source version is identified by hashes in docs/LOCAL_TEST_RESULTS.json.
+
+WHAT IS READY
+The playable game, 200-creature catalog, breeding recipes, enclosures/income,
+local/offline progress, daily gifts, native achievements/leaderboard plugin,
+audio/settings, Android test ads and Web export are present. Production Play
+Games IDs remain disabled until the owner supplies the real configuration.
+Marketing includes store/website copy, app and feature art,23 achievement icons,
+5 leaderboard icons and9 normal-play screenshots with raw images/provenance.
+See marketing/STORE-HANDOFF.txt and marketing/screenshots/capture-manifest.json.
+
+VERIFICATION
+184 model assertions,25 headless UI assertions and25 GPU UI assertions passed.
+On this exact APK a real native earned callback granted once and reduced the
+saved egg deadline25seconds. Two legitimate short outings triggered a native
+interstitial. Back closes modals/returns Safari to Home without exiting.
+Actual offline play added69coins/90XP/3outings/2captures; all nine required save
+groups survived a subsequent cold restart. Network/display settings restored.
+See docs/NATIVE_QA.json and docs/LOCAL_TEST_RESULTS.json for exact evidence.
+Web exported successfully; all9 runtime files and packed-file checksums passed.
+
+TEST LIMITS AND OWNER WORK
+The phone and logical7/10-inch layouts use one Android11/API30 x86 emulator.
+All screenshots are actual1080x1920 framebuffers; tablet names describe logical
+size/density overrides, not physical tablets or upscaled images. Rapid resizing
+caused a SystemUI ANR; affected frames were rejected and clean recaptures used.
+Production IDs/backend, real Google login/ad configuration, release signing,
+current store eligibility/privacy/audience details, physical-device checks and
+human gameplay/balance/content review remain owner work. Google test ads and
+disabled production Play Games do not establish production acceptance.
+
+PUBLIC SOURCE AND REMAINING OWNER WORK
+Public source is available at https://github.com/EthannYakabuski/pixel-safari-sanctuary.
+The first hosted CI run failed during Android SDK setup after Godot checks and Web
+export passed. A workflow correction is prepared; corrected CI success is not yet
+established. Live Pages activation remains held. Browser interaction, audible audio,
+physical devices, production services and human acceptance remain unverified.
+Google Play submission/publication remains owner work. Private device logs, saved
+profiles and coordinator evidence coordinates are excluded from this public tree.

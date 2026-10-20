@@ -1,0 +1,61 @@
+Pixel Safari Sanctuary - independent source review and bounded fixes
+Recorded 2026-10-20 07:53:34 UTC; core source frozen for coordinator Android rebuild.
+
+Initial source findings and their pre-fix locations:
+1. tests/ui_test.gd16-21 instantiated the main scene before setting test_mode,
+   replaced loaded player state and invoked render/save. The default CI command
+   omitted --test-mode. main.gd698-704 also submitted test achievements/scores
+   through Services, which persists platform_pending_v1.json.
+   Fixed: harness enables test_mode before add_child and uses a local Services
+   stub while temporarily renaming the real autoload. Real autoload name is
+   restored on cleanup. No production platform files changed.
+2. main.gd728-731 rebuilt all nursery controls every second while eggs existed;
+   _render253-261 hid/freed controls and released focus. A held press spanning a
+   tick could lose its target. Fixed: countdown labels and hatch/reward enabled
+   states update in place. Structural rebuilds occur for actual breed/hatch/page
+   changes. Already-ready eggs do not advertise another paid timer skip.
+3. model.gd336-355 accepted malformed nested nursery/stats/safari shapes, bypassing
+   valid backup recovery before unsafe downstream field access. Fixed: validate
+   required nested fields/types, IDs, capacity/ownership, semantic integer values
+   and finite ranges before accepting a primary. JSON float representations of
+   legitimate integer state remain supported. Malformed primary falls back to
+   valid backup; invalid primary+backup retains the caller's fresh-state path.
+4. Independent input review plus Android evidence identified STOP cards/buttons
+   consuming scroll gestures. Confirmed minimal card/button PASS changes are
+   integrated. Viewport drags over content and buttons now scroll, button drags
+   do not navigate, ordinary taps still navigate, and page switches reset scroll.
+
+Final canonical verification, actual console exit codes:
+- Model suite:184assertions,0failures,exit0.
+- Headless actual-scene UI:25assertions,0failures,exit0, without CLI test flags.
+- GPU actual-scene UI:25assertions,0failures,exit0. OpenGL3.3 Compatibility,
+  NVIDIA GeForce GT1030, driver560.94.
+- All final logs contain no ERROR/SCRIPT ERROR/WARNING lines.
+- Scope-specific SHA256 comparison before/after both UI runs proves unchanged
+  sanctuary-v1.json, sanctuary-v1.json.bak and platform_pending_v1.json.
+  Only those exact desktop profile files were hashed; no unrelated private
+  files were read. Actual Android progress was untouched by this task.
+
+Meaningful added regression coverage:
+Malformed nested primary saves recover the valid backup; missing/invalid nursery
+fields, bad stats, wrong safari shapes/IDs/counters, invalid scalar types and
+version fields are rejected; legitimate live nursery+safari JSON roundtrips pass.
+A real viewport mouse press stays held on the same Hatch button across a nursery
+one-second tick, then release hatches exactly once. Real viewport144px drags over
+card content/buttons move scroll; an ordinary button tap navigates. False earned
+callback leaves egg timers unchanged; true callback makes the hatch button ready
+without rebuilding; ready eggs no longer offer a worthless timer skip.
+
+Read-only content/claim checks: all200creatures are reachable through wild IDs and
+34acyclic fixed recipes; five rarities, three habitat gates, six lures,45seconds,
+pen income/8hour cap, daily streak, progression and earned-callback-only rewards
+match the source. Shared adapter single-use reward dispatch and every-two-round
+opportunities were inspected; no native backend success is inferred from stubs.
+
+Limits: these are correctness regressions, not proof of fun, pacing, balance,
+native ad completion or current Android UI. Coordinator performs actual Android
+rebuild/install/touch/consent/reward tests and human playtesting remains needed.
+No exports, installs, public actions or platform-file edits were performed here.
+A development-only caveat was reported: CLI screenshot fixtures must also isolate
+Services/user-data because screenshot_mode alone skips game saves but not pending
+native submissions. No screenshot fixture was run in this task.

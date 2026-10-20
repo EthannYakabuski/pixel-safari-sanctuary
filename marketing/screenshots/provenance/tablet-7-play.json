@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "package": "com.ethannyakabuski.pixelsafari",
+  "source_apk_sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
+  "key": "tablet-7-play",
+  "file": "tablet-7-play.png",
+  "sha256": "4188279e9f453cfed1ba98f9fbaaae8be49ddac3304021adb38e9ecd3dea5cd2",
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "raw_file": "raw/tablet-7-play.png",
+  "raw_sha256": "b1720838dfbace5e6dc8da72003f9246bf84dfc5d994d50d84120e8d85273c43",
+  "raw_dimensions": [
+    1920,
+    1080
+  ],
+  "game_state": "Normal offline play view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+  "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+  "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+  "role": "play",
+  "platform": "Android11/API30 emulator",
+  "network_mode": "offline",
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+}

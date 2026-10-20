@@ -1,0 +1,19 @@
+Pixel Safari Sanctuary core verification
+Godot:4.5.1.stable.official.f62fdbde1; Compatibility renderer.
+Final independent review regressions: MODEL_TESTS assertions=184 failures=0 exit0;
+UI_TESTS assertions=25 failures=0 exit0 on both headless and actual GPU runtime.
+See game/REVIEW_FIX_RESULTS.txt for exact accepted findings, bounded fixes,
+isolation/profile-hash proof, coverage and native/human verification limits.
+
+Tests are isolated without CLI test flags:
+Godot --headless --path PROJECT --script res://tests/model_test.gd
+Godot --headless --path PROJECT --script res://tests/ui_test.gd
+Model persistence uses uniquely named temporary files and removes them.
+UI harness enables test_mode before scene startup and isolates Services so neither
+live game progress nor native pending achievements/scores are modified.
+
+Earlier actual rendered viewport QA captured home/safari/nursery/journal at540x960
+on GodotOpenGL3/NVIDIA GeForce GT1030. These were desktop development frames,
+not Android-device evidence. This review ran no CLI screenshot fixtures.
+AdMob/Play Games production setup, Android install and real native behavior,
+Web/browser, hosted CI/Pages and final human playtesting remain coordinator work.

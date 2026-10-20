@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "package": "com.ethannyakabuski.pixelsafari",
+  "source_apk_sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
+  "key": "tablet-10-home",
+  "file": "tablet-10-home.png",
+  "sha256": "a411f52fe127e52f6d4c503b29012ea9d51831be3a76f6bf90dc18a29a55f73e",
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "raw_file": "raw/tablet-10-home.png",
+  "raw_sha256": "d4a7534ec5ab81e3deddc43d8bb00c8ddf3ac134b5b0bd4d89cea3eb44853826",
+  "raw_dimensions": [
+    1920,
+    1080
+  ],
+  "game_state": "Normal offline home view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+  "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+  "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+  "role": "home",
+  "platform": "Android11/API30 emulator",
+  "network_mode": "offline",
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+}

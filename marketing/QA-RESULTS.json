@@ -1,0 +1,37 @@
+{
+  "schema": 2,
+  "game": "Pixel Safari Sanctuary",
+  "artwork_and_copy_checks": {
+    "title_max_30": true,
+    "short_max_80": true,
+    "long_max_4000": true,
+    "achievements_exact_catalog_keys": true,
+    "achievements_actual_names": true,
+    "leaderboards_exact_catalog_keys": true,
+    "leaderboards_actual_names": true,
+    "all_manifest_hashes": true,
+    "all_png_decoders_and_icon_sizes": true,
+    "app_icon_size": true,
+    "feature_size": true
+  },
+  "image_count": 52,
+  "short_description_characters": 79,
+  "long_description_characters": 1184,
+  "artwork_visual_review": "All three feature graphics, app icons and representative achievement/leaderboard icons inspected; Pixel Safari sprite scale corrected.",
+  "capture_count": 9,
+  "source_apk_sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
+  "capture_manifest": "screenshots/capture-manifest.json",
+  "capture_checks": {
+    "all_nine_approved_views_present": true,
+    "selected_source_and_installed_apk_matched": true,
+    "original_raw_and_portrait_bytes_preserved": true,
+    "only_documented_orientation_correction": true,
+    "no_resizing_or_content_editing": true,
+    "actual_frames_visually_inspected_by_ai_operator": true,
+    "network_and_display_restored_during_local_qa": true
+  },
+  "limits": [
+    "All image framebuffers are1080x1920. Logical tablet overrides are not physical tablet testing.",
+    "Production services, physical devices, audible audio, browser interaction and human acceptance remain unverified."
+  ]
+}

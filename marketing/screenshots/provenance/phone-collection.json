@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "package": "com.ethannyakabuski.pixelsafari",
+  "source_apk_sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
+  "key": "phone-collection",
+  "file": "phone-collection.png",
+  "sha256": "2264b9ba2478e5129d70c4b0d89fe7598c113f82b0732ae9da9259be66b55829",
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "raw_file": "raw/phone-collection.png",
+  "raw_sha256": "1e6aa92246981cb007f3ba4695d837c3587d3fbfb603e69f7f0492beb132d991",
+  "raw_dimensions": [
+    1920,
+    1080
+  ],
+  "game_state": "Normal offline collection view reached through real navigation and played progress; no fixture or diagnostic launch arguments.",
+  "orientation_correction": "90 degrees clockwise to Android display orientation; no crop/content changes",
+  "pixel_processing": "Byte-for-byte copy of the approved portrait PNG and original raw framebuffer PNG; no resizing, crop, overlays, framing, or fabricated content.",
+  "role": "collection",
+  "platform": "Android11/API30 emulator",
+  "network_mode": "offline",
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "visual_review": "Actual frame inspected by AI operator for readable normal content and unobstructed controls. Human acceptance remains unverified."
+}

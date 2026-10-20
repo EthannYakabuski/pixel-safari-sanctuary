@@ -1,0 +1,77 @@
+{
+  "title": "Pixel Safari Sanctuary",
+  "display": [
+    "PIXEL SAFARI",
+    "SANCTUARY"
+  ],
+  "kind": "safari",
+  "short": "Catch curious creatures, grow a cozy sanctuary, and discover rare family trees.",
+  "palette": {
+    "ink": "#183F39",
+    "paper": "#F6F1DF",
+    "primary": "#78A75C",
+    "light": "#B8DCC3",
+    "gold": "#F3C86A",
+    "accent": "#E48B73"
+  },
+  "strap": "A little sanctuary. A world of curious creatures.",
+  "feature_chips": [
+    "EXPLORE",
+    "CARE",
+    "DISCOVER"
+  ],
+  "achievements": [
+    "first_friend",
+    "collection_10",
+    "collection_25",
+    "collection_50",
+    "collection_100",
+    "collection_200",
+    "first_safari",
+    "safari_5",
+    "safari_25",
+    "safari_100",
+    "rare_keeper",
+    "endangered_keeper",
+    "extinct_revival",
+    "first_breed",
+    "breeder_10",
+    "breeder_25",
+    "income_500",
+    "income_10000",
+    "income_100000",
+    "level_5",
+    "level_10",
+    "level_20",
+    "seven_days"
+  ],
+  "leaderboards": [
+    "collection",
+    "player_level",
+    "safari_captures",
+    "total_income",
+    "breeding_master"
+  ],
+  "cards": [
+    [
+      "One more curious face",
+      "Take a short safari and bring a new companion home. Every rarity has a place in your collection."
+    ],
+    [
+      "A sanctuary that grows with you",
+      "Improve your enclosures, collect income, and make room for a thriving creature community."
+    ],
+    [
+      "Discover the family tree",
+      "Pair specific parents to uncover creatures you cannot find on an ordinary outing."
+    ]
+  ],
+  "category": "GAME_SIMULATION",
+  "tags": [
+    "Casual",
+    "Simulation",
+    "Collecting",
+    "Single player",
+    "Offline"
+  ]
+}

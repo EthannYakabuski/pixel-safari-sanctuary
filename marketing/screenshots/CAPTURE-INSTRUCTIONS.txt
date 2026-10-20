@@ -1,0 +1,11 @@
+SCREENSHOT REVIEW AND FUTURE CAPTURE
+
+Keep actual gameplay captures distinct from illustrative brand art. The included
+nine dated emulator views have exact public hashes in capture-manifest.json.
+Portrait PNGs are1080x1920 after the declared orientation correction. Logical
+7/10-inch viewport names do not establish physical-tablet tests or larger pixels.
+
+For future store submissions, capture the actual current app state on the intended
+hardware, keep originals, document exact dimensions and verify current store rules.
+Do not fabricate gameplay, resize screenshots to imply untested hardware, or treat
+emulator evidence as human acceptance. Owner handles physical-device/store review.
