@@ -21,3 +21,5 @@ includes native-plugin notices conservatively because the source shares addons;
 this does not claim native services run in a browser. Production SDK/service
 terms, store setup and channel-specific notice accessibility remain the
 distributor's responsibility. No production approval is implied.
+
+Round Two image provenance: marketing/source_art/round-two-manifest.json. The project includes generated illustrations; preserve existing Creature Mixer character-design terms and all third-party notices alongside the project license.

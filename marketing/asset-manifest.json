@@ -6,7 +6,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "aaaf60e55027ab462243fc239f429846ba2c6fb3541ca80ed07e29a2e3d90869"
+    "sha256": "e38ca0d9a117ab8bd17893de43bf03ab77beffae9f7ee3ea872851b416fec72d"
   },
   {
     "file": "achievements/breeder_25.png",
@@ -15,7 +15,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "6f3ac11ac84edcf3a185a932859e320b45a06f19dacb458e87a85e8d16958e24"
+    "sha256": "a8dc94c098dc17a1edd46ead694f8f6e32e71d71d90f0e2f52d5df5ca178b05b"
   },
   {
     "file": "achievements/collection_10.png",
@@ -24,7 +24,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "ecaa11454231e99221d895d98ee6170e311962f9e57d56165faa479338951ec5"
+    "sha256": "05db0e3e8f514cf505df2f951238337db859778b54c217ab3b82e46712f01d8b"
   },
   {
     "file": "achievements/collection_100.png",
@@ -33,7 +33,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "3cb8604a33adab52f6912d5d6439cd59ea7d3f22c05a6deb3aff96ca76c422cc"
+    "sha256": "150db087fa2200ea7025e6d9acdb75dead3b409aacf582a6b81c2e86bc4029e8"
   },
   {
     "file": "achievements/collection_200.png",
@@ -42,7 +42,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "b4605709de05074ccdea54846a562c655807d711206c7a5e6e2c1bde3c83414c"
+    "sha256": "29089bf81aba58914246cc5bf85577296e543d2903242e270ef1d10d8ac561e0"
   },
   {
     "file": "achievements/collection_25.png",
@@ -51,7 +51,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "cc989debd46a8071d8b9188ba68dfcb6b93569964e8b90265732f2a610254557"
+    "sha256": "7bd535b8e54915ab09889bc1869edd5e13393dd0f31d5652a2eabe9058fe00bb"
   },
   {
     "file": "achievements/collection_50.png",
@@ -60,7 +60,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "7a5db98174399f277e4d936ea6683dd631b91a771ba97a7084d4d7fc46e282b2"
+    "sha256": "c40a31d47e826ffea4a83c487be1cb900a7ec5ac8a117729338a8683870aa918"
   },
   {
     "file": "achievements/endangered_keeper.png",
@@ -69,7 +69,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "c18183fe21451caf78bb376ef2f7b99e90c0b8434d68d73e2d97b499345a01b6"
+    "sha256": "3dbfb59f13f9a817afc73389bb028f0b58b83ca5522e4b9772e0c56d114fe3eb"
   },
   {
     "file": "achievements/extinct_revival.png",
@@ -78,7 +78,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "0a180301e3cbcd4e6b9b30816dab8608b49b336c5b3fa3c70bd1965038610858"
+    "sha256": "f282326dbaa1670228ce64de5de99121f65702ab11084f1876a8e0190a5affa2"
   },
   {
     "file": "achievements/first_breed.png",
@@ -87,7 +87,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "0a180301e3cbcd4e6b9b30816dab8608b49b336c5b3fa3c70bd1965038610858"
+    "sha256": "46b65062e9045f70f13b7420b48926226bd9c43828f8012117e272bdb36d540c"
   },
   {
     "file": "achievements/first_friend.png",
@@ -96,7 +96,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "c18183fe21451caf78bb376ef2f7b99e90c0b8434d68d73e2d97b499345a01b6"
+    "sha256": "2e92084ee72bf7de458fa0ba1a35a40e1f6e2d750a4b5a9005b3ee72d0e544fb"
   },
   {
     "file": "achievements/first_safari.png",
@@ -105,7 +105,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "6649b07520d60a829cfc92ad17627943d420b5158cbe9fc406861d0af00f9f48"
+    "sha256": "ce807fca9ab367a808c67108cec74b4a65fca8e9df6cb0e2601b12ccb401e9c1"
   },
   {
     "file": "achievements/income_10000.png",
@@ -114,7 +114,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "b57c1077f185556f955a71fd1470732c5edec8ce480fb9e4b6d32039bb6de08e"
+    "sha256": "dd5defdc90844ed3a6cf903e5cb6af88a414c94268658fbe931cc15780b9f89a"
   },
   {
     "file": "achievements/income_100000.png",
@@ -123,7 +123,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "e25931f2f23cbbb515ab4efce9a78584c0aef0ea9a6fa8167abfa1a6919582cc"
+    "sha256": "5a91731e9eb3c62bad1c1e0e1893194fac7fb7bd2dc2143e5417c0271a5499cc"
   },
   {
     "file": "achievements/income_500.png",
@@ -132,7 +132,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "98f90bbbe0be93f4b451c132c1a76868ebed5ef6b3394e650ec3fbc2323857d7"
+    "sha256": "7919a70906dedf42e854f6d07ddf2988c8c3652c8131cd570f055fc43be19923"
   },
   {
     "file": "achievements/level_10.png",
@@ -141,7 +141,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "d1933c2a046e1754824aa1a8cd054eee7189b4291693081d5fb9fa08251cb6c9"
+    "sha256": "a2f67ac4c9233dfd47d666618d1491a8b88dd202f9bf24960296cd2e0f5a1069"
   },
   {
     "file": "achievements/level_20.png",
@@ -150,7 +150,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "8457127e20127d253a4d94337ed9474efd8febaa719adf2a6adfeb884830bf84"
+    "sha256": "6d05a76acbab5636d747da52dc532c939f3c23fe2e5c0f08f4a27196ef2ded6b"
   },
   {
     "file": "achievements/level_5.png",
@@ -159,7 +159,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "500fd6656bf8cc2c571b18e8f3b86d8c1d0b849c7bc9e8c64d5444e3c3b609e9"
+    "sha256": "f58e5c5f68624c0c05b3597270f451a19fd9f250a7857835bdce7c5ca6126706"
   },
   {
     "file": "achievements/rare_keeper.png",
@@ -168,7 +168,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "c18183fe21451caf78bb376ef2f7b99e90c0b8434d68d73e2d97b499345a01b6"
+    "sha256": "3c444ab65e534be308b1d28fac013ca672b05ad89313fb63b2eca1b749e2fe30"
   },
   {
     "file": "achievements/safari_100.png",
@@ -177,7 +177,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "00fd6b3f3114e33aac3005e7247f3a4fb6978cbcc45c60884850154c036aa495"
+    "sha256": "a77842bba8c58826b905868c58729797191daf6a601417129e55375e1e91954c"
   },
   {
     "file": "achievements/safari_25.png",
@@ -186,7 +186,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "d3a7cb7879e8493736562a2a290963b42817fba9f7e3830bc8dcb1dd85ec896d"
+    "sha256": "ab05fa183387b9cf482cd3b91fec534ac48217cefee1cad1bd074531fd0500ad"
   },
   {
     "file": "achievements/safari_5.png",
@@ -195,7 +195,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "86d1a1e995a07390bf0610d905bc9706f377b198d3c031a3c6ac732202674abe"
+    "sha256": "e85c375c30bc8571fec019647007d23224566a2ee72c3a11c44e2d0c759f3375"
   },
   {
     "file": "achievements/seven_days.png",
@@ -204,7 +204,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "8aeb3197a09b9a0c39798b1f6798dce01cfcb68252a9b855e0ce829c0083da07"
+    "sha256": "8fbb6b06a6b93f3eca42463c7b637ca232ebfbdce4f16944e72feb15d5c3cb23"
   },
   {
     "file": "app-icon-192.png",
@@ -213,7 +213,7 @@
       192
     ],
     "mode": "RGB",
-    "sha256": "7386f2681877834c9b84cad0e38a8b95104f691541ca5ee516ff928c11c42159"
+    "sha256": "7bdbd8bab0d5dd6550705fdb43499e15eb029c242401c2428cb7bbdb9249ae91"
   },
   {
     "file": "app-icon-512.png",
@@ -222,7 +222,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "4db56401f4adba38ce26b45e2185aa282e95197a4be3200f63813b4e889ad705"
+    "sha256": "56db1362b8e827176068ce6e67951dea5075de5605569b30b7ead9638743cb9b"
   },
   {
     "file": "feature-graphic-1024x500.png",
@@ -231,7 +231,7 @@
       500
     ],
     "mode": "RGB",
-    "sha256": "f8eed9d96964f9298881fbe62819d6031ef885970513e5cf4cea2105c59081a6"
+    "sha256": "0a961f7cae70ffb79850a1ad18446a8826734aa0fd5122f24f0963576a7d8751"
   },
   {
     "file": "leaderboards/breeding_master.png",
@@ -240,7 +240,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "2245f69b3a38c48be54a40878cee259a71c75c9af4e1855020a6bffaa5a198e0"
+    "sha256": "86ef9765878bda056a1039d20e8c20cbfd337e74170a74e79a3e66e1b62bb03c"
   },
   {
     "file": "leaderboards/collection.png",
@@ -249,7 +249,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "438d82d56c0454a3fc8716145c3b721a2560ea929b82d6ff3e7b12af54e8cbe1"
+    "sha256": "67c5a3b6065defa198082f3dbed6e52b9287f3088eec20df879274a6cd820d5e"
   },
   {
     "file": "leaderboards/player_level.png",
@@ -258,7 +258,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "f5ea2cd922e52273b9ed774febad72fe367a07578ce5e81c2fbe36474961bc02"
+    "sha256": "49251b20b9ac770ad16a8ca4b94b52f9ed8a24a5349c87333d99044a3d043e68"
   },
   {
     "file": "leaderboards/safari_captures.png",
@@ -267,7 +267,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "1376655811c16284bceb28f26bc48d733d42018ed81adefaa0dde17cd1f5c71c"
+    "sha256": "4fd3f048f2ece7bdbcd7595f93157466aa1ed330cfffcc893494a1c4cfdecf27"
   },
   {
     "file": "leaderboards/total_income.png",
@@ -276,7 +276,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "c4749120d935fad120e76189f3127b7ff27ebe5ab4aae551d3254b2bfb10f067"
+    "sha256": "bd6272ba85e859ae585de0c4c3a900ff1dc72fdff3fbe46e0ae000bc07c47f92"
   },
   {
     "file": "screenshots/phone-collection.png",

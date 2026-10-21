@@ -327,7 +327,7 @@ func _home() -> void:
 	var safari = _button("Go on safari  →", func(): _navigate("safari"))
 	safari.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	gift_row.add_child(safari)
-	body.add_child(_label("YOUR MEADOWS  ·  %d HOMES" % model.state.pens.size(), 13, MUTED))
+	body.add_child(_label("YOUR MEADOWS  ·  %d HOME%s" % [model.state.pens.size(), "" if model.state.pens.size() == 1 else "S"], 13, MUTED))
 	var page_row = HBoxContainer.new()
 	body.add_child(page_row)
 	var previous = _button("← Previous", func(): meadow_page -= 1; _render(), "soft")
@@ -574,7 +574,7 @@ func _finish_safari() -> void:
 	if result.get("completed", true):
 		_service("round_finished")
 	var box = _open_modal("Welcome home, explorer.")
-	box.add_child(_paragraph("%d resident safely brought home. +%d coins and +%d XP." % [result.caught.size(), int(result.coins), int(result.xp)], 18, INK))
+	box.add_child(_paragraph("%d resident%s safely brought home. +%d coins and +%d XP." % [result.caught.size(), "" if result.caught.size() == 1 else "s", int(result.coins), int(result.xp)], 18, INK))
 	var row = HFlowContainer.new()
 	box.add_child(row)
 	for id in result.caught:
@@ -931,6 +931,7 @@ func _prepare_capture_fixture() -> void:
 	page = capture_mode if capture_mode in ["home", "safari", "nursery", "journal"] else "home"
 	if page == "safari":
 		model.start_safari(1, 4179)
+		model.begin_capture(1)
 		selected_slot = 1
 
 func _capture() -> void:

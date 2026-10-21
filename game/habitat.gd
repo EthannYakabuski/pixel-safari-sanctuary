@@ -9,12 +9,16 @@ var phase = 0.0
 var textures: Dictionary = {}
 var animation = 0.0
 var scenery: Texture2D
+var biome_backdrop: Texture2D
+const BIOME_ART = ["biome-0-meadow-footpath", "biome-1-fern-brook", "biome-2-sunstone-ridge", "biome-3-moonlit-marsh", "biome-4-tidepool-coast", "biome-5-copperwood-grove", "biome-6-frostglass-pass", "biome-7-starfall-hollow"]
 const INK = Color("183f39")
 
 func _ready() -> void:
 	clip_contents = true
 	mouse_filter = Control.MOUSE_FILTER_STOP if mode == "safari" else Control.MOUSE_FILTER_IGNORE
 	scenery = load("res://assets/environment/tiny-town.png")
+	var zone = 0 if mode == "home" else int(model.state.safari.get("habitat", 0))
+	biome_backdrop = load("res://assets/environment/%s.png" % BIOME_ART[zone])
 
 func _process(delta: float) -> void:
 	animation += delta
@@ -39,14 +43,19 @@ func draw_ellipse(center: Vector2, radii: Vector2, color_value: Color) -> void:
 		points.append(center + Vector2(cos(angle) * radii.x, sin(angle) * radii.y))
 	draw_colored_polygon(points, color_value)
 
-func tree(position: Vector2, scale_value: float = 1.0, autumn: bool = false) -> void:
+const TREE_TINTS = [Color("a8c091"), Color("94b6a4"), Color("dfbd89"), Color("7b88b5"), Color("a5cac5"), Color("d4a47d"), Color("a8b7cf"), Color("8e7bae")]
+
+func tree(position: Vector2, scale_value: float = 1.0, autumn: bool = false, tint: Color = Color.WHITE) -> void:
 	if scenery == null: return
 	var source = Rect2(48 if autumn else 64, 0, 16, 32)
 	var dimensions = Vector2(38, 76) * scale_value
 	draw_ellipse(position + Vector2(0, 2), Vector2(19, 5) * scale_value, Color(0.1, 0.25, 0.18, 0.12))
-	draw_texture_rect_region(scenery, Rect2(position - Vector2(dimensions.x * 0.5, dimensions.y), dimensions), source)
+	draw_texture_rect_region(scenery, Rect2(position - Vector2(dimensions.x * 0.5, dimensions.y), dimensions), source, tint)
 
 func ground(height: int, tint: Color) -> void:
+	if biome_backdrop != null:
+		draw_texture_rect(biome_backdrop, Rect2(0, 0, 480, height), false)
+		return
 	draw_style_box(_ground(tint), Rect2(0, 0, 480, height))
 	if scenery == null: return
 	for y in range(0, height, 32):
@@ -66,9 +75,7 @@ func _draw() -> void:
 	draw_set_transform(Vector2.ZERO, 0.0, scale_value)
 	if mode == "home":
 		ground(300, Color("d7e7c5"))
-		# Supplied Tiny Town path tiles, trees and fences replace the old circle-tree sketch.
-		for y in range(16, 300, 32):
-			if scenery != null: draw_texture_rect_region(scenery, Rect2(224, y, 32, 32), Rect2(16, 16, 16, 16))
+		# Real Tiny Town foreground props sit over the illustrated, noninteractive ground.
 		for local_index in range(6):
 			var index = pen_offset + local_index
 			if index >= model.state.pens.size(): continue
@@ -84,9 +91,8 @@ func _draw() -> void:
 	else:
 		var zone = int(model.state.safari.get("habitat", 0))
 		ground(410, Color(model.ZONES[zone].color))
-		draw_ellipse(Vector2(244, 226), Vector2(184, 122), Color(0.98, 0.95, 0.84, 0.42))
 		for position in [Vector2(18, 103), Vector2(70, 72), Vector2(430, 96), Vector2(472, 253), Vector2(25, 349), Vector2(410, 333)]:
-			tree(position, 1.14, zone in [2, 5])
+			tree(position, 0.72, zone in [2, 5], TREE_TINTS[zone])
 		for slot in range(3):
 			var position = slot_position(slot)
 			if selected == slot:

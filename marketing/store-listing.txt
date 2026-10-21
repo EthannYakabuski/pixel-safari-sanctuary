@@ -1,20 +1,22 @@
 Pixel Safari Sanctuary
 
-SHORT DESCRIPTION (79/80 characters)
-Catch curious creatures, grow a cozy sanctuary, and discover rare family trees.
+SHORT DESCRIPTION (75/80 characters)
+Meet 200 curious monsters. Master each capture. Make room for every friend.
 
 LONG DESCRIPTION
-Make a home for the wonderfully unusual.
+Meet them. Nurture them. Make room.
 
-Pixel Safari Sanctuary is a cozy creature-collecting game about short expeditions and the little sanctuary waiting when you return. Take your lures into the wild, time a capture, and bring your newest companion back to an enclosure of its own.
+A tiny horned face appears between the ferns. The gold window moves. One well-timed chain brings a new friend home.
 
-Build your collection across common, uncommon, rare, endangered, and extinct rarity tiers. Improve your pens, collect their income, and earn player experience as your sanctuary grows. Away for a while? Local progress and capped offline earnings keep the rhythm gentle.
+Pixel Safari Sanctuary combines quick capture challenges with a sanctuary you can keep growing. Explore eight illustrated trails, from the warm Meadow Footpath to snowy Frostglass Pass and violet Starfall Hollow. Earn your way into deeper habitats through keeper levels and completed outings, meeting familiar common creatures first and rarer companions later.
 
-Some discoveries begin at home. Explore a breeding tree with specific parent pairings and unlock creatures that an ordinary safari cannot reveal. A seven-day login reward cycle gives you another small reason to check in.
+Every capture is a little skill challenge. Choose a creature, land every consecutive hit inside gold, and return with one resident. Common chains need two hits; endangered chains need five. A miss always breaks the chain. Upgrade your explorer's satchel for more attempts, and try again: normal safaris are always free.
 
-Choose a quick outing or spend a quiet moment with your collection. Your progress saves locally, and the core game remains playable offline.
+Duplicates become bonds. Repeated captures raise shared species levels and the income of every matching resident. Reach level 5 with both exact parents to begin one of 34 nursery recipes, including species never found in the wild. Your parents stay with you.
 
-The Android edition supports optional rewarded ads and ads at natural breaks. Online achievements and leaderboards depend on Google Play Games sign-in and configuration. The Web edition keeps local play available with graceful fallbacks for Android-only services.
+Build a home worth returning to. Open as many meadows as you can afford, upgrade their space, and plan resident combinations for variety, home-habitat themes and named friendship bonuses. Each meadow shows what it earns. Your field guide records all 200 species across five rarity tiers and explains their bonds and favorite companions.
+
+Collect visitor income, follow daily field notes and return for a seven-day gift cycle. Core play works offline, saves on this device and earns up to eight hours of visitor income while you are away. Optional advertising requires a connection. Online service availability depends on the final Android configuration.
 
 CATEGORY
 GAME_SIMULATION
@@ -23,4 +25,4 @@ SUGGESTED TAGS
 Casual, Simulation, Collecting, Single player, Offline
 
 PUBLICATION NOTE
-This is store copy for the implemented candidate, not a claim of publication or production-service verification. Check feature claims against the final build before uploading. The owner completes backend configuration, final testing, privacy/Data safety declarations, audience/content-rating questionnaires, support/privacy URLs, and Google Play publication.
+Verify claims against the final build. The owner completes production service IDs, console configuration, release eligibility, privacy/Data safety declarations and Google Play publication. Local/native and hosted CI artifacts have separate verification records.

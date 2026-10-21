@@ -1,0 +1,1013 @@
+{
+  "version": 1,
+  "tool": "built-in imagegen",
+  "packaging": "PNG verification and Lanczos size normalization; originals retained unchanged",
+  "assets": [
+    {
+      "kind": "badges",
+      "key": "breeder_10",
+      "original": "marketing/source_art/round-two-badges/breeder_10-original.png",
+      "prompt": "marketing/source_art/round-two-badges/breeder_10-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "dbfe2cff1e8eb0adb00eea1f21ca38ad44a830c08d33ebf04482726f70e22ff0",
+      "outputs": [
+        "marketing/achievements/breeder_10.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/breeder_10.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "e38ca0d9a117ab8bd17893de43bf03ab77beffae9f7ee3ea872851b416fec72d"
+        }
+      ],
+      "prompt_sha256": "16f8b817fc4a14abaeff389d9624afc812d47aaed3015d4fbca127354f1fd765"
+    },
+    {
+      "kind": "badges",
+      "key": "breeder_25",
+      "original": "marketing/source_art/round-two-badges/breeder_25-original.png",
+      "prompt": "marketing/source_art/round-two-badges/breeder_25-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "1703d2a63dbf500f0f7abeee15d949d3d54464d7dcaaa1eb24258f96b9f13bb7",
+      "outputs": [
+        "marketing/achievements/breeder_25.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/breeder_25.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "a8dc94c098dc17a1edd46ead694f8f6e32e71d71d90f0e2f52d5df5ca178b05b"
+        }
+      ],
+      "prompt_sha256": "47d0262e3a2a68d25599503a8519d23c2e5a17fc09cd2c701d0beb58ffd9343b"
+    },
+    {
+      "kind": "badges",
+      "key": "breeding_master",
+      "original": "marketing/source_art/round-two-badges/breeding_master-original.png",
+      "prompt": "marketing/source_art/round-two-badges/breeding_master-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "b07bff5f162246f6d96664fcf5a1646c428ad1411c09efd99d33716c54016e40",
+      "outputs": [
+        "marketing/leaderboards/breeding_master.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/leaderboards/breeding_master.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "86ef9765878bda056a1039d20e8c20cbfd337e74170a74e79a3e66e1b62bb03c"
+        }
+      ],
+      "prompt_sha256": "a72298f41f27e3a70850cf768ac43cf19f017de7f45ef3cdaad07f5e6dbd4499"
+    },
+    {
+      "kind": "badges",
+      "key": "collection",
+      "original": "marketing/source_art/round-two-badges/collection-original.png",
+      "prompt": "marketing/source_art/round-two-badges/collection-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "2ff845eec52408ce83461294b42adcdcda4fefc57cc76961ef5023fa399c5145",
+      "outputs": [
+        "marketing/leaderboards/collection.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/leaderboards/collection.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "67c5a3b6065defa198082f3dbed6e52b9287f3088eec20df879274a6cd820d5e"
+        }
+      ],
+      "prompt_sha256": "3e9d11197a3d18fc0e84c50daee4c1c8eebcfd883a4f52cb7de0f0fab007f144"
+    },
+    {
+      "kind": "badges",
+      "key": "collection_10",
+      "original": "marketing/source_art/round-two-badges/collection_10-original.png",
+      "prompt": "marketing/source_art/round-two-badges/collection_10-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "7e7b7f350a389b434a72d7a6f442e89cffaa88a6766d424f29cc8f2c25716429",
+      "outputs": [
+        "marketing/achievements/collection_10.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/collection_10.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "05db0e3e8f514cf505df2f951238337db859778b54c217ab3b82e46712f01d8b"
+        }
+      ],
+      "prompt_sha256": "8d781dffe9ed8879ced43357a6ee49e4c5f83167d1e91cb2bd683859fb460b07"
+    },
+    {
+      "kind": "badges",
+      "key": "collection_100",
+      "original": "marketing/source_art/round-two-badges/collection_100-original.png",
+      "prompt": "marketing/source_art/round-two-badges/collection_100-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "e6b5e5b896e3cd8a3460cee1b5a0bfe1cf283218e7dbf489018c2d74dec5f2d0",
+      "outputs": [
+        "marketing/achievements/collection_100.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/collection_100.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "150db087fa2200ea7025e6d9acdb75dead3b409aacf582a6b81c2e86bc4029e8"
+        }
+      ],
+      "prompt_sha256": "22c4ac97f38a573ca39c6d00defc012ebc1eb5ce46adda4bca5a987b4fd7523e"
+    },
+    {
+      "kind": "badges",
+      "key": "collection_200",
+      "original": "marketing/source_art/round-two-badges/collection_200-original.png",
+      "prompt": "marketing/source_art/round-two-badges/collection_200-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "7fd6dfcc393232679adc1a1faea1a4e9d5845cf6d10f3f1afe0018a057458ec1",
+      "outputs": [
+        "marketing/achievements/collection_200.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/collection_200.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "29089bf81aba58914246cc5bf85577296e543d2903242e270ef1d10d8ac561e0"
+        }
+      ],
+      "prompt_sha256": "383b7abc8b1881b97692167a1471ab3d1cd5651ebef98ff1d8fa85489e0c8665"
+    },
+    {
+      "kind": "badges",
+      "key": "collection_25",
+      "original": "marketing/source_art/round-two-badges/collection_25-original.png",
+      "prompt": "marketing/source_art/round-two-badges/collection_25-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "914f3b409d2371435d9b4a2c0dbff519f6ce11fc2cea9e86e8c2bb5db57f9879",
+      "outputs": [
+        "marketing/achievements/collection_25.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/collection_25.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "7bd535b8e54915ab09889bc1869edd5e13393dd0f31d5652a2eabe9058fe00bb"
+        }
+      ],
+      "prompt_sha256": "75f5d627f71ef09f8665e62d1c3b23a2b101b26599be639c929d634504a73d09"
+    },
+    {
+      "kind": "badges",
+      "key": "collection_50",
+      "original": "marketing/source_art/round-two-badges/collection_50-original.png",
+      "prompt": "marketing/source_art/round-two-badges/collection_50-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "35e017cc685c6f734381e025ae46fef770183dd3fe9653366ac267a51bc665af",
+      "outputs": [
+        "marketing/achievements/collection_50.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/collection_50.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "c40a31d47e826ffea4a83c487be1cb900a7ec5ac8a117729338a8683870aa918"
+        }
+      ],
+      "prompt_sha256": "2e5e7ecdcfe281390cdf39306caddcb0cefda3c39d2f0e08b0524d58589484d6"
+    },
+    {
+      "kind": "badges",
+      "key": "endangered_keeper",
+      "original": "marketing/source_art/round-two-badges/endangered_keeper-original.png",
+      "prompt": "marketing/source_art/round-two-badges/endangered_keeper-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "bee47482d7d3c1a141ed5c0ff4a1839b6d14592d2e1240bc5522193719d44024",
+      "outputs": [
+        "marketing/achievements/endangered_keeper.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/endangered_keeper.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "3dbfb59f13f9a817afc73389bb028f0b58b83ca5522e4b9772e0c56d114fe3eb"
+        }
+      ],
+      "prompt_sha256": "23ec0d0edc3e3c49ab12ee351a8e471f6693cd4f878b7ea1bbdc02eb0914d44e"
+    },
+    {
+      "kind": "badges",
+      "key": "extinct_revival",
+      "original": "marketing/source_art/round-two-badges/extinct_revival-original.png",
+      "prompt": "marketing/source_art/round-two-badges/extinct_revival-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "6c5933bdf34c09ea8042fd77c3f868f1b306e51084fdac8e4d99e2db6c1060aa",
+      "outputs": [
+        "marketing/achievements/extinct_revival.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/extinct_revival.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "f282326dbaa1670228ce64de5de99121f65702ab11084f1876a8e0190a5affa2"
+        }
+      ],
+      "prompt_sha256": "22fc3e283d98a194b4ed53fa2962022b63ad5e3afe4d6497cb421af7cf6e0327"
+    },
+    {
+      "kind": "badges",
+      "key": "first_breed",
+      "original": "marketing/source_art/round-two-badges/first_breed-original.png",
+      "prompt": "marketing/source_art/round-two-badges/first_breed-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "0d69addc5adf12aefc9878aa012af517a55f09546f52d57ff760638c7aa721f0",
+      "outputs": [
+        "marketing/achievements/first_breed.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/first_breed.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "46b65062e9045f70f13b7420b48926226bd9c43828f8012117e272bdb36d540c"
+        }
+      ],
+      "prompt_sha256": "9d187e045788199cd64feef4e48ea57e04b1edb997ed48aa408257a48c02269b"
+    },
+    {
+      "kind": "badges",
+      "key": "first_friend",
+      "original": "marketing/source_art/round-two-badges/first_friend-original.png",
+      "prompt": "marketing/source_art/round-two-badges/first_friend-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "e0956d2eda01e59589b466e5a8b836d7c91334030872d46c5c9d7a9e180e6434",
+      "outputs": [
+        "marketing/achievements/first_friend.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/first_friend.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "2e92084ee72bf7de458fa0ba1a35a40e1f6e2d750a4b5a9005b3ee72d0e544fb"
+        }
+      ],
+      "prompt_sha256": "2f4831a10f0c59a3cca7ed3df4d59f90f62adb0d5ba25be335b15d2023f6f8f3"
+    },
+    {
+      "kind": "badges",
+      "key": "first_safari",
+      "original": "marketing/source_art/round-two-badges/first_safari-original.png",
+      "prompt": "marketing/source_art/round-two-badges/first_safari-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "befeda7b22a79e9c47a322997abb47cd214f4ac40f1fa179c960cd19d6675932",
+      "outputs": [
+        "marketing/achievements/first_safari.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/first_safari.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "ce807fca9ab367a808c67108cec74b4a65fca8e9df6cb0e2601b12ccb401e9c1"
+        }
+      ],
+      "prompt_sha256": "d44038276ad4db988cffa3445a5ea32baff1463024bcb00f1f74508750955a53"
+    },
+    {
+      "kind": "badges",
+      "key": "income_10000",
+      "original": "marketing/source_art/round-two-badges/income_10000-original.png",
+      "prompt": "marketing/source_art/round-two-badges/income_10000-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "201d524abfad89ec7410d080493f4e534d19a56f149aa93c8ba257519ed42a24",
+      "outputs": [
+        "marketing/achievements/income_10000.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/income_10000.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "dd5defdc90844ed3a6cf903e5cb6af88a414c94268658fbe931cc15780b9f89a"
+        }
+      ],
+      "prompt_sha256": "5f95b0bbb7bafd3ed19defb4c9bd188077c342d255a4cdd8f1b482dc01a05cd2"
+    },
+    {
+      "kind": "badges",
+      "key": "income_100000",
+      "original": "marketing/source_art/round-two-badges/income_100000-original.png",
+      "prompt": "marketing/source_art/round-two-badges/income_100000-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "27cea2cba0d226a1bceca9e598c5c934902e6350052a248258347a5a33020142",
+      "outputs": [
+        "marketing/achievements/income_100000.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/income_100000.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "5a91731e9eb3c62bad1c1e0e1893194fac7fb7bd2dc2143e5417c0271a5499cc"
+        }
+      ],
+      "prompt_sha256": "ffa08e6e133ca8c5aadfb2ac92c808355a0e243018f25b656cd3e242d489013e"
+    },
+    {
+      "kind": "badges",
+      "key": "income_500",
+      "original": "marketing/source_art/round-two-badges/income_500-original.png",
+      "prompt": "marketing/source_art/round-two-badges/income_500-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "2ae5f1f7b1e75c1c7c49e58717f08c6a888ce6a7e6783f05b5bbd791b366cc16",
+      "outputs": [
+        "marketing/achievements/income_500.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/income_500.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "7919a70906dedf42e854f6d07ddf2988c8c3652c8131cd570f055fc43be19923"
+        }
+      ],
+      "prompt_sha256": "15991b859ec9fda8b9bbd3abb4c14d984a33b842f054e495a454c7549dc30321"
+    },
+    {
+      "kind": "badges",
+      "key": "level_10",
+      "original": "marketing/source_art/round-two-badges/level_10-original.png",
+      "prompt": "marketing/source_art/round-two-badges/level_10-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "f408f5d10252ca100d6fd20030e9f8c2ecd5d0e003da23101406aa2b8be2b5ce",
+      "outputs": [
+        "marketing/achievements/level_10.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/level_10.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "a2f67ac4c9233dfd47d666618d1491a8b88dd202f9bf24960296cd2e0f5a1069"
+        }
+      ],
+      "prompt_sha256": "bc8ab7511756227981c87109c49f921fc2e5d075dc3cf1c41bbc1e09398cc6df"
+    },
+    {
+      "kind": "badges",
+      "key": "level_20",
+      "original": "marketing/source_art/round-two-badges/level_20-original.png",
+      "prompt": "marketing/source_art/round-two-badges/level_20-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "4f6e6905b4388a9a4c6c9ec19e3081abbc47dd5ed24a6be0e2a42ad99932bd72",
+      "outputs": [
+        "marketing/achievements/level_20.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/level_20.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "6d05a76acbab5636d747da52dc532c939f3c23fe2e5c0f08f4a27196ef2ded6b"
+        }
+      ],
+      "prompt_sha256": "f89badf4d35730b5932ce2e9724587ec3aa465e787db04da60f79227f826b788"
+    },
+    {
+      "kind": "badges",
+      "key": "level_5",
+      "original": "marketing/source_art/round-two-badges/level_5-original.png",
+      "prompt": "marketing/source_art/round-two-badges/level_5-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "b37637509db4628aac5d6efc70cfa325c543d9e0c08e8c616c27029357677a4b",
+      "outputs": [
+        "marketing/achievements/level_5.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/level_5.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "f58e5c5f68624c0c05b3597270f451a19fd9f250a7857835bdce7c5ca6126706"
+        }
+      ],
+      "prompt_sha256": "4740d88bd38406e8cf608724acb306c0a2c64351f26abcefaaeb735a61fe0df8"
+    },
+    {
+      "kind": "badges",
+      "key": "player_level",
+      "original": "marketing/source_art/round-two-badges/player_level-original.png",
+      "prompt": "marketing/source_art/round-two-badges/player_level-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "1692aa4521ab1e6415b18ba54e07f795649b0c34dd36109f5d3c4754610b164a",
+      "outputs": [
+        "marketing/leaderboards/player_level.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/leaderboards/player_level.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "49251b20b9ac770ad16a8ca4b94b52f9ed8a24a5349c87333d99044a3d043e68"
+        }
+      ],
+      "prompt_sha256": "58ca40f12551b20c6779a503faf7d57804d6fa6507b8f8ec2ef5c82157b13b69"
+    },
+    {
+      "kind": "badges",
+      "key": "rare_keeper",
+      "original": "marketing/source_art/round-two-badges/rare_keeper-original.png",
+      "prompt": "marketing/source_art/round-two-badges/rare_keeper-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "4d21804195f85edf80a368543d73f8b1f31d07c0c371a9838e263c85eabf0c35",
+      "outputs": [
+        "marketing/achievements/rare_keeper.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/rare_keeper.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "3c444ab65e534be308b1d28fac013ca672b05ad89313fb63b2eca1b749e2fe30"
+        }
+      ],
+      "prompt_sha256": "820dd41b445e6c2ff7295b8bf94a25d663b602f354e4ef50fdf3f2d1df930c07"
+    },
+    {
+      "kind": "badges",
+      "key": "safari_100",
+      "original": "marketing/source_art/round-two-badges/safari_100-original.png",
+      "prompt": "marketing/source_art/round-two-badges/safari_100-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "19b17bc19ad3f13116c6b91ee4c70309dc7655e152aa5753f057bc35447480ef",
+      "outputs": [
+        "marketing/achievements/safari_100.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/safari_100.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "a77842bba8c58826b905868c58729797191daf6a601417129e55375e1e91954c"
+        }
+      ],
+      "prompt_sha256": "89a02d1885f65bb22010fb718624e68ca4e89350b98d0465c34e056e9ed9a420"
+    },
+    {
+      "kind": "badges",
+      "key": "safari_25",
+      "original": "marketing/source_art/round-two-badges/safari_25-original.png",
+      "prompt": "marketing/source_art/round-two-badges/safari_25-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "28bfe1d44f098ee9cae7d7b7e9add5b274095478b415b72d5adaa7eb5b3cc3c3",
+      "outputs": [
+        "marketing/achievements/safari_25.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/safari_25.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "ab05fa183387b9cf482cd3b91fec534ac48217cefee1cad1bd074531fd0500ad"
+        }
+      ],
+      "prompt_sha256": "8ca809710e8eddf49dae6cef02f04b64284cd02a1c6c690534d0d5fd513115c8"
+    },
+    {
+      "kind": "badges",
+      "key": "safari_5",
+      "original": "marketing/source_art/round-two-badges/safari_5-original.png",
+      "prompt": "marketing/source_art/round-two-badges/safari_5-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "5dabaa03e9e586d0ceb0322fa31a986dad4547925d542bf2e048757762cf92a8",
+      "outputs": [
+        "marketing/achievements/safari_5.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/safari_5.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "e85c375c30bc8571fec019647007d23224566a2ee72c3a11c44e2d0c759f3375"
+        }
+      ],
+      "prompt_sha256": "d82d06a698538606358d48c69431ae9ab32b1f26a42bbb814fd82d86760a3cbe"
+    },
+    {
+      "kind": "badges",
+      "key": "safari_captures",
+      "original": "marketing/source_art/round-two-badges/safari_captures-original.png",
+      "prompt": "marketing/source_art/round-two-badges/safari_captures-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "9c242e357d2fe8e1c7db6a933bd1bec3e52f65de3681ddb17a337d16cbf11549",
+      "outputs": [
+        "marketing/leaderboards/safari_captures.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/leaderboards/safari_captures.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "4fd3f048f2ece7bdbcd7595f93157466aa1ed330cfffcc893494a1c4cfdecf27"
+        }
+      ],
+      "prompt_sha256": "219b39e4ae30dd7b10b3ae25697b7b8f3af31a7c4850dfe45c0bf37a6d2e4959"
+    },
+    {
+      "kind": "badges",
+      "key": "seven_days",
+      "original": "marketing/source_art/round-two-badges/seven_days-original.png",
+      "prompt": "marketing/source_art/round-two-badges/seven_days-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "0b4c572ecc4662b5ba83961df661512a426f152f581a296545beb15638449367",
+      "outputs": [
+        "marketing/achievements/seven_days.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/achievements/seven_days.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "8fbb6b06a6b93f3eca42463c7b637ca232ebfbdce4f16944e72feb15d5c3cb23"
+        }
+      ],
+      "prompt_sha256": "5896716ad8190640a3d4541f236ba15b15b1c0d6a1d6de2cc626b87b9e4f802a"
+    },
+    {
+      "kind": "badges",
+      "key": "total_income",
+      "original": "marketing/source_art/round-two-badges/total_income-original.png",
+      "prompt": "marketing/source_art/round-two-badges/total_income-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "0d15ad8afafef24068fd0861fef384ba46fdbb5f3caf1422aead25b6692d2dae",
+      "outputs": [
+        "marketing/leaderboards/total_income.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/leaderboards/total_income.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "bd6272ba85e859ae585de0c4c3a900ff1dc72fdff3fbe46e0ae000bc07c47f92"
+        }
+      ],
+      "prompt_sha256": "bdd1b69c516aab3049ab19c3296e5f28812b90895b550a00731e729b618e8b0c"
+    },
+    {
+      "kind": "biomes",
+      "key": "biome-0-meadow-footpath",
+      "original": "marketing/source_art/round-two-biomes/biome-0-meadow-footpath-original.png",
+      "prompt": "marketing/source_art/round-two-biomes/biome-0-meadow-footpath-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "89b16dba7d18881d213645e8fe410ee83b103268ae2e328b10a1538c89efd5bd",
+      "outputs": [
+        "assets/environment/biome-0-meadow-footpath.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "assets/environment/biome-0-meadow-footpath.png",
+          "dimensions": [
+            768,
+            768
+          ],
+          "sha256": "76e788c3b311605ca34f0abec946e422bf2b2aed2dff18bd769148301be2733c"
+        }
+      ],
+      "prompt_sha256": "7ba1b94981797964e3f1db17c33cff5ae82140473449addac73f14cfaa2e8e8e"
+    },
+    {
+      "kind": "biomes",
+      "key": "biome-1-fern-brook",
+      "original": "marketing/source_art/round-two-biomes/biome-1-fern-brook-original.png",
+      "prompt": "marketing/source_art/round-two-biomes/biome-1-fern-brook-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "915596efcae3ee429c994cb1bdb2a3c310be7efb4c6792ba4fdb7b289c0d20cc",
+      "outputs": [
+        "assets/environment/biome-1-fern-brook.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "assets/environment/biome-1-fern-brook.png",
+          "dimensions": [
+            768,
+            768
+          ],
+          "sha256": "2dce366e0665c4fd75141f005264b812f38ee5b5740b7951c75a8ae42532cf67"
+        }
+      ],
+      "prompt_sha256": "63e9d04a97924ea42ff6d843ea84a86756387f97f677838ecfcb1379ecb2e537"
+    },
+    {
+      "kind": "biomes",
+      "key": "biome-2-sunstone-ridge",
+      "original": "marketing/source_art/round-two-biomes/biome-2-sunstone-ridge-original.png",
+      "prompt": "marketing/source_art/round-two-biomes/biome-2-sunstone-ridge-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "2c2950b4b4a1fbe396a806eb7377d5564b8f025623d3052a58a75eb13ff0f9aa",
+      "outputs": [
+        "assets/environment/biome-2-sunstone-ridge.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "assets/environment/biome-2-sunstone-ridge.png",
+          "dimensions": [
+            768,
+            768
+          ],
+          "sha256": "3e6af76bea40324bbcfe35e21cb1372f752de9cb9cdc05f8f94e94ae875eae77"
+        }
+      ],
+      "prompt_sha256": "7b2394e2a247b66c2ea49584ea44e28f828b717d1c505364fcf6af7a47d1aeb0"
+    },
+    {
+      "kind": "biomes",
+      "key": "biome-3-moonlit-marsh",
+      "original": "marketing/source_art/round-two-biomes/biome-3-moonlit-marsh-original.png",
+      "prompt": "marketing/source_art/round-two-biomes/biome-3-moonlit-marsh-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "e6baaf5fd19f2d313329972146d518a01cb9da7c5aa656ac3e9b8bae710fa874",
+      "outputs": [
+        "assets/environment/biome-3-moonlit-marsh.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "assets/environment/biome-3-moonlit-marsh.png",
+          "dimensions": [
+            768,
+            768
+          ],
+          "sha256": "02890a1d0988eb75e70c7bda26b4e169b925d0e519a51369da9b504a87b5d88a"
+        }
+      ],
+      "prompt_sha256": "6f56e0ceea7515d9d046b963c8fcad165d4e50d52610b9196a886071123f033b"
+    },
+    {
+      "kind": "biomes",
+      "key": "biome-4-tidepool-coast",
+      "original": "marketing/source_art/round-two-biomes/biome-4-tidepool-coast-original.png",
+      "prompt": "marketing/source_art/round-two-biomes/biome-4-tidepool-coast-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "532a92078fbd2f27f900a33b51c9b72d3288434617d04e2e0a3722639cd8cee7",
+      "outputs": [
+        "assets/environment/biome-4-tidepool-coast.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "assets/environment/biome-4-tidepool-coast.png",
+          "dimensions": [
+            768,
+            768
+          ],
+          "sha256": "165d653904ac2b3b02ceaf5736350e2c7169f2f053747f44fb9f947f2097d48f"
+        }
+      ],
+      "prompt_sha256": "6c59c2658192644b4f9495757621c8ef2f91f1fcd06b779628e811e5054ef12a"
+    },
+    {
+      "kind": "biomes",
+      "key": "biome-5-copperwood-grove",
+      "original": "marketing/source_art/round-two-biomes/biome-5-copperwood-grove-original.png",
+      "prompt": "marketing/source_art/round-two-biomes/biome-5-copperwood-grove-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "f196370a408b836808f10c45401eb8ce0a389d05591d9ca7748cd3b80281325f",
+      "outputs": [
+        "assets/environment/biome-5-copperwood-grove.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "assets/environment/biome-5-copperwood-grove.png",
+          "dimensions": [
+            768,
+            768
+          ],
+          "sha256": "4d19a5ec3619ef64b2c94192362fa0b4d509b9c4dc435f454180f3e8b6024fc6"
+        }
+      ],
+      "prompt_sha256": "c22360a0348f2cb979f836b5b43388749bfe137bdfcbba06ad70815a004e1ace"
+    },
+    {
+      "kind": "biomes",
+      "key": "biome-6-frostglass-pass",
+      "original": "marketing/source_art/round-two-biomes/biome-6-frostglass-pass-original.png",
+      "prompt": "marketing/source_art/round-two-biomes/biome-6-frostglass-pass-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "d8121b9eec864314f695df9eb84798ca87e386080fb211474eed061491aece6d",
+      "outputs": [
+        "assets/environment/biome-6-frostglass-pass.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "assets/environment/biome-6-frostglass-pass.png",
+          "dimensions": [
+            768,
+            768
+          ],
+          "sha256": "d30a56b247ffd8f6cfd111f5f9385fa6ee7f50ef25e029667e0e2562cf1b47f3"
+        }
+      ],
+      "prompt_sha256": "0c282cafc5298c0707ecb89d7098415353500d234a38b7097d3293d12f7b2fd7"
+    },
+    {
+      "kind": "biomes",
+      "key": "biome-7-starfall-hollow",
+      "original": "marketing/source_art/round-two-biomes/biome-7-starfall-hollow-original.png",
+      "prompt": "marketing/source_art/round-two-biomes/biome-7-starfall-hollow-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "77131181a0e5e5fe9d7d7d4984dcdb800ac3f4cb29c68b2eaf0475263ccf6352",
+      "outputs": [
+        "assets/environment/biome-7-starfall-hollow.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "assets/environment/biome-7-starfall-hollow.png",
+          "dimensions": [
+            768,
+            768
+          ],
+          "sha256": "5166493889a9877345b42850ca1b967404156a08417966b794ed2df2807194c8"
+        }
+      ],
+      "prompt_sha256": "b335d32d5791b970f54ed6b751784f4e103958ba30d2eedb5138d5044ec67942"
+    },
+    {
+      "kind": "branding",
+      "key": "app-icon",
+      "original": "marketing/source_art/round-two-branding/app-icon-original.png",
+      "prompt": "marketing/source_art/round-two-branding/app-icon-prompt.txt",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "original_sha256": "62731ff52ba84e6b5d9242ab8104e340403e57a96a06347432e7638d7ac0ad52",
+      "outputs": [
+        "marketing/app-icon-512.png",
+        "marketing/app-icon-192.png",
+        "platform/app-icon-512.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/app-icon-512.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "56db1362b8e827176068ce6e67951dea5075de5605569b30b7ead9638743cb9b"
+        },
+        {
+          "file": "marketing/app-icon-192.png",
+          "dimensions": [
+            192,
+            192
+          ],
+          "sha256": "7bdbd8bab0d5dd6550705fdb43499e15eb029c242401c2428cb7bbdb9249ae91"
+        },
+        {
+          "file": "platform/app-icon-512.png",
+          "dimensions": [
+            512,
+            512
+          ],
+          "sha256": "56db1362b8e827176068ce6e67951dea5075de5605569b30b7ead9638743cb9b"
+        }
+      ],
+      "prompt_sha256": "4a308f92f3d08bde60b6b447f8ab995d26dbaf953792ad7e791d3689587ae0d9"
+    },
+    {
+      "kind": "branding",
+      "key": "feature",
+      "original": "marketing/source_art/round-two-branding/feature-original.png",
+      "prompt": "marketing/source_art/round-two-branding/feature-prompt.txt",
+      "original_dimensions": [
+        1796,
+        876
+      ],
+      "original_sha256": "ac4600fc328bee3a73a7a29056c630243e186e8e6acedd0ff4a7a854996a9549",
+      "outputs": [
+        "marketing/feature-graphic-1024x500.png"
+      ],
+      "generation": "built-in imagegen",
+      "output_specs": [
+        {
+          "file": "marketing/feature-graphic-1024x500.png",
+          "dimensions": [
+            1024,
+            500
+          ],
+          "sha256": "0a961f7cae70ffb79850a1ad18446a8826734aa0fd5122f24f0963576a7d8751"
+        }
+      ],
+      "prompt_sha256": "7eff8db72303ced0d275d8df69f1c41269c30a53a9ce1cda3f749b61e78bd864"
+    }
+  ]
+}

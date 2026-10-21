@@ -28,4 +28,4 @@ godot --headless --path . --script platform/tests/services_smoke.gd
 - Stage only reviewed project files. Private QA originals, raw logs, saves, backups, signing material, credentials, generated SDK builds and prebuilt exports stay out of published history. Ignore rules do not protect already tracked paths; inspect each diff.
 - Preserve `LICENSE`, `NOTICE`, `LICENSES/` and asset/plugin terms. Retain notices with distributed binaries.
 - Pages deployment remains disabled; no Library change or Google Play publication is part of ordinary updates. Production configuration, real-service/physical-device testing and human acceptance remain owner work.
-- Work on the requested game/update. The application inventory cap remains ten; do not start another game as part of continuation.
+- Work on the requested game/update. This focused continuation covers this repository; the coordinator manages any separately authorized new-game work and queue limits.

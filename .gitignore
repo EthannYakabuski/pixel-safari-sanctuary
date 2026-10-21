@@ -30,3 +30,6 @@ CHECKPOINT.txt
 **/runtime-receipt.json
 # Generated import sidecars for non-runtime screenshot evidence
 /marketing/screenshots/**/*.png.import
+
+# Generated metadata for non-runtime illustrated source originals
+/marketing/source_art/round-two-*/**/*.png.import

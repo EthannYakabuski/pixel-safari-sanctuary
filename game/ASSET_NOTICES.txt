@@ -3,3 +3,5 @@ Original game code, procedural habitat illustrations, icon, and synthesized audi
 
 Runtime scenery: Kenney Tiny Town 1.1 tiles, CC0. Original atlas copied unchanged.
 See LICENSES/Assets/Safari/TinyTown-CC0.txt. Creature Mixer terms remain separate.
+
+Round Two illustrated biome backgrounds, store branding and semantic badges: generated with the built-in imagegen tool for this project. Exact accepted originals and prompts are preserved under marketing/source_art/round-two-*. Creature Mixer design notices and custom terms remain applicable and are retained above.
