@@ -37,11 +37,28 @@ current store eligibility/privacy/audience details, physical-device checks and
 human gameplay/balance/content review remain owner work. Google test ads and
 disabled production Play Games do not establish production acceptance.
 
-PUBLIC SOURCE AND REMAINING OWNER WORK
-Public source is available at https://github.com/EthannYakabuski/pixel-safari-sanctuary.
-The first hosted CI run failed during Android SDK setup after Godot checks and Web
-export passed. A workflow correction is prepared; corrected CI success is not yet
-established. Live Pages activation remains held. Browser interaction, audible audio,
-physical devices, production services and human acceptance remain unverified.
-Google Play submission/publication remains owner work. Private device logs, saved
-profiles and coordinator evidence coordinates are excluded from this public tree.
+CURRENT REPOSITORY AND CONTINUATION - 2026-10-21
+Public source: https://github.com/EthannYakabuski/pixel-safari-sanctuary
+Recorded passing CI baseline: 7e365ffff2dfee813bd219e21f507c8d3395641f
+CI PASS: https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39525423937
+The original local QA APK identified above is retained unchanged; CI artifacts
+are separate builds and have not received that native verification. This
+repository consolidation and documentation refresh requires no APK rebuild.
+Pages deployment remains disabled. No Library or Google Play publication
+is included. Physical devices, audible Android sound, interactive Web and
+production service configurations still require their stated verification.
+
+Use this repository root as the sole active game project. For a new Codex
+task, read AGENTS.md, README.md, this handoff and docs/PLATFORM_SETUP.md,
+inspect Git status/diff and specify the desired update. Previous chats and
+archival staging copies are not required or assumed context. Original local
+folders and private evidence are retained separately; do not copy private
+notes/logs or older unsanitized tracked-document versions into commits.
+
+IDs: game/catalog.json defines 23 achievements and 5 leaderboards;
+fill the same symbolic mappings in platform/config.json. The numeric PGS
+game ID also belongs in export_presets.cfg. AdMob manifest App ID belongs
+in project.godot via admob/general/android/app_id; JSON app_id alone is
+insufficient. test_mode changes wording only, not the configured ad requests.
+Keep sample IDs for development and read the complete platform setup before
+production configuration. Supply signing keys/credentials outside Git.
