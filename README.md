@@ -4,6 +4,8 @@ A little sanctuary. A world of curious creatures.
 
 Explore eight expedition trails and bring home one creature by completing every stage of its capture chain. Grow an expandable sanctuary with no meadow-count limit; repeated captures raise species bonds, income and level-gated breeding. Discover 200 creatures across five rarity tiers, build habitat and friendship bonuses, and claim a seven-day login reward.
 
+**Round Two status (2026-10-21):** The source and illustrated artwork for the rules described here are complete and have passed isolated source/UI checks. New Android and Web exports, native gameplay/service verification and final-build screenshots are pending. The preserved original APK and its screenshots verify the earlier game only. Round Two public pushes remain blocked by approval review despite the owner's authorization; no Round Two hosted CI result is available. See `HANDOFF.txt` for the original artifact identity and dated QA.
+
 ## Play
 
 Choose a free safari trail, tap a creature, and land every consecutive hit inside the moving gold window. A miss always breaks the chain; rarity changes its speed, width and required stages. One successful chain returns one resident. Duplicate captures raise that species' shared bond level, and both parents need level 5 before breeding. Browse six meadows per page, inspect their computed income, and use the field guide's Bond & home view to plan combinations. See [the Round Two rules and migration contract](docs/ROUND_TWO.md).
@@ -22,11 +24,11 @@ godot --headless --path . --script tests/model_test.gd
 godot --headless --path . --script tests/round_two_test.gd
 godot --headless --path . --script tests/ui_test.gd
 godot --headless --path . --script platform/tests/services_smoke.gd
-godot --headless --path . --export-release Web build/web/index.html
-godot --headless --path . --install-android-build-template --export-debug Android build/android/game-debug.apk
+godot --headless --path . --export-release Web build/round-two-candidate/web/index.html
+godot --headless --path . --install-android-build-template --export-debug Android build/round-two-candidate/android/pixel-safari-sanctuary-debug.apk
 ```
 
-Create build/web and build/android before exporting. The Android application ID is `com.ethannyakabuski.pixelsafari`. Debug APKs include ARM64 and x86 for the supplied test environment. Exported debug builds are for testing; Google Play publication and final release signing remain with the human owner.
+Create the separate build/round-two-candidate/web and build/round-two-candidate/android directories before exporting; preserve the original build/android/game-debug.apk and its matching package unchanged. The Android application ID is `com.ethannyakabuski.pixelsafari`. Debug APKs include ARM64 and x86 for the supplied test environment. Exported debug builds are for testing; Google Play publication and final release signing remain with the human owner.
 
 ## Integration and handoff
 
@@ -66,6 +68,6 @@ Android artifact.
 
 ## Public source and local artifacts
 
-Public repository: [Pixel Safari Sanctuary](https://github.com/EthannYakabuski/pixel-safari-sanctuary). Current source and this continuation documentation are tracked here. Prebuilt exports, real saves, private QA records, credentials and signing material stay outside the published source history. Local artifact availability is described in `HANDOFF.txt`; a fresh clone does not contain the original debug APK.
+Public repository: [Pixel Safari Sanctuary](https://github.com/EthannYakabuski/pixel-safari-sanctuary). The public repository contains the earlier published baseline; the completed Round Two source, art and continuation updates are committed locally while their public push remains blocked. Prebuilt exports, real saves, private QA records, credentials and signing material stay outside the published source history. Local artifact availability is described in `HANDOFF.txt`; a fresh clone does not contain the original debug APK.
 
 Original work is Apache-2.0; assets, fonts, engine and plugins retain their own terms in `LICENSES/`, `NOTICE` and source notices. Creature Mixer assets, where used, have custom non-NFT/non-blockchain terms and are not CC0.

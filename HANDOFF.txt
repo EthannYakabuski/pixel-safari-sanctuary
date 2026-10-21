@@ -1,5 +1,15 @@
 PIXEL SAFARI SANCTUARY - LOCAL TEST HANDOFF
-Status: READY FOR OWNER LOCAL TEST REVIEW (2026-10-20T09:14:25.267994+00:00).
+Status: ROUND TWO SOURCE AND ART COMPLETE; NEW EXPORTS, NATIVE QA AND CAPTURES PENDING (2026-10-21).
+The new eight-trail/capture-chain/bond rules and illustrated art passed isolated
+source/UI checks; no new Android/Web export or native verification is claimed.
+Public Round Two pushes remain blocked by approval review despite owner
+authorization, so no Round Two hosted CI result is available.
+
+PRESERVED ORIGINAL PACKAGE - DATED LOCAL REVIEW
+Original status: READY FOR OWNER LOCAL TEST REVIEW (2026-10-20T09:14:25.267994+00:00).
+The APK, QA results and screenshots below belong to the earlier game and do not
+verify the Round Two source, art, migration or new balance. Export Round Two
+candidates to separate output directories; do not replace this original APK.
 
 Open build/android/pixel-safari-sanctuary-test-package.zip for the debug APK plus
 its accompanying license notices. Keep LICENSES with redistributed binaries.
@@ -8,16 +18,18 @@ SHA256: 6163796d0d2327881a77d4725ab861b44dd5dadf75e4e3c0e20482b588b94b5e
 The supplied test build contains ARM64 and x86, minimum API24/target35.
 Source version is identified by hashes in docs/LOCAL_TEST_RESULTS.json.
 
-WHAT IS READY
+WHAT WAS READY IN THE ORIGINAL PACKAGE
 The playable game, 200-creature catalog, breeding recipes, enclosures/income,
 local/offline progress, daily gifts, native achievements/leaderboard plugin,
 audio/settings, Android test ads and Web export are present. Production Play
 Games IDs remain disabled until the owner supplies the real configuration.
 Marketing includes store/website copy, app and feature art,23 achievement icons,
 5 leaderboard icons and9 normal-play screenshots with raw images/provenance.
-See marketing/STORE-HANDOFF.txt and marketing/screenshots/capture-manifest.json.
+The retained marketing/screenshots/capture-manifest.json identifies the original
+screenshots; these are historical captures, not Round Two final-build views.
+Current illustrated marketing art and store copy have since been updated.
 
-VERIFICATION
+DATED ORIGINAL-PACKAGE VERIFICATION
 184 model assertions,25 headless UI assertions and25 GPU UI assertions passed.
 On this exact APK a real native earned callback granted once and reduced the
 saved egg deadline25seconds. Two legitimate short outings triggered a native
@@ -43,7 +55,9 @@ Recorded passing CI baseline: 7e365ffff2dfee813bd219e21f507c8d3395641f
 CI PASS: https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39525423937
 The original local QA APK identified above is retained unchanged; CI artifacts
 are separate builds and have not received that native verification. This
-repository consolidation and documentation refresh requires no APK rebuild.
+earlier repository consolidation did not rebuild that APK. The later Round Two
+runtime/art changes require new Android/Web builds, native regression and new
+final-build captures before a replacement local handoff can be marked ready.
 Pages deployment remains disabled. No Library or Google Play publication
 is included. Physical devices, audible Android sound, interactive Web and
 production service configurations still require their stated verification.
