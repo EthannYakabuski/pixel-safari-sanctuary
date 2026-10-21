@@ -28,3 +28,5 @@ CHECKPOINT.txt
 /local-backups/
 **/*-stopped-save.json
 **/runtime-receipt.json
+# Generated import sidecars for non-runtime screenshot evidence
+/marketing/screenshots/**/*.png.import

@@ -122,14 +122,14 @@ func _run() -> void:
 	click.position = game.wild_view.slot_position(0) * (game.wild_view.size / Vector2(480, 410))
 	game.wild_view._gui_input(click)
 	check(game.selected_slot == 0 and not game.capture_button.disabled, "touch/mouse selects creature and enables catch")
-	for attempt in range(6):
-		if game.model.state.safari.is_empty():
-			break
-		game._select_creature(attempt % 3)
-		game.capture_phase = 0.0
+	check(game.safari_lure_label.text == "3 LURES LEFT", "selecting a creature immediately refreshes the spent-lure counter")
+	var required_hits = int(game.model.capture_window().required)
+	for hit in range(required_hits):
+		var window = game.model.capture_window()
+		game.capture_phase = asin(float(window.center) * 2.0 - 1.0)
 		game._attempt_capture()
 		await process_frame
-	check(game.model.state.safari.is_empty() and game.page == "home", "using all lures returns to sanctuary")
+	check(game.model.state.safari.is_empty() and game.page == "home", "complete chain returns exactly one resident to sanctuary")
 	check(game.model.state.stats.outings == 1, "UI outing banks once")
 	check(is_instance_valid(game.modal), "safari return summary displayed")
 	game._close_modal()
@@ -142,9 +142,15 @@ func _run() -> void:
 	game._navigate("nursery")
 	await process_frame
 	check(game.page == "nursery" and game.body.get_child_count() > 30, "all breeding recipes rendered")
+	var recipes: Array = game.model.catalog.recipes.duplicate()
+	recipes.sort_custom(game._recipe_precedes)
+	check(int(recipes[0].target) == 110, "starter parents appear before distant unavailable breeding recipes")
+	for repeat in range(4):
+		game.model.add_creature(0)
+		game.model.add_creature(1)
 	game._breed(110)
 	check(game.model.state.nursery.size() == 1, "UI starts fixed-parent breeding")
-	game.model.tick(game.model.clock + 60)
+	game.model.tick(game.model.clock + game.model.breeding_seconds(game.model.recipe_for(110)))
 	game._update_nursery_rows()
 	await process_frame
 	await process_frame
@@ -192,6 +198,43 @@ func _run() -> void:
 	check(is_instance_valid(game.modal), "settings/help/privacy UI opens")
 	check(not game._can_reward(), "unavailable rewarded ads cannot grant mock rewards")
 	game._close_modal()
+	game.model.state.coins = 100000000
+	while game.model.state.pens.size() < 13: game.model.add_pen()
+	game.meadow_page = 2
+	game._navigate("home")
+	await settle()
+	var labels: Array = game.body.find_children("*", "Label", true, false)
+	var has_thirteenth = false
+	for label in labels:
+		if "Meadow 13" in label.text: has_thirteenth = true
+	check(has_thirteenth, "pagination reaches meadow thirteen without rendering every meadow")
+	game._manage_pen(12)
+	await settle()
+	var rarity_and_level = false
+	for button in game.modal.find_children("*", "Button", true, false):
+		if "Common" in button.text and "Lv" in button.text: rarity_and_level = true
+	check(rarity_and_level, "add-resident cards show rarity and species level explicitly")
+	game._close_modal()
+	game._species_details(0)
+	await settle()
+	check(is_instance_valid(game.modal), "species bond and habitat detail view opens")
+	game._close_modal()
+	game._navigate("safari")
+	game._start_safari(0)
+	await settle()
+	game._select_creature(0)
+	game.capture_phase = -PI * 0.5
+	var captured_before = int(game.model.state.stats.captures)
+	game._attempt_capture()
+	await settle()
+	check(not game.model.state.safari.is_empty() and game.model.state.safari.caught.is_empty(), "UI marker outside gold cannot award a creature")
+	game._finish_safari()
+	check(int(game.model.state.stats.captures) == captured_before, "failed chain return cannot create a hidden capture")
+	game._close_modal()
+	# Release the test scene while the audio server still has time to mix its stop commands.
+	game._release_audio()
+	check(game.effects.stream == null and game.ambient.stream == null, "test teardown releases active audio resources")
+	await create_timer(0.2).timeout
 	game.queue_free()
 	await process_frame
 	await process_frame

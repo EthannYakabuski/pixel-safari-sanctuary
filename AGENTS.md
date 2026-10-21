@@ -1,6 +1,6 @@
 # Pixel Safari Sanctuary: continuation
 
-Open this repository root as the single active game project. Start each focused task by reading `README.md`, `HANDOFF.txt` and `docs/PLATFORM_SETUP.md`, then inspect Git status/diff. Do not assume an earlier conversation or use an archival staging copy as a parallel source of truth.
+Open this repository root as the single active game project. Start each focused task by reading `README.md`, `HANDOFF.txt`, `docs/ROUND_TWO.md` and `docs/PLATFORM_SETUP.md`, then inspect Git status/diff. Do not assume an earlier conversation or use an archival staging copy as a parallel source of truth.
 
 ## Targets and verification
 
@@ -12,6 +12,7 @@ Open this repository root as the single active game project. Start each focused 
 ```sh
 godot --headless --editor --path . --import
 godot --headless --path . --script tests/model_test.gd
+godot --headless --path . --script tests/round_two_test.gd
 godot --headless --path . --script tests/ui_test.gd
 godot --headless --path . --script platform/tests/services_smoke.gd
 ```

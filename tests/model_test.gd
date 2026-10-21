@@ -34,12 +34,12 @@ func _initialize() -> void:
 	check(model.player_level() == 1, "initial keeper level")
 	check(model.income_per_second() > 0.0, "residents earn income")
 	model.tick(T + 60)
-	check(int(model.state.bank) == 72, "income for elapsed minute")
+	check(int(model.state.bank) == 11, "income for elapsed minute")
 	var coins_before = model.state.coins
-	check(model.collect_income() == 72 and model.state.coins == coins_before + 72, "collection transfers bank exactly once")
+	check(model.collect_income() == 11 and model.state.coins == coins_before + 11, "collection transfers bank exactly once")
 	check(model.collect_income() == 0, "cannot collect twice")
 	model.tick(T + 60 + 86400)
-	check(int(model.state.bank) == 34560, "offline income capped at eight hours")
+	check(int(model.state.bank) == 5391, "offline income capped at eight hours")
 	var bank_before = model.state.bank
 	model.tick(T)
 	check(model.state.bank == bank_before, "clock rollback does not grant duplicate income")
@@ -60,12 +60,13 @@ func _initialize() -> void:
 	var other = fresh()
 	other.start_safari(0, 42)
 	check(model.safari_species(0) == other.safari_species(0), "seeded encounter determinism")
-	for attempt in range(6):
+	for attempt in range(model.lure_capacity()):
 		var id = model.safari_species(attempt % 3)
 		check(not model.species(id).breeding_only, "wild encounters exclude nursery-only species")
-		model.attempt_capture(id, 1.0)
-	check(model.state.safari.lures == 0, "six capture attempts consume six lures")
-	check(not model.attempt_capture(0, 1.0), "cannot capture after lures exhausted")
+		check(model.begin_capture(attempt % 3), "lure starts a whole chain")
+		check(model.tap_capture(-1.0) == "miss", "outside-window tap never succeeds")
+	check(model.state.safari.lures == 0, "one lure per whole-chain attempt")
+	check(not model.begin_capture(0), "cannot capture after lures exhausted")
 	var result = model.finish_safari()
 	check(int(model.state.stats.outings) == 1, "outing counted once")
 	check(int(model.state.stats.captures) == result.caught.size(), "captures banked on return")
@@ -78,12 +79,16 @@ func _initialize() -> void:
 	model = fresh()
 	model.state.coins = 100000
 	var first = data.recipes[0]
+	check(not model.can_breed(first), "level-one starters cannot bypass parent bond gate")
+	for repeat in range(4):
+		model.add_creature(0)
+		model.add_creature(1)
 	check(model.can_breed(first), "starter parents have first recipe")
 	var first_parent_count = model.count(0)
 	check(model.begin_breed(int(first.target)), "valid pair breeds")
 	check(model.count(0) == first_parent_count, "parents are never consumed")
 	check(model.hatch(0) == -1, "unready egg cannot hatch")
-	model.tick(T + int(first.seconds))
+	model.tick(T + model.breeding_seconds(first))
 	check(model.hatch(0) == int(first.target), "ready egg yields fixed species")
 	check(model.count(int(first.target)) == 1, "new species is in collection")
 	check(model.hatch(0) == -1, "hatched egg cannot duplicate")
@@ -95,13 +100,15 @@ func _initialize() -> void:
 	var locked = data.recipes[-1]
 	check(not model.begin_breed(int(locked.target)), "missing exact parents block recipe")
 	model = fresh()
+	model.state.coins = 100000
+	check(model.add_pen(), "resident-move fixture buys its second meadow")
 	check(not model.assign(0, 1), "one individual cannot occupy two pens")
 	check(model.remove_resident(0, 0) and model.assign(0, 1), "resident moves between pens")
 	model.state.coins = 100000
 	check(model.upgrade_pen(0) and model.pen_capacity(0) == 3, "pen upgrade increases capacity")
-	while model.state.pens.size() < 6:
+	while model.state.pens.size() < 12:
 		check(model.add_pen(), "expand enclosure")
-	check(not model.add_pen(), "enclosure cap enforced")
+	check(model.add_pen() and model.state.pens.size() == 13, "meadows expand beyond the former six-meadow cap")
 	model = fresh()
 	model.refresh_quest()
 	model.state.stats.captures += 3
@@ -164,9 +171,13 @@ func _initialize() -> void:
 		check(restored.state.nursery.is_empty() and restored.state.stats.has("captures"), "recovery selects safe backup fields")
 	var valid_nested = fresh()
 	valid_nested.state.coins = 100000
-	valid_nested.begin_breed(110)
+	for repeat in range(4):
+		valid_nested.add_creature(0)
+		valid_nested.add_creature(1)
+	check(valid_nested.begin_breed(110), "live save fixture has a legitimate nursery timer")
 	valid_nested.start_safari(0, 451)
-	valid_nested.attempt_capture(valid_nested.safari_species(0), 1.0)
+	valid_nested.begin_capture(0)
+	valid_nested.tap_capture(float(valid_nested.capture_window().center))
 	var parsed_save: Variant = JSON.parse_string(JSON.stringify(valid_nested.state))
 	check(valid_nested.valid_save(parsed_save), "legitimate JSON float integers, live nursery and safari remain compatible")
 	check(valid_nested.save_to(save_path) == OK and restored.load_from(save_path, T), "live timers and unbanked safari survive real save roundtrip")

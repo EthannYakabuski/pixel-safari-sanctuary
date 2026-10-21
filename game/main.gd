@@ -17,10 +17,12 @@ var coin_label: Label
 var level_label: Label
 var bank_label: Label
 var safari_time_label: Label
+var safari_lure_label: Label
 var wild_view: Control
 var capture_button: Button
 var safari_info: Label
 var selected_slot = -1
+var meadow_page = 0
 var capture_phase = 0.0
 var second_timer = 0.0
 var toast_label: Label
@@ -269,6 +271,7 @@ func _render() -> void:
 	wild_view = null
 	bank_label = null
 	safari_time_label = null
+	safari_lure_label = null
 	nursery_rows = []
 	nursery_reward_button = null
 	nursery_reward_status = null
@@ -296,9 +299,11 @@ func _reset_page_scroll() -> void:
 	scroll.set_deferred("scroll_vertical", 0)
 
 func _home() -> void:
-	_section("A little wild. A lot of wonder.", "A safe home for every creature you discover.")
+	_section("A little wild. A lot of wonder.", "Build bonds, discover faraway habitats, and make room for every friend.")
+	meadow_page = clampi(meadow_page, 0, maxi(0, int((model.state.pens.size() - 1) / 6)))
 	var view = Habitat.new()
 	view.model = model
+	view.pen_offset = meadow_page * 6
 	view.custom_minimum_size.y = 275
 	view.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	body.add_child(view)
@@ -312,43 +317,60 @@ func _home() -> void:
 	bank_label = _label("", 24)
 	income_text.add_child(bank_label)
 	income_row.add_child(_button("Collect", _collect, "gold"))
-	income_card.add_child(_paragraph("%s coins/min  \u00b7  Your residents earn while you are away." % _number(int(model.income_per_second() * 60)), 13))
+	income_card.add_child(_paragraph("%.1f coins/min  ·  Residents earn while you are away, up to eight hours." % (model.income_per_second() * 60.0), 13))
 	var gift_row = HBoxContainer.new()
 	gift_row.add_theme_constant_override("separation", 8)
 	body.add_child(gift_row)
-	var daily = _button("Daily gift" + ("  \u2022" if model.daily_available() else "  \u2713"), _daily, "soft")
+	var daily = _button("Daily gift" + ("  •" if model.daily_available() else "  ✓"), _daily, "soft")
 	daily.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	gift_row.add_child(daily)
-	var safari = _button("Go on safari  \u2192", func(): _navigate("safari"))
+	var safari = _button("Go on safari  →", func(): _navigate("safari"))
 	safari.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	gift_row.add_child(safari)
-	body.add_child(_label("YOUR ENCLOSURES", 13, MUTED))
+	body.add_child(_label("YOUR MEADOWS  ·  %d HOMES" % model.state.pens.size(), 13, MUTED))
+	var page_row = HBoxContainer.new()
+	body.add_child(page_row)
+	var previous = _button("← Previous", func(): meadow_page -= 1; _render(), "soft")
+	previous.disabled = meadow_page == 0
+	page_row.add_child(previous)
+	var page_label = _label("%d–%d / %d" % [meadow_page * 6 + 1, mini((meadow_page + 1) * 6, model.state.pens.size()), model.state.pens.size()], 13, MUTED)
+	page_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	page_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	page_row.add_child(page_label)
+	var following = _button("Next →", func(): meadow_page += 1; _render(), "soft")
+	following.disabled = (meadow_page + 1) * 6 >= model.state.pens.size()
+	page_row.add_child(following)
 	var pens = GridContainer.new()
 	pens.columns = 2
 	pens.add_theme_constant_override("h_separation", 10)
 	pens.add_theme_constant_override("v_separation", 10)
 	body.add_child(pens)
-	for index in range(model.state.pens.size()):
+	for index in range(meadow_page * 6, mini((meadow_page + 1) * 6, model.state.pens.size())):
 		var pen = model.state.pens[index]
+		var earning = model.meadow_income(index)
 		var box = _card(pens)
-		box.add_child(_label("Meadow %d  \u00b7  Lv %d" % [index + 1, int(pen.level)], 16))
+		box.add_child(_label("Meadow %d  ·  Lv %d" % [index + 1, int(pen.level)], 16))
 		var residents = HBoxContainer.new()
 		box.add_child(residents)
-		for resident in pen.residents.slice(0, 3):
-			residents.add_child(_sprite(int(resident), 46))
-		if pen.residents.is_empty():
-			residents.add_child(_label("Room for new friends", 12, MUTED))
+		for resident in pen.residents.slice(0, 3): residents.add_child(_sprite(int(resident), 46))
+		if pen.residents.is_empty(): residents.add_child(_label("Room for new friends", 12, MUTED))
 		box.add_child(_label("%d/%d residents" % [pen.residents.size(), model.pen_capacity(index)], 13, MUTED))
+		box.add_child(_label("%.1f coins / min" % (float(earning.rate) * 60.0), 17, INK))
+		var bonuses: Array = []
+		if float(earning.diversity) > 0.0: bonuses.append("Variety +%d%%" % roundi(float(earning.diversity) * 100.0))
+		if float(earning.theme) > 0.0: bonuses.append("Habitat theme +25%")
+		if float(earning.pair) > 0.0: bonuses.append("Friendship +%d%%" % roundi(float(earning.pair) * 100.0))
+		box.add_child(_paragraph(" · ".join(bonuses) if not bonuses.is_empty() else "Try a habitat theme or a friendship pair.", 11, MUTED))
 		var this_pen = index
 		box.add_child(_button("Manage", func(): _manage_pen(this_pen), "soft"))
 		var upgrade = _button("Upgrade %d" % model.upgrade_cost(index) if int(pen.level) < 5 else "Fully upgraded", func(): _upgrade(this_pen), "soft")
 		upgrade.disabled = int(pen.level) >= 5 or int(model.state.coins) < model.upgrade_cost(index)
 		upgrade.add_theme_font_size_override("font_size", 13)
 		box.add_child(upgrade)
-	if model.state.pens.size() < 6:
-		var expansion = _button("Open another meadow  \u00b7  %d coins" % model.new_pen_cost(), _expand, "soft")
-		expansion.disabled = int(model.state.coins) < model.new_pen_cost()
-		body.add_child(expansion)
+	var expansion = _button("Open another meadow  ·  %s coins" % _number(model.new_pen_cost()), _expand, "soft")
+	expansion.disabled = int(model.state.coins) < model.new_pen_cost()
+	body.add_child(expansion)
+	body.add_child(_paragraph("No meadow limit. Browse six at a time. Duplicate captures raise a species' bond level; every resident of that species earns more.", 13))
 	_update_ticking_labels()
 
 func _collect() -> void:
@@ -369,20 +391,24 @@ func _upgrade(index: int) -> void:
 
 func _expand() -> void:
 	if model.add_pen():
+		meadow_page = int((model.state.pens.size() - 1) / 6)
+		_sound("upgrade")
 		_toast("A new meadow is ready for residents.")
-	_check_progress()
-	_render()
+		_check_progress()
+		_render()
 
 func _manage_pen(index: int) -> void:
 	var box = _open_modal("Meadow %d" % (index + 1))
-	box.add_child(_paragraph("Residents bring in visitor coins. Move them freely; creatures always stay in your collection."))
+	var earning = model.meadow_income(index)
+	box.add_child(_paragraph("%.1f coins/min with these residents. Different species add variety, matching home habitats add 25%%, and named friendship pairs add 12%% each." % (float(earning.rate) * 60.0)))
 	var residents = model.state.pens[index].residents
 	for slot in range(residents.size()):
 		var id = int(residents[slot])
+		var rarity = int(model.species(id).rarity)
 		var item = HBoxContainer.new()
 		box.add_child(item)
 		item.add_child(_sprite(id, 48))
-		var name_label = _label(str(model.species(id).name), 14)
+		var name_label = _paragraph("%s\n%s · Species Lv %d" % [str(model.species(id).name), Model.RARITIES[rarity], model.species_level(id)], 13, RARITY_COLORS[rarity].darkened(0.25))
 		name_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		item.add_child(name_label)
 		var this_slot = slot
@@ -392,8 +418,13 @@ func _manage_pen(index: int) -> void:
 		for key in model.state.owned:
 			var id = int(key)
 			if model.count(id) > model.assigned_count(id):
+				var rarity = int(model.species(id).rarity)
 				var this_id = id
-				box.add_child(_button(str(model.species(id).name) + "  +", func(): model.assign(this_id, index); _close_modal(); _render(); _manage_pen(index), "soft"))
+				var choose = _button("%s  +\n%s · Lv %d · %s" % [str(model.species(id).name), Model.RARITIES[rarity], model.species_level(id), Model.ZONES[model.species_biome(id)].name], func(): model.assign(this_id, index); _close_modal(); _render(); _manage_pen(index), "soft")
+				choose.custom_minimum_size.y = 72
+				choose.add_theme_font_size_override("font_size", 13)
+				choose.add_theme_stylebox_override("normal", _style(RARITY_COLORS[rarity].lightened(0.74)))
+				box.add_child(choose)
 	box.add_child(_button("Done", _close_modal))
 
 func _daily() -> void:
@@ -419,42 +450,50 @@ func _daily() -> void:
 
 func _safari() -> void:
 	if model.state.safari.is_empty():
-		_section("Follow your curiosity.", "Six lures. Forty-five seconds. A whole lot of new friends.")
-		var habitats = [["Sunlit Meadow", "Gentle paths, familiar faces, and a little luck.", 1], ["Fernwood Trail", "A deeper forest with more uncommon encounters.", 3], ["Amber Highlands", "Rare company beyond the sunset ridge.", 6]]
-		for index in range(3):
-			var habitat = habitats[index]
+		_section("One expedition. One special friend.", "%d lures · 90 seconds · Chain every gold-window hit to bring one resident home." % model.lure_capacity())
+		var equipment = _card()
+		equipment.add_child(_label("EXPLORER'S SATCHEL", 12, MUTED))
+		equipment.add_child(_paragraph("%d lures per outing. A lure starts a creature's complete capture chain; a miss spends that lure. Normal safaris are always free." % model.lure_capacity(), 14, INK))
+		var upgrade = _button("Add a lure  ·  %d coins" % model.lure_upgrade_cost() if int(model.state.lure_level) < Model.MAX_LURE_LEVEL else "Satchel fully upgraded", func():
+			if model.upgrade_lures(): _sound("upgrade"); _toast("Satchel upgraded!"); _render(), "soft")
+		upgrade.disabled = int(model.state.lure_level) >= Model.MAX_LURE_LEVEL or int(model.state.coins) < model.lure_upgrade_cost()
+		equipment.add_child(upgrade)
+		for index in range(Model.ZONES.size()):
+			var habitat: Dictionary = Model.ZONES[index]
+			var unlocked = model.zone_available(index)
 			var box = _card()
 			var art = HBoxContainer.new()
 			box.add_child(art)
-			art.add_child(_sprite([0, 88, 156][index], 88))
+			art.add_child(_sprite(int(Model.ZONE_POOLS[index][0][0]), 78))
 			var title = VBoxContainer.new()
 			title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 			art.add_child(title)
-			title.add_child(_label(str(habitat[0]), 20))
-			title.add_child(_paragraph(str(habitat[1]), 14))
+			title.add_child(_label(str(habitat.name), 20))
+			title.add_child(_paragraph(str(habitat.description), 14))
+			if not unlocked: box.add_child(_paragraph("Keeper %d/%d · %d/%d outings" % [model.player_level(), int(habitat.level), int(model.state.stats.outings), int(habitat.outings)], 13, MUTED))
 			var which = index
-			var depart = _button("Explore  \u2192" if model.player_level() >= int(habitat[2]) else "Opens at keeper level %d" % int(habitat[2]), func(): _start_safari(which))
-			depart.disabled = model.player_level() < int(habitat[2])
+			var depart = _button("Explore  →" if unlocked else "Keep exploring to open this trail", func(): _start_safari(which))
+			depart.disabled = not unlocked
 			box.add_child(depart)
 		var quest = _card()
 		quest.add_child(_label("TODAY'S FIELD NOTE", 12, MUTED))
 		quest.add_child(_paragraph("Bring home 3 creatures today. 120 coins + 35 XP.", 16, INK))
 		quest.add_child(_label("%d / 3 friends brought home" % mini(3, model.quest_progress()), 15, MUTED))
 		var claim = _button("Claim field-note reward" if not model.state.quest_claimed else "Field note complete", func():
-			if model.claim_quest():
-				_toast("Field note complete! +120 coins +35 XP")
+			if model.claim_quest(): _toast("Field note complete! +120 coins +35 XP")
 			_check_progress()
 			_render(), "gold")
 		claim.disabled = model.state.quest_claimed or model.quest_progress() < 3
 		quest.add_child(claim)
 		return
-	_section("A little closer...", "Tap a creature, then catch when the white marker meets gold.")
+	_section(str(Model.ZONES[int(model.state.safari.habitat)].name), "Tap a creature. Land EVERY stage inside gold; a miss never captures it.")
 	var top = HBoxContainer.new()
 	body.add_child(top)
 	safari_time_label = _label("", 20)
 	safari_time_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	top.add_child(safari_time_label)
-	top.add_child(_label("%d LURES LEFT" % int(model.state.safari.lures), 14, MUTED))
+	safari_lure_label = _label("", 14, MUTED)
+	top.add_child(safari_lure_label)
 	wild_view = Habitat.new()
 	wild_view.model = model
 	wild_view.mode = "safari"
@@ -463,19 +502,25 @@ func _safari() -> void:
 	wild_view.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	wild_view.creature_selected.connect(_select_creature)
 	body.add_child(wild_view)
-	safari_info = _paragraph("Choose any creature in the clearing.", 17, INK)
+	safari_info = _paragraph("Choose a creature. Common chains need 2 hits; endangered chains need 5.", 16, INK)
 	body.add_child(safari_info)
 	capture_button = _button("Choose a creature", _attempt_capture, "gold")
-	capture_button.disabled = selected_slot < 0
+	capture_button.disabled = true
 	body.add_child(capture_button)
-	var caught_names: Array = []
-	for id in model.state.safari.caught:
-		caught_names.append(str(model.species(int(id)).name))
-	body.add_child(_paragraph("This outing: %d new friends" % caught_names.size(), 15))
+	body.add_child(_paragraph("One resident per expedition. Your satchel lets you try again if a chain breaks.", 14))
 	body.add_child(_button("Return to sanctuary", _finish_safari, "soft"))
 	_update_ticking_labels()
-	if selected_slot >= 0:
-		_select_creature(selected_slot)
+	_update_capture_labels()
+
+func _update_capture_labels() -> void:
+	if is_instance_valid(safari_lure_label) and not model.state.safari.is_empty():
+		safari_lure_label.text = "%d LURES LEFT" % int(model.state.safari.lures)
+	var window = model.capture_window()
+	if window.is_empty() or not is_instance_valid(capture_button): return
+	var creature = model.species(int(window.id))
+	safari_info.text = "%s · %s\nStage %d/%d · land in gold" % [creature.name, Model.RARITIES[int(creature.rarity)], int(window.stage) + 1, int(window.required)]
+	capture_button.text = "Secure stage %d / %d" % [int(window.stage) + 1, int(window.required)]
+	capture_button.disabled = false
 
 func _start_safari(habitat: int) -> void:
 	if model.start_safari(habitat, int(Time.get_ticks_msec())):
@@ -485,27 +530,37 @@ func _start_safari(habitat: int) -> void:
 		_reset_page_scroll()
 
 func _select_creature(slot: int) -> void:
+	if selected_slot == slot and not model.capture_window().is_empty(): return
+	if not model.begin_capture(slot): return
 	selected_slot = slot
-	capture_phase = 0.7
+	capture_phase = -PI * 0.5
 	wild_view.selected = slot
-	var creature = model.species(model.safari_species(slot))
-	safari_info.text = "%s  \u00b7  %s" % [creature.name, Model.RARITIES[int(creature.rarity)]]
-	capture_button.text = "Catch!  \u2193"
-	capture_button.disabled = false
+	_update_capture_labels()
+	_save()
 
 func _attempt_capture() -> void:
-	if selected_slot < 0 or model.state.safari.is_empty():
+	if selected_slot < 0 or model.state.safari.is_empty(): return
+	var window = model.capture_window()
+	if window.is_empty(): return
+	var id = int(window.id)
+	var result = model.tap_capture((sin(capture_phase) + 1.0) * 0.5)
+	if result == "stage":
+		_sound("capture")
+		capture_phase = -PI * 0.5
+		_update_capture_labels()
+		_toast("Good hit! The next gold window moves.")
+		_save()
 		return
-	var id = model.safari_species(selected_slot)
-	var quality = 1.0 - absf(sin(capture_phase))
-	var caught = model.attempt_capture(id, quality)
-	_sound("capture" if caught else "escape")
-	_toast("%s joined your safari!" % model.species(id).name if caught else "%s slipped away. Try another friend." % model.species(id).name)
-	selected_slot = -1
-	if int(model.state.safari.lures) <= 0:
+	if result == "caught":
+		_sound("capture")
 		_finish_safari()
-	else:
-		_render()
+		return
+	if result == "blocked": return
+	_sound("escape")
+	_toast("%s slipped away. A miss breaks the whole chain." % model.species(id).name)
+	selected_slot = -1
+	if int(model.state.safari.lures) <= 0: _finish_safari()
+	else: _render()
 
 func _finish_safari() -> void:
 	var result = model.finish_safari()
@@ -519,17 +574,19 @@ func _finish_safari() -> void:
 	if result.get("completed", true):
 		_service("round_finished")
 	var box = _open_modal("Welcome home, explorer.")
-	box.add_child(_paragraph("%d creatures safely brought back. +%d coins and +%d XP." % [result.caught.size(), int(result.coins), int(result.xp)], 18, INK))
+	box.add_child(_paragraph("%d resident safely brought home. +%d coins and +%d XP." % [result.caught.size(), int(result.coins), int(result.xp)], 18, INK))
 	var row = HFlowContainer.new()
 	box.add_child(row)
 	for id in result.caught:
 		row.add_child(_sprite(int(id), 78))
+	for bond in result.get("levels", []):
+		box.add_child(_paragraph("%s reached species level %d! Every resident of that species now earns more." % [model.species(int(bond.id)).name, int(bond.level)], 16, INK))
 	if result.caught.is_empty():
 		box.add_child(_paragraph("Every outing teaches you something. There is always another trail."))
 	box.add_child(_button("Meet the residents", _close_modal))
 
 func _nursery() -> void:
-	_section("Grow the family tree.", "Some wonders can only be born here. Parents stay in your sanctuary.")
+	_section("Grow the family tree.", "Parents need species level 5. Duplicate safari captures grow bonds; parents stay in your sanctuary.")
 	for index in range(model.state.nursery.size()):
 		var egg = model.state.nursery[index]
 		var card = _card()
@@ -562,7 +619,7 @@ func _nursery() -> void:
 		body.add_child(nursery_reward_status)
 	body.add_child(_label("BREEDING TREE  \u00b7  %d RECIPES" % model.catalog.recipes.size(), 13, MUTED))
 	var recipes: Array = model.catalog.recipes.duplicate()
-	recipes.sort_custom(func(a: Dictionary, b: Dictionary): return int(model.can_breed(a)) > int(model.can_breed(b)))
+	recipes.sort_custom(_recipe_precedes)
 	for recipe in recipes:
 		var card = _card()
 		var target = int(recipe.target)
@@ -582,12 +639,21 @@ func _nursery() -> void:
 			var parent_box = VBoxContainer.new()
 			parent_box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 			parents.add_child(parent_box)
-			parent_box.add_child(_label(("\u2713 " if model.count(parent_id) > 0 else "\u25cb ") + str(model.species(parent_id).name), 13, INK if model.count(parent_id) > 0 else MUTED))
+			parent_box.add_child(_label(("✓ " if model.breeding_level_ready(parent_id) else "○ ") + "%s · Lv %d/5" % [str(model.species(parent_id).name), model.species_level(parent_id)], 13, INK if model.count(parent_id) > 0 else MUTED))
 		var this_target = target
-		var breed = _button("Breed  \u00b7  %d coins  \u00b7  %ds" % [int(recipe.cost), int(recipe.seconds)], func(): _breed(this_target), "soft")
+		var breed = _button("Breed  \u00b7  %d coins  \u00b7  %ds" % [model.breeding_cost(recipe), model.breeding_seconds(recipe)], func(): _breed(this_target), "soft")
 		breed.disabled = not model.can_breed(recipe)
 		card.add_child(breed)
 	_update_nursery_rows()
+
+func _recipe_precedes(a: Dictionary, b: Dictionary) -> bool:
+	var a_ready = model.can_breed(a)
+	var b_ready = model.can_breed(b)
+	if a_ready != b_ready: return a_ready
+	var a_bonds = mini(5, model.species_level(int(a.parents[0]))) + mini(5, model.species_level(int(a.parents[1])))
+	var b_bonds = mini(5, model.species_level(int(b.parents[0]))) + mini(5, model.species_level(int(b.parents[1])))
+	if a_bonds != b_bonds: return a_bonds > b_bonds
+	return int(a.target) < int(b.target)
 
 func _update_nursery_rows() -> void:
 	if model == null or page != "nursery": return
@@ -633,7 +699,7 @@ func _reward_nursery() -> void:
 		_save()])
 
 func _journal() -> void:
-	_section("Your living field guide.", "%d of 200 species discovered. Every little wonder counts." % model.collection_size())
+	_section("Your living field guide.", "%d of 200 species discovered. Duplicate captures grow species levels and income." % model.collection_size())
 	var summary = _card()
 	summary.add_child(_label("THE STORY SO FAR", 12, MUTED))
 	summary.add_child(_paragraph("%d outings  \u00b7  %d safari friends  \u00b7  %d eggs hatched" % [int(model.state.stats.outings), int(model.state.stats.captures), int(model.state.stats.breeds)], 16, INK))
@@ -665,6 +731,26 @@ func _journal() -> void:
 			name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 			name_label.custom_minimum_size = Vector2(95, 32)
 			cell.add_child(name_label)
+			if model.count(int(creature.id)) > 0:
+				cell.add_child(_label("Lv %d · ×%d" % [model.species_level(int(creature.id)), model.count(int(creature.id))], 12, RARITY_COLORS[rarity]))
+				var this_id = int(creature.id)
+				var detail = _button("Bond & home", func(): _species_details(this_id), "soft")
+				detail.add_theme_font_size_override("font_size", 10)
+				cell.add_child(detail)
+
+func _species_details(id: int) -> void:
+	var creature = model.species(id)
+	var box = _open_modal(str(creature.name))
+	box.add_child(_sprite(id, 120))
+	box.add_child(_label("%s · Species level %d" % [Model.RARITIES[int(creature.rarity)], model.species_level(id)], 18, RARITY_COLORS[int(creature.rarity)]))
+	box.add_child(_paragraph("%d residents · %d duplicate bonds. Each repeat capture adds one species level, up to 50; all residents of this species share that bond." % [model.count(id), int(model.state.species_xp.get(str(id), 0))]))
+	box.add_child(_paragraph("Home habitat: %s. A meadow of residents with the same home gains a 25%% theme bonus. Different species add variety." % Model.ZONES[model.species_biome(id)].name))
+	box.add_child(_paragraph("Breeding ready!" if model.breeding_level_ready(id) else "Reach species level 5 to use this parent in discovered breeding recipes."))
+	var friends: Array = []
+	for pair in Model.MEADOW_PAIRS:
+		if pair.has(id): friends.append(str(model.species(int(pair[1] if int(pair[0]) == id else pair[0])).name))
+	if not friends.is_empty(): box.add_child(_paragraph("Friendship bonus with: %s (+12%% together)." % ", ".join(friends)))
+	box.add_child(_button("Back to field guide", _close_modal))
 
 func _milestones() -> void:
 	var box = _open_modal("Keeper milestones")
@@ -754,14 +840,15 @@ func _process(delta: float) -> void:
 		return
 	second_timer += delta
 	if not model.state.safari.is_empty():
-		capture_phase += delta * 2.4
+		var window = model.capture_window()
+		capture_phase += delta * (float(window.speed) if not window.is_empty() else 1.35)
 		if is_instance_valid(wild_view):
 			wild_view.phase = capture_phase
 	if second_timer >= 1.0:
 		second_timer = 0.0
 		model.tick(int(Time.get_unix_time_from_system()))
 		_update_ticking_labels()
-		if not model.state.safari.is_empty() and model.clock - int(model.state.safari.started) >= 45:
+		if not model.state.safari.is_empty() and model.clock - int(model.state.safari.started) >= Model.SAFARI_DURATION:
 			_finish_safari()
 		_save()
 
@@ -770,7 +857,7 @@ func _update_ticking_labels() -> void:
 	if is_instance_valid(bank_label):
 		bank_label.text = "%s coins" % _number(int(model.state.bank))
 	if is_instance_valid(safari_time_label) and not model.state.safari.is_empty():
-		safari_time_label.text = "%02d seconds" % maxi(0, 45 - (model.clock - int(model.state.safari.started)))
+		safari_time_label.text = "%02d seconds" % maxi(0, Model.SAFARI_DURATION - (model.clock - int(model.state.safari.started)))
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_APPLICATION_PAUSED or what == NOTIFICATION_WM_CLOSE_REQUEST:
@@ -798,6 +885,9 @@ func _apply_audio() -> void:
 		ambient.stream_paused = not model.state.sound
 
 func _exit_tree() -> void:
+	_release_audio()
+
+func _release_audio() -> void:
 	if is_instance_valid(effects):
 		effects.stop()
 		effects.stream = null
@@ -823,6 +913,9 @@ func _number(value: int) -> String:
 	return str(value)
 
 func _prepare_capture_fixture() -> void:
+	# Isolated UI/demo fixture only; never used for native gameplay evidence.
+	while model.state.pens.size() < 3: model.state.pens.append({"level": 1, "residents": []})
+	model.state.unlocked_zones = [0, 1, 2]
 	model.state.coins = 2410
 	model.add_xp(1040)
 	for id in [6, 15, 27, 42, 83, 88, 99, 110, 112, 135, 137, 151]:

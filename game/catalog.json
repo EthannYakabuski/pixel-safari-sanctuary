@@ -6,1400 +6,1600 @@
       "name": "Acorn King",
       "file": "res://assets/creatures/acorn_king.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 1,
       "name": "Amber Antlers",
       "file": "res://assets/creatures/amber_antlers.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 2,
       "name": "Amber Eclipse",
       "file": "res://assets/creatures/amber_eclipse.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 3,
       "name": "Amber Imp",
       "file": "res://assets/creatures/amber_imp.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 4,
       "name": "Amethyst Earl",
       "file": "res://assets/creatures/amethyst_earl.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 5,
       "name": "Apricot Elder",
       "file": "res://assets/creatures/apricot_elder.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 6,
       "name": "Ash Bonnet",
       "file": "res://assets/creatures/ash_bonnet.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 7,
       "name": "Ashen Howl",
       "file": "res://assets/creatures/ashen_howl.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 8,
       "name": "Ashplate Rusher",
       "file": "res://assets/creatures/ashplate_rusher.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 9,
       "name": "Azure Antlers",
       "file": "res://assets/creatures/azure_antlers.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 10,
       "name": "Azure Baron",
       "file": "res://assets/creatures/azure_baron.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 11,
       "name": "Azure Rampart",
       "file": "res://assets/creatures/azure_rampart.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 12,
       "name": "Azure Wraith",
       "file": "res://assets/creatures/azure_wraith.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 13,
       "name": "Barkbeard Oracle",
       "file": "res://assets/creatures/barkbeard_oracle.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 14,
       "name": "Barkwall",
       "file": "res://assets/creatures/barkwall.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 15,
       "name": "Biscuit Bastion",
       "file": "res://assets/creatures/biscuit_bastion.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 16,
       "name": "Biscuit Warlock",
       "file": "res://assets/creatures/biscuit_warlock.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 17,
       "name": "Blackthorn Conjurer",
       "file": "res://assets/creatures/blackthorn_conjurer.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 18,
       "name": "Bloodmoon Sentinel",
       "file": "res://assets/creatures/bloodmoon_sentinel.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 19,
       "name": "Bluebell Bandit",
       "file": "res://assets/creatures/bluebell_bandit.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 20,
       "name": "Blush Biter",
       "file": "res://assets/creatures/blush_biter.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 21,
       "name": "Bog Boulder",
       "file": "res://assets/creatures/bog_boulder.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 22,
       "name": "Bone Bonnet",
       "file": "res://assets/creatures/bone_bonnet.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 23,
       "name": "Bone Dreadroot",
       "file": "res://assets/creatures/bone_dreadroot.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 24,
       "name": "Bone Moonbeast",
       "file": "res://assets/creatures/bone_moonbeast.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 25,
       "name": "Boneblossom Hex",
       "file": "res://assets/creatures/boneblossom_hex.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 26,
       "name": "Bramble Dreadhorn",
       "file": "res://assets/creatures/bramble_dreadhorn.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 27,
       "name": "Bramble Sleepwalker",
       "file": "res://assets/creatures/bramble_sleepwalker.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 28,
       "name": "Branch Biter",
       "file": "res://assets/creatures/branch_biter.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 29,
       "name": "Brass Breaker",
       "file": "res://assets/creatures/brass_breaker.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 30,
       "name": "Brick Beard",
       "file": "res://assets/creatures/brick_beard.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 31,
       "name": "Butter Gob",
       "file": "res://assets/creatures/butter_gob.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 32,
       "name": "Carrot Cavalier",
       "file": "res://assets/creatures/carrot_cavalier.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 33,
       "name": "Chapel Gargoyle",
       "file": "res://assets/creatures/chapel_gargoyle.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 34,
       "name": "Cherry Gnash",
       "file": "res://assets/creatures/cherry_gnash.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 35,
       "name": "Chestnut Chimera",
       "file": "res://assets/creatures/chestnut_chimera.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 36,
       "name": "Cinder Anvil",
       "file": "res://assets/creatures/cinder_anvil.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 37,
       "name": "Cinder Cheek",
       "file": "res://assets/creatures/cinder_cheek.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 38,
       "name": "Cinder Coven",
       "file": "res://assets/creatures/cinder_coven.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 39,
       "name": "Cinder Nightcap",
       "file": "res://assets/creatures/cinder_nightcap.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 40,
       "name": "Cinder Sailor",
       "file": "res://assets/creatures/cinder_sailor.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 41,
       "name": "Cinder Sandman",
       "file": "res://assets/creatures/cinder_sandman.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 42,
       "name": "Clay Colossus",
       "file": "res://assets/creatures/clay_colossus.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 43,
       "name": "Clay Crawler",
       "file": "res://assets/creatures/clay_crawler.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 44,
       "name": "Cloud Crown",
       "file": "res://assets/creatures/cloud_crown.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 45,
       "name": "Coal Cask",
       "file": "res://assets/creatures/coal_cask.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 46,
       "name": "Coal Imp",
       "file": "res://assets/creatures/coal_imp.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 47,
       "name": "Coal Marauder",
       "file": "res://assets/creatures/coal_marauder.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 48,
       "name": "Cobalt Cantor",
       "file": "res://assets/creatures/cobalt_cantor.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 49,
       "name": "Cobalt Conjurer",
       "file": "res://assets/creatures/cobalt_conjurer.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 50,
       "name": "Cobble Cub",
       "file": "res://assets/creatures/cobble_cub.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 51,
       "name": "Cocoa Snout",
       "file": "res://assets/creatures/cocoa_snout.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 52,
       "name": "Copper Cairn",
       "file": "res://assets/creatures/copper_cairn.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 53,
       "name": "Copper Cap",
       "file": "res://assets/creatures/copper_cap.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 54,
       "name": "Copper Dreamhorn",
       "file": "res://assets/creatures/copper_dreamhorn.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 55,
       "name": "Copper Lancer",
       "file": "res://assets/creatures/copper_lancer.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 56,
       "name": "Copper Nocturne",
       "file": "res://assets/creatures/copper_nocturne.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 57,
       "name": "Copper Troll",
       "file": "res://assets/creatures/copper_troll.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 58,
       "name": "Copper Wizard",
       "file": "res://assets/creatures/copper_wizard.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 59,
       "name": "Corn Husk",
       "file": "res://assets/creatures/corn_husk.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 60,
       "name": "Corncrown Hexer",
       "file": "res://assets/creatures/corncrown_hexer.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 61,
       "name": "Cream Cap",
       "file": "res://assets/creatures/cream_cap.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 62,
       "name": "Creature-Sheet (2)",
       "file": "res://assets/creatures/creature-sheet (2).png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 63,
       "name": "Crimson Coronet",
       "file": "res://assets/creatures/crimson_coronet.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 64,
       "name": "Crimson Duke",
       "file": "res://assets/creatures/crimson_duke.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 65,
       "name": "Crimson Knave",
       "file": "res://assets/creatures/crimson_knave.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 66,
       "name": "Crimson Skulk",
       "file": "res://assets/creatures/crimson_skulk.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 67,
       "name": "Crimson Velvet",
       "file": "res://assets/creatures/crimson_velvet.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 68,
       "name": "Cyan Channeler",
       "file": "res://assets/creatures/cyan_channeler.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 69,
       "name": "Dream Jester",
       "file": "res://assets/creatures/dream_jester.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 70,
       "name": "Dreamroot Devourer",
       "file": "res://assets/creatures/dreamroot_devourer.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 71,
       "name": "Dusk Bellringer",
       "file": "res://assets/creatures/dusk_bellringer.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 72,
       "name": "Dusk Hare",
       "file": "res://assets/creatures/dusk_hare.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 73,
       "name": "Dusk Howler",
       "file": "res://assets/creatures/dusk_howler.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 74,
       "name": "Dust Rabbit",
       "file": "res://assets/creatures/dust_rabbit.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 75,
       "name": "Ember Bishop",
       "file": "res://assets/creatures/ember_bishop.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 76,
       "name": "Ember Claw",
       "file": "res://assets/creatures/ember_claw.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 77,
       "name": "Ember Earl",
       "file": "res://assets/creatures/ember_earl.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 78,
       "name": "Ember Hood",
       "file": "res://assets/creatures/ember_hood.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 79,
       "name": "Ember Nightbloom",
       "file": "res://assets/creatures/ember_nightbloom.png",
       "rarity": 0,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 80,
       "name": "Emerald Cantor",
       "file": "res://assets/creatures/emerald_cantor.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 81,
       "name": "Emerald Gentleman",
       "file": "res://assets/creatures/emerald_gentleman.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 82,
       "name": "Emerald Gravegrin",
       "file": "res://assets/creatures/emerald_gravegrin.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 83,
       "name": "Fern Fang",
       "file": "res://assets/creatures/fern_fang.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 84,
       "name": "Forked Fang",
       "file": "res://assets/creatures/forked_fang.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 85,
       "name": "Frost Guard",
       "file": "res://assets/creatures/frost_guard.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 86,
       "name": "Ghost Wisp",
       "file": "res://assets/creatures/ghost_wisp.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 87,
       "name": "Gilded Goggle",
       "file": "res://assets/creatures/gilded_goggle.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 88,
       "name": "Gilded Gremlin",
       "file": "res://assets/creatures/gilded_gremlin.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 89,
       "name": "Gilded Nightwarden",
       "file": "res://assets/creatures/gilded_nightwarden.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 90,
       "name": "Golden Gnome",
       "file": "res://assets/creatures/golden_gnome.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 91,
       "name": "Goldtongue Seer",
       "file": "res://assets/creatures/goldtongue_seer.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 92,
       "name": "Grave Moth",
       "file": "res://assets/creatures/grave_moth.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 93,
       "name": "Gravebone Hare",
       "file": "res://assets/creatures/gravebone_hare.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 94,
       "name": "Gravejaw Chorus",
       "file": "res://assets/creatures/gravejaw_chorus.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 95,
       "name": "Hex Hat",
       "file": "res://assets/creatures/hex_hat.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 96,
       "name": "Hollow Bell",
       "file": "res://assets/creatures/hollow_bell.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 97,
       "name": "Hollow Candle",
       "file": "res://assets/creatures/hollow_candle.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 98,
       "name": "Honey Goliath",
       "file": "res://assets/creatures/honey_goliath.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 99,
       "name": "Honey Lump",
       "file": "res://assets/creatures/honey_lump.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 100,
       "name": "Honey Yawn",
       "file": "res://assets/creatures/honey_yawn.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 101,
       "name": "Hooded Dreamer",
       "file": "res://assets/creatures/hooded_dreamer.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 102,
       "name": "Horned Husk",
       "file": "res://assets/creatures/horned_husk.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 103,
       "name": "Indigo Fang",
       "file": "res://assets/creatures/indigo_fang.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 104,
       "name": "Iron Muffin",
       "file": "res://assets/creatures/iron_muffin.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 105,
       "name": "Iron Nibbler",
       "file": "res://assets/creatures/iron_nibbler.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 106,
       "name": "Ivory Baron",
       "file": "res://assets/creatures/ivory_baron.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 107,
       "name": "Ivory Bulwark",
       "file": "res://assets/creatures/ivory_bulwark.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 108,
       "name": "Ivory Cryptseer",
       "file": "res://assets/creatures/ivory_cryptseer.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 109,
       "name": "Ivory Haunter",
       "file": "res://assets/creatures/ivory_haunter.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 110,
       "name": "Ivory Imp",
       "file": "res://assets/creatures/ivory_imp.png",
       "rarity": 1,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 6
     },
     {
       "id": 111,
       "name": "Ivory Ironroot",
       "file": "res://assets/creatures/ivory_ironroot.png",
       "rarity": 1,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 7
     },
     {
       "id": 112,
       "name": "Ivory Nightcap",
       "file": "res://assets/creatures/ivory_nightcap.png",
       "rarity": 1,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 0
     },
     {
       "id": 113,
       "name": "Jade Barricade",
       "file": "res://assets/creatures/jade_barricade.png",
       "rarity": 1,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 1
     },
     {
       "id": 114,
       "name": "Jade Jester",
       "file": "res://assets/creatures/jade_jester.png",
       "rarity": 1,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 2
     },
     {
       "id": 115,
       "name": "Jade Juggernaut",
       "file": "res://assets/creatures/jade_juggernaut.png",
       "rarity": 1,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 3
     },
     {
       "id": 116,
       "name": "Jade Moonbaron",
       "file": "res://assets/creatures/jade_moonbaron.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 117,
       "name": "Jam Juggernaut",
       "file": "res://assets/creatures/jam_juggernaut.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 118,
       "name": "Lantern Ghast",
       "file": "res://assets/creatures/lantern_ghast.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 119,
       "name": "Lavender Gremlin",
       "file": "res://assets/creatures/lavender_gremlin.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 120,
       "name": "Lemon Lancer",
       "file": "res://assets/creatures/lemon_lancer.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 121,
       "name": "Lilac Hound",
       "file": "res://assets/creatures/lilac_hound.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 122,
       "name": "Lime Royal",
       "file": "res://assets/creatures/lime_royal.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 123,
       "name": "Malachite Screech",
       "file": "res://assets/creatures/malachite_screech.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 124,
       "name": "Marigold Mourner",
       "file": "res://assets/creatures/marigold_mourner.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 125,
       "name": "Marsh Mask",
       "file": "res://assets/creatures/marsh_mask.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 126,
       "name": "Mauve Mountain",
       "file": "res://assets/creatures/mauve_mountain.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 127,
       "name": "Midnight Sailor",
       "file": "res://assets/creatures/midnight_sailor.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 128,
       "name": "Mint Brute",
       "file": "res://assets/creatures/mint_brute.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 129,
       "name": "Mint Munch",
       "file": "res://assets/creatures/mint_munch.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 130,
       "name": "Moon Mallow",
       "file": "res://assets/creatures/moon_mallow.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 131,
       "name": "Moonlit Marshal",
       "file": "res://assets/creatures/moonlit_marshal.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 132,
       "name": "Moss Lantern",
       "file": "res://assets/creatures/moss_lantern.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 133,
       "name": "Moss Minotaur",
       "file": "res://assets/creatures/moss_minotaur.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 134,
       "name": "Moss Moth",
       "file": "res://assets/creatures/moss_moth.png",
       "rarity": 1,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 135,
       "name": "Moss Muzzle",
       "file": "res://assets/creatures/moss_muzzle.png",
       "rarity": 2,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 7
     },
     {
       "id": 136,
       "name": "Mulberry Bat",
       "file": "res://assets/creatures/mulberry_bat.png",
       "rarity": 2,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 0
     },
     {
       "id": 137,
       "name": "Mustard Maw",
       "file": "res://assets/creatures/mustard_maw.png",
       "rarity": 2,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 1
     },
     {
       "id": 138,
       "name": "Mustard Monolith",
       "file": "res://assets/creatures/mustard_monolith.png",
       "rarity": 2,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 2
     },
     {
       "id": 139,
       "name": "Neon Nightmare",
       "file": "res://assets/creatures/neon_nightmare.png",
       "rarity": 2,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 3
     },
     {
       "id": 140,
       "name": "Night Pebble",
       "file": "res://assets/creatures/night_pebble.png",
       "rarity": 2,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 4
     },
     {
       "id": 141,
       "name": "Night Watch",
       "file": "res://assets/creatures/night_watch.png",
       "rarity": 2,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 5
     },
     {
       "id": 142,
       "name": "Obsidian Fang",
       "file": "res://assets/creatures/obsidian_fang.png",
       "rarity": 2,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 6
     },
     {
       "id": 143,
       "name": "Obsidian Maw",
       "file": "res://assets/creatures/obsidian_maw.png",
       "rarity": 2,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 7
     },
     {
       "id": 144,
       "name": "Ochre Oracle",
       "file": "res://assets/creatures/ochre_oracle.png",
       "rarity": 2,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 0
     },
     {
       "id": 145,
       "name": "Ochre Orb",
       "file": "res://assets/creatures/ochre_orb.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 146,
       "name": "Orchid Abyssal",
       "file": "res://assets/creatures/orchid_abyssal.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 147,
       "name": "Orchid Colossus",
       "file": "res://assets/creatures/orchid_colossus.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 148,
       "name": "Orchid Ooze",
       "file": "res://assets/creatures/orchid_ooze.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 149,
       "name": "Pale Crownfiend",
       "file": "res://assets/creatures/pale_crownfiend.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 150,
       "name": "Peach Ogre",
       "file": "res://assets/creatures/peach_ogre.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 151,
       "name": "Peach Wail",
       "file": "res://assets/creatures/peach_wail.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 152,
       "name": "Pepper Guard",
       "file": "res://assets/creatures/pepper_guard.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 153,
       "name": "Pepper Pixie",
       "file": "res://assets/creatures/pepper_pixie.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 154,
       "name": "Pine Prophet",
       "file": "res://assets/creatures/pine_prophet.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 155,
       "name": "Plum Doomcaster",
       "file": "res://assets/creatures/plum_doomcaster.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 156,
       "name": "Prism Hex",
       "file": "res://assets/creatures/prism_hex.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 157,
       "name": "Pumpkin Helm",
       "file": "res://assets/creatures/pumpkin_helm.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 158,
       "name": "Raincoat Rogue",
       "file": "res://assets/creatures/raincoat_rogue.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 159,
       "name": "Redcap Ravager",
       "file": "res://assets/creatures/redcap_ravager.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 160,
       "name": "River Imp",
       "file": "res://assets/creatures/river_imp.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 161,
       "name": "Rose Granite",
       "file": "res://assets/creatures/rose_granite.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 162,
       "name": "Rose Rampart",
       "file": "res://assets/creatures/rose_rampart.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 163,
       "name": "Ruby Jester",
       "file": "res://assets/creatures/ruby_jester.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 164,
       "name": "Ruby Rake",
       "file": "res://assets/creatures/ruby_rake.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 165,
       "name": "Ruby Rampart",
       "file": "res://assets/creatures/ruby_rampart.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 166,
       "name": "Ruby Robin",
       "file": "res://assets/creatures/ruby_robin.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 167,
       "name": "Ruby Rook",
       "file": "res://assets/creatures/ruby_rook.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 168,
       "name": "Russet Razor",
       "file": "res://assets/creatures/russet_razor.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 169,
       "name": "Rust Moonfang",
       "file": "res://assets/creatures/rust_moonfang.png",
       "rarity": 2,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 170,
       "name": "Rust Rampart",
       "file": "res://assets/creatures/rust_rampart.png",
       "rarity": 3,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 2
     },
     {
       "id": 171,
       "name": "Sage Specter",
       "file": "res://assets/creatures/sage_specter.png",
       "rarity": 3,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 3
     },
     {
       "id": 172,
       "name": "Sallow Moonmoth",
       "file": "res://assets/creatures/sallow_moonmoth.png",
       "rarity": 3,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 4
     },
     {
       "id": 173,
       "name": "Scarlet Sleepless",
       "file": "res://assets/creatures/scarlet_sleepless.png",
       "rarity": 3,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 5
     },
     {
       "id": 174,
       "name": "Scarlet Whistle",
       "file": "res://assets/creatures/scarlet_whistle.png",
       "rarity": 3,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 6
     },
     {
       "id": 175,
       "name": "Silver Sleepwalker",
       "file": "res://assets/creatures/silver_sleepwalker.png",
       "rarity": 3,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 7
     },
     {
       "id": 176,
       "name": "Skycrown Prophet",
       "file": "res://assets/creatures/skycrown_prophet.png",
       "rarity": 3,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 0
     },
     {
       "id": 177,
       "name": "Slate Scholar",
       "file": "res://assets/creatures/slate_scholar.png",
       "rarity": 3,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 1
     },
     {
       "id": 178,
       "name": "Slate Scythe",
       "file": "res://assets/creatures/slate_scythe.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 179,
       "name": "Slate Squid",
       "file": "res://assets/creatures/slate_squid.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 180,
       "name": "Slate Stalker",
       "file": "res://assets/creatures/slate_stalker.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 181,
       "name": "Sleepy Squash",
       "file": "res://assets/creatures/sleepy_squash.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 182,
       "name": "Soot Gargoyle",
       "file": "res://assets/creatures/soot_gargoyle.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 6
     },
     {
       "id": 183,
       "name": "Sprout Sprite",
       "file": "res://assets/creatures/sprout_sprite.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 7
     },
     {
       "id": 184,
       "name": "Sun Puff",
       "file": "res://assets/creatures/sun_puff.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 0
     },
     {
       "id": 185,
       "name": "Sunlit Hexer",
       "file": "res://assets/creatures/sunlit_hexer.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 1
     },
     {
       "id": 186,
       "name": "Thistle Totem",
       "file": "res://assets/creatures/thistle_totem.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 2
     },
     {
       "id": 187,
       "name": "Tin Tusk",
       "file": "res://assets/creatures/tin_tusk.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 3
     },
     {
       "id": 188,
       "name": "Tin Witchling",
       "file": "res://assets/creatures/tin_witchling.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 4
     },
     {
       "id": 189,
       "name": "Twig Terror",
       "file": "res://assets/creatures/twig_terror.png",
       "rarity": 3,
-      "breeding_only": false
+      "breeding_only": false,
+      "biome": 5
     },
     {
       "id": 190,
       "name": "Velvet Nightmare",
       "file": "res://assets/creatures/velvet_nightmare.png",
       "rarity": 4,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 6
     },
     {
       "id": 191,
       "name": "Velvet Visor",
       "file": "res://assets/creatures/velvet_visor.png",
       "rarity": 4,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 7
     },
     {
       "id": 192,
       "name": "Violet Dirge",
       "file": "res://assets/creatures/violet_dirge.png",
       "rarity": 4,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 0
     },
     {
       "id": 193,
       "name": "Violet Graveguard",
       "file": "res://assets/creatures/violet_graveguard.png",
       "rarity": 4,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 1
     },
     {
       "id": 194,
       "name": "Violet Warden",
       "file": "res://assets/creatures/violet_warden.png",
       "rarity": 4,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 2
     },
     {
       "id": 195,
       "name": "Viridian Ripper",
       "file": "res://assets/creatures/viridian_ripper.png",
       "rarity": 4,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 3
     },
     {
       "id": 196,
       "name": "Void Candle",
       "file": "res://assets/creatures/void_candle.png",
       "rarity": 4,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 4
     },
     {
       "id": 197,
       "name": "White Redcap",
       "file": "res://assets/creatures/white_redcap.png",
       "rarity": 4,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 5
     },
     {
       "id": 198,
       "name": "Winter Warden",
       "file": "res://assets/creatures/winter_warden.png",
       "rarity": 4,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 6
     },
     {
       "id": 199,
       "name": "Witching Bough",
       "file": "res://assets/creatures/witching_bough.png",
       "rarity": 4,
-      "breeding_only": true
+      "breeding_only": true,
+      "biome": 7
     }
   ],
   "recipes": [

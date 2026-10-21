@@ -2,11 +2,11 @@
 
 A little sanctuary. A world of curious creatures.
 
-Explore a safari, capture creatures, and bring them home. Manage enclosures and collect income; discover specific-parent breeding recipes and breeding-only species across five rarity tiers. Build a collection of 200 creatures, advance your keeper level, and claim a seven-day login reward.
+Explore eight expedition trails and bring home one creature by completing every stage of its capture chain. Grow an expandable sanctuary with no meadow-count limit; repeated captures raise species bonds, income and level-gated breeding. Discover 200 creatures across five rarity tiers, build habitat and friendship bonuses, and claim a seven-day login reward.
 
 ## Play
 
-Choose a safari habitat, tap a creature, and time your capture action. Return home to assign enclosure residents, collect income, upgrade pens, and choose a breeding recipe. The journal, milestones, daily gifts, and settings are available from the main navigation.
+Choose a free safari trail, tap a creature, and land every consecutive hit inside the moving gold window. A miss always breaks the chain; rarity changes its speed, width and required stages. One successful chain returns one resident. Duplicate captures raise that species' shared bond level, and both parents need level 5 before breeding. Browse six meadows per page, inspect their computed income, and use the field guide's Bond & home view to plan combinations. See [the Round Two rules and migration contract](docs/ROUND_TWO.md).
 
 The game supports touch and mouse input, portrait layouts, offline/local progress, achievements and player progression. Web play keeps Android-only ads and Google Play Games features unavailable without blocking the game. Rewarded benefits require the real earned-reward callback; the browser does not grant simulated ad rewards.
 
@@ -19,6 +19,7 @@ Use Godot **4.5.1**, the **Compatibility** renderer, and matching export templat
 ```sh
 godot --headless --editor --path . --import
 godot --headless --path . --script tests/model_test.gd
+godot --headless --path . --script tests/round_two_test.gd
 godot --headless --path . --script tests/ui_test.gd
 godot --headless --path . --script platform/tests/services_smoke.gd
 godot --headless --path . --export-release Web build/web/index.html
@@ -51,7 +52,7 @@ Preserve original local packages and QA evidence. The accepted local APK hash is
 
 ## Future extension
 
-Moonlit Wetlands: a bioluminescent habitat and another breeding branch. This is a future content idea; the initial game is intended to be independently playable.
+Additional expedition art and breeding branches can extend the eight current habitats. Keep early encounter pools narrow, preserve earned player progress during migrations, and test any economy change against the free safari and passive-income loop.
 
 The Android test preset uses minimum API 24 and target API 35 with Android texture imports enabled. This does not establish current Google Play release eligibility; release signing, backend configuration and current store requirements need final owner verification.
 

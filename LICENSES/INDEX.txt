@@ -11,7 +11,7 @@ Noto Sans CJK SC Regular: ThirdParty/NOTO-CJK-SC-NOTICE.txt and
 ThirdParty/NOTO-CJK-OFL-1.1.txt (Adobe copyright plus full SIL OFL).
 
 Asset map
-Creature sheets: Kenney Creature Mixer custom terms in Assets/CREATURE-MIXER-TERMS.txt. Original procedural habitat art, icon, audio and code: Apache-2.0.
+Creature sheets: Kenney Creature Mixer custom terms in Assets/CREATURE-MIXER-TERMS.txt. Tiny Town environment atlas: Kenney CC0, Assets/Safari/TinyTown-CC0.txt. Original generated icon, audio and code: Apache-2.0.
 Pack notices are reproduced under Assets using relative source paths.
 
 This accompanying bundle must travel with the software when this package is
