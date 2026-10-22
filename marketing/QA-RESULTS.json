@@ -1,37 +1,70 @@
 {
-  "schema": 2,
+  "schema": 4,
+  "prepared_utc": "2026-10-22T02:33:50.328762+00:00",
+  "status": "QUALIFIED_CURRENT_NATIVE_AND18_IMAGES",
   "game": "Pixel Safari Sanctuary",
-  "artwork_and_copy_checks": {
-    "title_max_30": true,
-    "short_max_80": true,
-    "long_max_4000": true,
-    "achievements_exact_catalog_keys": true,
-    "achievements_actual_names": true,
-    "leaderboards_exact_catalog_keys": true,
-    "leaderboards_actual_names": true,
-    "all_manifest_hashes": true,
-    "all_png_decoders_and_icon_sizes": true,
-    "app_icon_size": true,
-    "feature_size": true
+  "runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+  "catalog_counts": {
+    "creatures": 200,
+    "achievements": 23,
+    "leaderboards": 5,
+    "expedition_biomes": 8
   },
-  "image_count": 52,
-  "short_description_characters": 79,
-  "long_description_characters": 1184,
-  "artwork_visual_review": "All three feature graphics, app icons and representative achievement/leaderboard icons inspected; Pixel Safari sprite scale corrected.",
-  "capture_count": 9,
-  "source_apk_sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
-  "capture_manifest": "screenshots/capture-manifest.json",
-  "capture_checks": {
-    "all_nine_approved_views_present": true,
-    "selected_source_and_installed_apk_matched": true,
-    "original_raw_and_portrait_bytes_preserved": true,
-    "only_documented_orientation_correction": true,
-    "no_resizing_or_content_editing": true,
-    "actual_frames_visually_inspected_by_ai_operator": true,
-    "network_and_display_restored_during_local_qa": true
+  "recorded_art_review": {
+    "manifest": "source_art/round-two-manifest.json",
+    "accepted_originals": 38,
+    "individual_achievement_badges": 23,
+    "leaderboard_emblems": 5,
+    "biome_paintings": 8,
+    "brand_illustrations": 2,
+    "recorded_review": "512px outputs and 64px icon/badge thumbnails; 768px biome textures and actual source scenes inspected.",
+    "new_visual_or_native_review_by_doc_preparation": false,
+    "qualification": "Generated illustrations are not gameplay screenshots; retained original/prompt/output provenance is not deterministic image regeneration."
   },
+  "static_manifest_preparation": {
+    "committed_non_capture_png_entries": 72,
+    "hashes_bytes_and_ihdr_dimensions_read": true,
+    "full_decoder_test": false,
+    "manifest": "asset-manifest.json",
+    "source_art_original_prompt_output_hashes_match_committed_files": true,
+    "new_gpu_native_or_audio_test": false
+  },
+  "source_tests": {
+    "recorded_source_evidence_only": true,
+    "new_tests_run_for_this_doc_preparation": false,
+    "model_checks": 200,
+    "round_two_checks": 7344,
+    "headless_ui_checks": 33,
+    "compatibility_gpu_ui_checks": 38,
+    "eight_biome_scene_checks": 25,
+    "services_smoke": "PASS",
+    "all_final_recorded_exit_codes": 0,
+    "all_final_recorded_stderr": "empty",
+    "scope": "Isolated synthetic source/model/actual engine viewport evidence; strict misses/chains, legacy/JSON migration, 40 meadows, economy idempotency and 7200 curated encounters. Not native or auditory acceptance."
+  },
+  "capture_status": "ALL18_IMAGES_ONLY",
+  "capture_count": 18,
+  "required_count": 18,
+  "capture_manifest": "screenshots-round-two/capture-manifest.json",
+  "current_native_report": "../docs/NATIVE_QA.json",
+  "historical_first_pass": "history/before-round-two-final/QA-RESULTS.json",
+  "old_capture_orientation_rules_apply_to_new_views": false,
+  "old_generator_should_overwrite_illustrations": false,
   "limits": [
-    "All image framebuffers are1080x1920. Logical tablet overrides are not physical tablet testing.",
-    "Production services, physical devices, audible audio, browser interaction and human acceptance remain unverified."
-  ]
+    "Offline native gameplay remains UNVERIFIED: ordinary controls never disconnected the actual guest network. This does not establish an application offline failure.",
+    "Home Android Back stayed on Home with the same live process, matching source routing; graceful quit/audio shutdown was not exercised.",
+    "Broad native log gate remains FALSE: final retained sample contains a goldfish VP9 output-buffer mode diagnostic; an earlier Google Mobile Ads callback qualification is retained. Causes are unproved. Zero selected Godot/ObjectDB/resource/FATAL/ANR terms in the final sample is not whole-session cleanliness.",
+    "No new nursery earned-ad acceleration or new high-parent breeding wait was verified; ready legacy eggs and locked late content are not fabricated future progression.",
+    "Emulator audio is disabled; auditory output, physical devices, production services, interactive Web, human timing/balance and long-session/performance acceptance remain unverified.",
+    "The eighteen approved images show their exact earlier legitimate selection contexts. Their at-selection pending-catch captions/qualification remain historical; later successful capture is proved separately, without relabeling images.",
+    "Current minAPI24/targetAPI35 is the engine test constraint; production IDs/signing/privacy/current release eligibility and Play publication remain owner responsibilities."
+  ],
+  "current_native_acceptance": false,
+  "source_ci": {
+    "commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+    "url": "https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39719396352",
+    "conclusion": "success"
+  },
+  "qualified_native_handoff_ready": true,
+  "broad_native_log_gate": false
 }

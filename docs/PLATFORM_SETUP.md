@@ -1,5 +1,9 @@
 # Android integrations and build handoff
 
+## Current qualified native checkpoint
+
+Current runtime `e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7` / APK `8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C` has accepted Android/Web exports and passing [exact source CI](https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39719396352). One actual two-stage Common chain returned one resident with +20 coins/+34 XP once; result close, Home Back and a subsequent cold launch duplicated no reward. Home Back stayed on Home with the process alive, matching source policy; it was not graceful quit. Eighteen unchanged actual images are approved in their earlier selection contexts; their pending-catch language is historical, while the later catch proof is separate. Original display/radios/connectivity, genuine newest progress and stopped backup were verified. Offline remains unverified because the guest never disconnected. Broad native gate stays false for a goldfish VP9 diagnostic and retained earlier Google Mobile Ads callback qualification; no earned-ad, new high-parent breeding wait, auditory/physical-device, production, interactive-Web or general performance acceptance is claimed.
+
 This project targets Godot **4.5.1 Compatibility**, Android (API35 target, min24), and a single-threaded Web export. Windows desktop builds are outside its scope. Production Play publication remains a separate human step: verify the then-current target API policy before release; a successful API35 test build is not a claim of current store-submission eligibility.
 
 ## Runtime services

@@ -1,124 +1,84 @@
 {
-  "schema": 1,
-  "local_handoff_recorded_utc": "2026-10-20T09:14:25.267994+00:00",
-  "status": "READY_FOR_OWNER_LOCAL_TEST_REVIEW",
-  "artifact_versioning": "Exact source/artifact hashes; this handoff is not anchored to the earlier local Git commit.",
+  "schema": 3,
+  "status": "ACCEPTED_EXPORTS_SOURCE_CI_QUALIFIED_NATIVE_AND18_IMAGES",
+  "prepared_utc": "2026-10-22T10:35:05.896462+00:00",
+  "runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
   "android": {
-    "file": "build/android/game-debug.apk",
-    "sha256": "6163796d0d2327881a77d4725ab861b44dd5dadf75e4e3c0e20482b588b94b5e",
-    "bytes": 184014475,
-    "debug": true,
-    "minimum_api": 24,
-    "target_api": 35,
-    "abis": [
-      "arm64-v8a",
-      "x86"
-    ],
-    "test_package": "build/android/pixel-safari-sanctuary-test-package.zip",
-    "test_package_sha256": "9da262c72867f4433cd7ecf271563cd024e398baaac692f4ab4b063d62021279"
-  },
-  "source_hashes": {
-    "game/main.gd": "f234f5e1725206a13104e104240ae62193e8f72368c6b704075d55c8bd4b0d93",
-    "game/model.gd": "9e53081d5ad26a8c2aa36651fb355327feed89d0d4849dbfb3cf4a65d96b352e",
-    "platform/services.gd": "4b4c6e6751524097dee623825b3384192ac0be5251f2829fcfaadd293cf03356",
-    "project.godot": "ea54e5d4d581e4eb89ccc7998ca6d3ace031e8952585b99fea51a030117ff7b0",
-    "export_presets.cfg": "9217cb473921dede111d50aa144ecccae5bd21c24dfcb75554db5990e8eedffa",
-    "platform/config.json": "b842d9a68f03a3ebf72516b654e3ff56eac6825904a67c2a03fbf3932fd8f0bb"
-  },
-  "core_tests": {
-    "model_assertions": 184,
-    "headless_ui_assertions": 25,
-    "gpu_ui_assertions": 25,
-    "failures": 0,
-    "reports": [
-      "game/CORE_TEST_RESULTS.txt",
-      "game/REVIEW_FIX_RESULTS.txt"
-    ],
-    "scope": "Focused correctness/input/save checks; human gameplay balance and long-session quality remain unreviewed."
-  },
-  "native": {
-    "report": "docs/NATIVE_QA.json",
-    "report_sha256": "7840785EF33662CA82F10ED909A9E8DB36256F9515A1B876D19C6CBCCD8ED503",
-    "real_sdk_earned_accepted_once": true,
-    "measured_egg_deadline_reduction_seconds": 25,
-    "interstitial_after_two_completed_short_outings": true,
-    "custom_android_back_routes_passed": true,
-    "offline_progress_delta": {
-      "coins": 69.0,
-      "xp": 90.0,
-      "outings": 3.0,
-      "captures": 2.0,
-      "breeds": 0.0
-    },
-    "nine_required_save_groups_preserved": true,
-    "network_and_display_restored": true,
-    "normal_play_captures": 9
+    "file": "build/round-two-e3e6fee4-a1/android/pixel-safari-sanctuary-debug.apk",
+    "sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+    "bytes": 194776259,
+    "debug": true
   },
   "web": {
-    "export": "build/web/index.html",
-    "html_sha256": "F19CDC4A39A567303C38005EBD41833DF89B6CB5BF90F5333C39FA2664D0843F",
-    "pck_sha256": "C9A32A4F8D138DA62BABD117C739304E7E41B023C0B18463BC3483509C790121",
-    "packed_entries": 767,
-    "runtime_sidecars_validated": 9,
-    "all_packed_checksums_verified": true,
-    "interactive_browser_verified": false
+    "entry": "build/round-two-e3e6fee4-a1/web/index.html",
+    "html_sha256": "FE79D56EC00A86FD7364E4B42EACFF677DF1D62CDAF79977DFD0FD2FD9281100",
+    "html_bytes": 5497,
+    "pck_sha256": "30F3A1EE902919A4662F867556C9969DC06A6B84E1014CFFC942E88333B7770F",
+    "pck_bytes": 12667364,
+    "interactive_browser_qa": false
   },
-  "marketing": {
-    "directory": "marketing/",
-    "capture_manifest": "marketing/screenshots/capture-manifest.json",
-    "capture_manifest_sha256": "D5963BE97CDA207EE1B9E934CED715498F9EA16CE1765F71AF23B60A5F704689",
-    "roles": [
-      "phone-collection",
-      "phone-home",
-      "phone-play",
-      "tablet-10-collection",
-      "tablet-10-home",
-      "tablet-10-play",
-      "tablet-7-collection",
-      "tablet-7-home",
-      "tablet-7-play"
-    ],
-    "actual_framebuffer": [
-      1080,
-      1920
-    ],
-    "logical_tablet_overrides_only": true,
-    "physical_device_testing": false
+  "exports": {
+    "android": {
+      "accepted": true,
+      "exit_code": 0,
+      "strict_errors": [],
+      "runtime_inputs_stable": true,
+      "source_binding_before_after": true,
+      "complete_notice_bundle": true
+    },
+    "web": {
+      "accepted": true,
+      "exit_code": 0,
+      "strict_errors": [],
+      "runtime_inputs_stable": true,
+      "source_binding_before_after": true,
+      "complete_notice_bundle": true
+    }
   },
-  "licenses": {
-    "source_index": "LICENSES/INDEX.txt",
-    "android_index": "build/android/LICENSES/INDEX.txt",
-    "web_index": "build/web/LICENSES/INDEX.txt",
-    "pixel_export_bytes_unchanged": true
+  "source_tests": {
+    "recorded_source_evidence_only": true,
+    "new_tests_run_for_this_doc_preparation": false,
+    "model_checks": 200,
+    "round_two_checks": 7344,
+    "headless_ui_checks": 33,
+    "compatibility_gpu_ui_checks": 38,
+    "eight_biome_scene_checks": 25,
+    "services_smoke": "PASS",
+    "all_final_recorded_exit_codes": 0,
+    "all_final_recorded_stderr": "empty",
+    "scope": "Isolated synthetic source/model/actual engine viewport evidence; strict misses/chains, legacy/JSON migration, 40 meadows, economy idempotency and 7200 curated encounters. Not native or auditory acceptance."
   },
-  "known_test_limits": [
-    "Android11/API30 x86 emulator with host GPU; no physical phone/tablet testing.",
-    "Rapid logical-display resizing produced SystemUI ANR overlays; rejected frames are excluded. Recovery used observed Wait and stable viewport batches; no app or emulator save was injected.",
-    "Earlier pre-final black-media ad attempts did not prove completed playback. Actual canonical earned callback and measured benefit now pass; no reward-behavior source fix was needed or proven.",
-    "Web interaction/audio/WebGL and hosted CI/Pages have not been verified in this environment."
+  "native_report": "docs/NATIVE_QA.json",
+  "native_report_sha256": "56B366716414FC5AE732348D2FBE307F49AE0D2508E5A59BD1151C95060B3814",
+  "native_acceptance": false,
+  "current_capture_acceptance": "ALL18_IMAGES_ONLY",
+  "original_build": {
+    "file": "build/android/game-debug.apk",
+    "sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
+    "bytes": 184014475
+  },
+  "historical_report": "docs/history/pre-round-two-handoff/LOCAL_TEST_RESULTS.json",
+  "publication": {
+    "runtime_source_public": true,
+    "runtime_source_ci_verified": true,
+    "runtime_source_ci_url": "https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39719396352",
+    "future_final_document_commit": "NOT_CREATED_PRIVATE_PROPOSAL_ONLY",
+    "pages_library_play_changes": false
+  },
+  "limits": [
+    "Offline native gameplay remains UNVERIFIED: ordinary controls never disconnected the actual guest network. This does not establish an application offline failure.",
+    "Home Android Back stayed on Home with the same live process, matching source routing; graceful quit/audio shutdown was not exercised.",
+    "Broad native log gate remains FALSE: final retained sample contains a goldfish VP9 output-buffer mode diagnostic; an earlier Google Mobile Ads callback qualification is retained. Causes are unproved. Zero selected Godot/ObjectDB/resource/FATAL/ANR terms in the final sample is not whole-session cleanliness.",
+    "No new nursery earned-ad acceleration or new high-parent breeding wait was verified; ready legacy eggs and locked late content are not fabricated future progression.",
+    "Emulator audio is disabled; auditory output, physical devices, production services, interactive Web, human timing/balance and long-session/performance acceptance remain unverified.",
+    "The eighteen approved images show their exact earlier legitimate selection contexts. Their at-selection pending-catch captions/qualification remain historical; later successful capture is proved separately, without relabeling images.",
+    "Current minAPI24/targetAPI35 is the engine test constraint; production IDs/signing/privacy/current release eligibility and Play publication remain owner responsibilities."
   ],
-  "owner_completion": [
-    "Human gameplay/balance/content playtesting",
-    "Production Play Games/AdMob/consent console IDs and final real-service tests",
-    "Production signing, current store eligibility, audience/privacy/support/Data safety details",
-    "Physical-device validation and Google Play submission/publication"
-  ],
-  "external_publication": {
-    "source_repository": "https://github.com/EthannYakabuski/pixel-safari-sanctuary",
-    "prior_source_commit": "1a01974ab16f704dad8f7f5a0fb589fc9beb0347",
-    "first_hosted_ci_run": "https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39502382159",
-    "first_hosted_ci_result": "FAILED_ANDROID_SETUP_LEGACY_TOOLS_PACKAGE",
-    "passed_steps_before_failure": [
-      "Godot install and import",
-      "service fallback checks",
-      "game smoke tests",
-      "Web export",
-      "Java setup"
-    ],
-    "current_workflow_correction": "Explicit platform-tools replaces the setup action default legacy tools request; required exact Android packages remain in the next step. Corrected hosted run not yet established.",
-    "pages_deployed": false,
-    "pages_activation": "HELD",
-    "google_play_publication": "OWNER_WORK"
+  "source_ci": {
+    "commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+    "url": "https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39719396352",
+    "conclusion": "success"
   },
-  "evidence_scope": "Concise dated verification summaries and public image hashes are included. Internal device records, raw SDK logs, real saved profiles and private coordinator coordinates are excluded from the current public tree."
+  "qualified_native_handoff_ready": true,
+  "broad_native_log_gate": false
 }

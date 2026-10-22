@@ -1,72 +1,127 @@
 {
-  "schema": 2,
-  "status": "DATED_LOCAL_NATIVE_VERIFICATION_SUMMARY",
-  "verification_date": "2026-10-20",
+  "schema": 3,
+  "status": "QUALIFIED_CURRENT_NATIVE_SCOPE_LOCAL_HANDOFF",
   "package": "com.ethannyakabuski.pixelsafari",
-  "apk": {
-    "sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
-    "bytes": 184014475,
-    "installed_identity_matched": true
+  "runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+  "android_host_artifact": {
+    "file": "build/round-two-e3e6fee4-a1/android/pixel-safari-sanctuary-debug.apk",
+    "sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+    "bytes": 194776259,
+    "debug": true
   },
-  "scope": "Observed normal Android gameplay on one emulator with diagnostic observer hooks disabled. This is a concise outcome summary; private logs and saved-profile evidence are not part of this source repository.",
-  "saved_progress": {
-    "install_preserved_saved_groups": 9,
-    "offline_cold_launch_preserved_saved_groups": 9,
-    "final_restart_preserved_saved_groups": 9
+  "current_native_acceptance": false,
+  "successful_catch_verified": true,
+  "once_only_catch_payout_verified": true,
+  "final_ordinary_back_outcome": "PASS_SAME_HOME_PROCESS_REMAINS_SOURCE_POLICY_NOT_GRACEFUL_QUIT",
+  "offline": {
+    "status": "UNVERIFIED_GUEST_DID_NOT_DISCONNECT",
+    "application_offline_failure_established": false
   },
-  "rewarded_ad": {
-    "accepted_native_grants": 1,
-    "native_earned_observed_before_dismissal": true,
-    "remaining_seconds_before_offer": 28,
-    "nursery_deadline_reduction_seconds": 25,
-    "benefit_persisted_after_restart": true,
-    "qualification": "An actual native earned reward reduced the natural nursery deadline. This observation does not establish every ad creative, unearned-close branch or production ad-fill behavior."
-  },
-  "android_back": "Android Back closed the Daily and ordinary outing-result modals and navigated Safari to Home without exiting the app process.",
-  "offline_play": {
-    "ordinary_outings": 3,
-    "captures": 2,
-    "coins_earned": 69,
-    "xp_earned": 90,
-    "new_breeds": 0,
-    "network_and_display_restoration_verified": true,
-    "wifi_and_mobile_data_restored_enabled": true
-  },
-  "final_banked_outcome": {
-    "coins": 200,
-    "xp": 935,
-    "qualification": "Aggregate observed outcome only, not a saved-profile dump or a promise of starting balance."
-  },
-  "screenshots": {
-    "approved_views": 9,
-    "views": [
-      "Home",
-      "gameplay",
-      "collection"
-    ],
-    "packaged_dimensions": [
+  "formal_park_observation": {
+    "stopped": true,
+    "no_pending_device_command_or_input_producer": true,
+    "genuine_progression_and_stopped_backup_verified_privately": true,
+    "original_display": [
       1080,
       1920
     ],
-    "logical_profiles": [
-      "phone",
-      "7-inch tablet",
-      "10-inch tablet"
+    "original_density_dpi": 420,
+    "overrides_present": false,
+    "original_airplane_wifi_mobile_data": [
+      0,
+      1,
+      1
     ],
-    "qualification": "All packaged captures have the stated framebuffer dimensions. Logical tablet overrides do not establish physical-tablet testing. No fabricated gameplay state or decorative framing is claimed."
+    "actual_connectivity": "CONNECTED_WIFI_WITH_MOBILE_CONNECTED",
+    "qualification": "Genuine newest progression and stopped full backup verified privately after actual catch/close/HomeBack/cold; no restoration or fabricated progression for this final sequence.",
+    "genuine_groups": 23
+  },
+  "captures": {
+    "status": "ALL18_APPROVED_IMAGES_ONLY",
+    "count": 18,
+    "per_profile": {
+      "phone": 6,
+      "7inch": 6,
+      "10inch": 6
+    },
+    "manifest": "marketing/screenshots-round-two/capture-manifest.json",
+    "physical_device_test": false,
+    "physical_tablet_test": false
+  },
+  "native_earned_ad_verified": false,
+  "new_high_parent_breeding_wait_verified": false,
+  "historical_first_pass": {
+    "apk": {
+      "file": "build/android/game-debug.apk",
+      "sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
+      "bytes": 184014475
+    },
+    "report": "docs/history/pre-round-two-handoff/NATIVE_QA.json",
+    "applies_to_current_build": false
   },
   "limits": [
-    "One emulator; physical devices and tablets remain unverified.",
-    "Emulator audio output was disabled; audible Android sound remains unverified.",
-    "Interactive browser, browser audio and WebGL behavior remain unverified.",
-    "Official Google test ads only. Production AdMob and Play Games IDs, account/backend configuration and consent verification remain owner work.",
-    "The observed earned reward does not establish an unearned early-dismiss branch, broad ad-fill reliability, every ad creative or every gameplay path.",
-    "Human balance/content acceptance, multi-day progression and store publication were not established.",
-    "The Godot 4.5.1 test export uses minimum API24 and target API35. Current store release eligibility requires owner verification.",
-    "Hosted CI outcome is separate from local native verification. Live Pages deployment remains held."
+    "Offline native gameplay remains UNVERIFIED: ordinary controls never disconnected the actual guest network. This does not establish an application offline failure.",
+    "Home Android Back stayed on Home with the same live process, matching source routing; graceful quit/audio shutdown was not exercised.",
+    "Broad native log gate remains FALSE: final retained sample contains a goldfish VP9 output-buffer mode diagnostic; an earlier Google Mobile Ads callback qualification is retained. Causes are unproved. Zero selected Godot/ObjectDB/resource/FATAL/ANR terms in the final sample is not whole-session cleanliness.",
+    "No new nursery earned-ad acceleration or new high-parent breeding wait was verified; ready legacy eggs and locked late content are not fabricated future progression.",
+    "Emulator audio is disabled; auditory output, physical devices, production services, interactive Web, human timing/balance and long-session/performance acceptance remain unverified.",
+    "The eighteen approved images show their exact earlier legitimate selection contexts. Their at-selection pending-catch captions/qualification remain historical; later successful capture is proved separately, without relabeling images.",
+    "Current minAPI24/targetAPI35 is the engine test constraint; production IDs/signing/privacy/current release eligibility and Play publication remain owner responsibilities."
   ],
-  "interstitial": {
-    "observed_after_completed_short_outings": 2,
-    "qualification": "Actual native between-round presentation observed; this is distinct from production ad-fill reliability."
+  "native_log_acceptance": "Broad gate false; final retained sample has an ACodec goldfish VP9 diagnostic and zero selected Godot/ObjectDB/resource/FATAL/ANR terms. Prior Google Mobile Ads callback qualification retained; no raw SDK payload reproduced and no graceful-shutdown claim.",
+  "qualified_native_handoff_ready": true,
+  "native_qualified_test_complete": true,
+  "broad_native_log_gate": false,
+  "successful_capture": {
+    "actual_ui_contacts": 2,
+    "complete_Common_chain": true,
+    "stage_one_purse_xp_resident_delta": [
+      0,
+      0,
+      0
+    ],
+    "final_purse_delta": 20,
+    "final_xp_delta": 34,
+    "new_species_catalog_id": 4,
+    "new_resident_count": 1,
+    "captures": [
+      20,
+      21
+    ],
+    "outings": [
+      15,
+      16
+    ],
+    "prior_owned_counts_unchanged": true,
+    "active_safari_after": {},
+    "ordinary_autoassignment": "Previously empty fourth meadow received the new resident.",
+    "passive_income_coins_per_minute": [
+      36.168,
+      40.968
+    ],
+    "passive_income_separate_from_fixed_catch_payout": true,
+    "human_unaided_timing_acceptance": false
+  },
+  "once_only_and_cold": {
+    "result_modal_closed_once": true,
+    "close_and_Home_Back_changed_only": [
+      "bank",
+      "last_seen"
+    ],
+    "cold_Home_observed_seconds": 25.156,
+    "cold_changed_only": [
+      "bank",
+      "last_seen"
+    ],
+    "duplicate_catch_purse_xp_resident_or_stat_grant": false,
+    "final_genuine_summary": {
+      "coins": 49604,
+      "xp": 1234,
+      "species": 18,
+      "residents": 29,
+      "lure_level": 1,
+      "meadows": 4
+    },
+    "qualification": "Real current-build UI and persisted progression; clock-driven fund accrual is expected. This single cold observation is not a general performance pass."
   }
 }

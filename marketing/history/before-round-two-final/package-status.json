@@ -1,0 +1,26 @@
+{
+  "schema": 2,
+  "catalog_present": true,
+  "catalog_source": "../game/catalog.json",
+  "app_icon": "ready",
+  "feature_graphic": "ready_illustrative_brand_art",
+  "achievement_icons": 23,
+  "leaderboard_icons": 5,
+  "capture_manifest": "screenshots/capture-manifest.json",
+  "capture_count": 9,
+  "capture_apk_sha256": "6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E",
+  "capture_apk_bytes": 184014475,
+  "actual_framebuffer": [
+    1080,
+    1920
+  ],
+  "logical_tablet_profiles_only": true,
+  "physical_device_test": false,
+  "local_emulator_handoff": "all_nine_actual_views_approved_with_documented_limits",
+  "production_services": "owner_configuration_and_real_service_testing_required",
+  "human_playtesting": "unverified",
+  "source_repository": "https://github.com/EthannYakabuski/pixel-safari-sanctuary",
+  "hosted_ci": "first_run_failed_Android_setup; corrected_run_not_established",
+  "pages": "held_not_deployed",
+  "google_play_publication": "owner_work"
+}

@@ -1,0 +1,315 @@
+{
+  "schema": 2,
+  "game": "Pixel Safari Sanctuary",
+  "status": "ALL18_ROOT_APPROVED_IMAGES_ONLY_CORE_GAMEPLAY_GATE_PENDING",
+  "runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+  "apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+  "count": 18,
+  "per_profile": {
+    "phone": 6,
+    "7inch": 6,
+    "10inch": 6
+  },
+  "actual_emulator_pixels": true,
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "images": [
+    {
+      "file": "phone-01-home-after-result-close.png",
+      "profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 1042575,
+      "sha256": "0C7CA59376B5DDB2BE2593965D71D2A4AF72D4C9D3CCAA7512303ACBF7858BB5",
+      "caption": "Home after actual exhaustion: 208 coins and 941 XP; genuine three meadows; Visitor Fund separate from purse.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "phone-02-safari-trails-satchel.png",
+      "profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 184573,
+      "sha256": "604B61C4C3587B3DA8C6349DD723F0193B536DB766184D4B3925DEDD2797AAE1",
+      "caption": "Free trail selection and four-lure satchel; legacy Fern Brook legitimately available.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "phone-03-common-selected-before-hit.png",
+      "profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 1326653,
+      "sha256": "A5138FC68AF97B91BAF81C1CC3DB5C6D48F5CA3BCE8C61CC38A2CE6998357C3A",
+      "caption": "Actual Amber Antlers Common stage 1/2 with three lures left; selected live chain, no successful-catch claim.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "phone-04-journal.png",
+      "profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 149527,
+      "sha256": "DCD6F1C57FBD56F8E4965DA220C9CB89180FEEC7018A78B4C88489EAFC866D5C",
+      "caption": "Genuine discovered collection: 17/200 species; 14 outings and 20 safari friends at this frame; bond details accessible.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "phone-05-real-meadow-cards-scrolled.png",
+      "profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 151245,
+      "sha256": "03F163400A10E4BA9BF2F30BD3FFBE3B0AAECC251954C0BB53347CCB707A0351",
+      "caption": "Normal body scroll shows actual Meadow 3, income/bonus cards and unaffordable 770-coin expansion; earlier card headings intentionally above the fold.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "phone-06-actual-settled-nursery.png",
+      "profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "density_dpi": 420,
+      "bytes": 160821,
+      "sha256": "BAEDD7890804D84A2B2E1A5E8DA1B0F634EF1043F7FE165099AB7C03D9A2505F",
+      "caption": "Actual settled Nursery after legitimate Visitor Fund Collect: 50534 coins and 1165 XP, Keeper 5 (95/475). Legacy Ivory Imp egg ready but not hatched; Night Watch recipe disabled with Ivory Imp Lv6/5 and Bramble Sleepwalker Lv2/5. No ad, Hatch or successful-catch claim.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "7inch-01-home-current.png",
+      "profile": "7inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 1022404,
+      "sha256": "9EAA652FF907587A661011AF20549E862E3F6576A2B5CF0C32B8D6CCB755A893",
+      "caption": "Home after real Collect, one new meadow and one lure upgrade: 49584 coins, 1200 XP, Keeper 5; four homes and separate Visitor Fund shown.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "7inch-02-nursery.png",
+      "profile": "7inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 154333,
+      "sha256": "5AC39C42782091D1BCD298BCFB8121EBC8BFED9C9007EFF4FA0B852BCEE0AD1D",
+      "caption": "Actual Nursery with existing Ivory Imp egg ready but not hatched; Night Watch recipe remains disabled with parent levels 6/5 and 2/5.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "7inch-03-journal.png",
+      "profile": "7inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 139340,
+      "sha256": "D1CEA393E444E5B15BC4A9388C08DAC067F29155D64DD475BFCB227089FFA408",
+      "caption": "Actual Journal: 17/200 discovered species, 15 outings, 20 safari friends and six old eggs hatched; no successful new catch asserted.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "7inch-04-bond-home-detail.png",
+      "profile": "7inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 137907,
+      "sha256": "0B01AAB7F0322485094CDB5DBE73FB8ECD0F0BF438636CB4B6F891BAF4BA10E9",
+      "caption": "Acorn King Bond & home modal: genuine species level 1, one resident, no duplicate bonds, Meadow Footpath home and Amber Antlers friendship.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "7inch-05-trails-satchel.png",
+      "profile": "7inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 163008,
+      "sha256": "AFF402C40DED9D0A71F8603C0F15227D9F8DB9B1DA48E5EA7A5D42D88F84B628",
+      "caption": "Idle trail/satchel menu after the real lure upgrade: five lures per outing; next upgrade 720 coins; Meadow Footpath and Fern Brook available. No new outing taken for this view.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "7inch-06-meadow-cards.png",
+      "profile": "7inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "density_dpi": 320,
+      "bytes": 158863,
+      "sha256": "CEF6B5AAA061E8558770B31C41B92863EDA5DC653BD04EE95AF82B4AD9A31AAD",
+      "caption": "Normal Home body scroll: four genuine meadows; full Meadow 1/2 cards show 11.2 and 14.4 coins/min, including actual Meadow 2 Habitat theme +25%.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "10inch-01-home.png",
+      "profile": "10inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 1486955,
+      "sha256": "51AEBC50C4DD670331DEBD905084E95CC4B7CDC9BED1DB83D35876CBBB231C22",
+      "caption": "Actual Home after separate income collection, one new meadow and one lure upgrade: 49584 coins, 1200 XP, four homes and independent Visitor Fund.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "10inch-02-nursery.png",
+      "profile": "10inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 220672,
+      "sha256": "D3413AC68F782E26E86D2DCCD90EB35BC57C60EAAB0E76BD86B9E07D134724D3",
+      "caption": "Actual Nursery: original Ivory Imp egg remains ready but unhatched; Night Watch breeding disabled with Ivory Imp level 6 and Bramble Sleepwalker level 2.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "10inch-03-journal.png",
+      "profile": "10inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 187925,
+      "sha256": "600000DCFD31B7AAE51C85C87DBA843C12C816AC0CC226AF6C5EF9F4C8D2475B",
+      "caption": "Genuine Journal: 17/200 discovered species, 15 outings, 20 safari friends and six historical eggs hatched; no successful new catch asserted.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "10inch-04-bond-home-detail.png",
+      "profile": "10inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 188797,
+      "sha256": "22066D14CAC6EA49A7E909EE1A96A95F08F156EAC41AF38C2810981A609DB507",
+      "caption": "Acorn King Bond & home modal: Common species level 1, one resident, zero duplicate bonds, Meadow Footpath home and Amber Antlers friendship.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "10inch-05-trails-satchel.png",
+      "profile": "10inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 239321,
+      "sha256": "B2D57285A59947FAA2D659EFCA49E8CF1021C9C6E4EC49E927BE216EB78ABD02",
+      "caption": "Idle Safari menu after actual upgrade: five lures per outing, next lure upgrade 720 coins, Meadow Footpath and Fern Brook Explore cards. No new outing taken for capture.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    },
+    {
+      "file": "10inch-06-meadow-cards.png",
+      "profile": "10inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "density_dpi": 300,
+      "bytes": 317233,
+      "sha256": "6173EA4D3E03F55E87E975D54A19A05B8760DA00C5167E884F05AE17E0FCB9AC",
+      "caption": "Normal Home body scroll: four real meadows; complete Meadow 1/2 cards show 11.2 and 14.4 coins/min, including actual Meadow 2 Habitat theme +25%.",
+      "source_runtime_commit": "e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7",
+      "source_apk_sha256": "8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C",
+      "raw_pixels_unchanged": true,
+      "root_review": "APPROVED_IMAGE_CONTEXT_ONLY"
+    }
+  ],
+  "qualification": "Image approval only. Captions distinguish legitimate progress and funds; no successful catch/payout, final Back, offline or whole-handoff acceptance is implied.",
+  "limits": [
+    "Successful native capture and once-only resident/+20 coins/+34 XP payout remain UNVERIFIED; final reviewed atomic test pending.",
+    "Final ordinary Android Back result is PENDING, distinct from the verified formal stopped park.",
+    "Attempted offline controls did not disconnect the guest; offline behavior remains UNVERIFIED. No application offline failure is established.",
+    "No current earned-ad, new high-parent breeding wait, auditory, physical-device, performance, long-session or interactive-Web acceptance is claimed.",
+    "Snapshots show different legitimate progress; Visitor Fund Collect and keeper bonus are not catch rewards. Do not infer one continuous frozen balance from the eighteen images.",
+    "Production services and current store/signing/release eligibility remain owner configuration."
+  ]
+}

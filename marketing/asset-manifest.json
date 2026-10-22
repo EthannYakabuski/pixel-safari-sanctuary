@@ -6,7 +6,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "e38ca0d9a117ab8bd17893de43bf03ab77beffae9f7ee3ea872851b416fec72d"
+    "sha256": "e38ca0d9a117ab8bd17893de43bf03ab77beffae9f7ee3ea872851b416fec72d",
+    "bytes": 527068
   },
   {
     "file": "achievements/breeder_25.png",
@@ -15,7 +16,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "a8dc94c098dc17a1edd46ead694f8f6e32e71d71d90f0e2f52d5df5ca178b05b"
+    "sha256": "a8dc94c098dc17a1edd46ead694f8f6e32e71d71d90f0e2f52d5df5ca178b05b",
+    "bytes": 543001
   },
   {
     "file": "achievements/collection_10.png",
@@ -24,7 +26,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "05db0e3e8f514cf505df2f951238337db859778b54c217ab3b82e46712f01d8b"
+    "sha256": "05db0e3e8f514cf505df2f951238337db859778b54c217ab3b82e46712f01d8b",
+    "bytes": 480267
   },
   {
     "file": "achievements/collection_100.png",
@@ -33,7 +36,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "150db087fa2200ea7025e6d9acdb75dead3b409aacf582a6b81c2e86bc4029e8"
+    "sha256": "150db087fa2200ea7025e6d9acdb75dead3b409aacf582a6b81c2e86bc4029e8",
+    "bytes": 558255
   },
   {
     "file": "achievements/collection_200.png",
@@ -42,7 +46,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "29089bf81aba58914246cc5bf85577296e543d2903242e270ef1d10d8ac561e0"
+    "sha256": "29089bf81aba58914246cc5bf85577296e543d2903242e270ef1d10d8ac561e0",
+    "bytes": 562451
   },
   {
     "file": "achievements/collection_25.png",
@@ -51,7 +56,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "7bd535b8e54915ab09889bc1869edd5e13393dd0f31d5652a2eabe9058fe00bb"
+    "sha256": "7bd535b8e54915ab09889bc1869edd5e13393dd0f31d5652a2eabe9058fe00bb",
+    "bytes": 514426
   },
   {
     "file": "achievements/collection_50.png",
@@ -60,7 +66,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "c40a31d47e826ffea4a83c487be1cb900a7ec5ac8a117729338a8683870aa918"
+    "sha256": "c40a31d47e826ffea4a83c487be1cb900a7ec5ac8a117729338a8683870aa918",
+    "bytes": 481973
   },
   {
     "file": "achievements/endangered_keeper.png",
@@ -69,7 +76,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "3dbfb59f13f9a817afc73389bb028f0b58b83ca5522e4b9772e0c56d114fe3eb"
+    "sha256": "3dbfb59f13f9a817afc73389bb028f0b58b83ca5522e4b9772e0c56d114fe3eb",
+    "bytes": 527716
   },
   {
     "file": "achievements/extinct_revival.png",
@@ -78,7 +86,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "f282326dbaa1670228ce64de5de99121f65702ab11084f1876a8e0190a5affa2"
+    "sha256": "f282326dbaa1670228ce64de5de99121f65702ab11084f1876a8e0190a5affa2",
+    "bytes": 559044
   },
   {
     "file": "achievements/first_breed.png",
@@ -87,7 +96,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "46b65062e9045f70f13b7420b48926226bd9c43828f8012117e272bdb36d540c"
+    "sha256": "46b65062e9045f70f13b7420b48926226bd9c43828f8012117e272bdb36d540c",
+    "bytes": 516293
   },
   {
     "file": "achievements/first_friend.png",
@@ -96,7 +106,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "2e92084ee72bf7de458fa0ba1a35a40e1f6e2d750a4b5a9005b3ee72d0e544fb"
+    "sha256": "2e92084ee72bf7de458fa0ba1a35a40e1f6e2d750a4b5a9005b3ee72d0e544fb",
+    "bytes": 475016
   },
   {
     "file": "achievements/first_safari.png",
@@ -105,7 +116,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "ce807fca9ab367a808c67108cec74b4a65fca8e9df6cb0e2601b12ccb401e9c1"
+    "sha256": "ce807fca9ab367a808c67108cec74b4a65fca8e9df6cb0e2601b12ccb401e9c1",
+    "bytes": 525739
   },
   {
     "file": "achievements/income_10000.png",
@@ -114,7 +126,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "dd5defdc90844ed3a6cf903e5cb6af88a414c94268658fbe931cc15780b9f89a"
+    "sha256": "dd5defdc90844ed3a6cf903e5cb6af88a414c94268658fbe931cc15780b9f89a",
+    "bytes": 494394
   },
   {
     "file": "achievements/income_100000.png",
@@ -123,7 +136,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "5a91731e9eb3c62bad1c1e0e1893194fac7fb7bd2dc2143e5417c0271a5499cc"
+    "sha256": "5a91731e9eb3c62bad1c1e0e1893194fac7fb7bd2dc2143e5417c0271a5499cc",
+    "bytes": 548971
   },
   {
     "file": "achievements/income_500.png",
@@ -132,7 +146,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "7919a70906dedf42e854f6d07ddf2988c8c3652c8131cd570f055fc43be19923"
+    "sha256": "7919a70906dedf42e854f6d07ddf2988c8c3652c8131cd570f055fc43be19923",
+    "bytes": 540876
   },
   {
     "file": "achievements/level_10.png",
@@ -141,7 +156,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "a2f67ac4c9233dfd47d666618d1491a8b88dd202f9bf24960296cd2e0f5a1069"
+    "sha256": "a2f67ac4c9233dfd47d666618d1491a8b88dd202f9bf24960296cd2e0f5a1069",
+    "bytes": 560420
   },
   {
     "file": "achievements/level_20.png",
@@ -150,7 +166,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "6d05a76acbab5636d747da52dc532c939f3c23fe2e5c0f08f4a27196ef2ded6b"
+    "sha256": "6d05a76acbab5636d747da52dc532c939f3c23fe2e5c0f08f4a27196ef2ded6b",
+    "bytes": 531905
   },
   {
     "file": "achievements/level_5.png",
@@ -159,7 +176,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "f58e5c5f68624c0c05b3597270f451a19fd9f250a7857835bdce7c5ca6126706"
+    "sha256": "f58e5c5f68624c0c05b3597270f451a19fd9f250a7857835bdce7c5ca6126706",
+    "bytes": 538150
   },
   {
     "file": "achievements/rare_keeper.png",
@@ -168,7 +186,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "3c444ab65e534be308b1d28fac013ca672b05ad89313fb63b2eca1b749e2fe30"
+    "sha256": "3c444ab65e534be308b1d28fac013ca672b05ad89313fb63b2eca1b749e2fe30",
+    "bytes": 515138
   },
   {
     "file": "achievements/safari_100.png",
@@ -177,7 +196,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "a77842bba8c58826b905868c58729797191daf6a601417129e55375e1e91954c"
+    "sha256": "a77842bba8c58826b905868c58729797191daf6a601417129e55375e1e91954c",
+    "bytes": 551431
   },
   {
     "file": "achievements/safari_25.png",
@@ -186,7 +206,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "ab05fa183387b9cf482cd3b91fec534ac48217cefee1cad1bd074531fd0500ad"
+    "sha256": "ab05fa183387b9cf482cd3b91fec534ac48217cefee1cad1bd074531fd0500ad",
+    "bytes": 540456
   },
   {
     "file": "achievements/safari_5.png",
@@ -195,7 +216,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "e85c375c30bc8571fec019647007d23224566a2ee72c3a11c44e2d0c759f3375"
+    "sha256": "e85c375c30bc8571fec019647007d23224566a2ee72c3a11c44e2d0c759f3375",
+    "bytes": 559693
   },
   {
     "file": "achievements/seven_days.png",
@@ -204,7 +226,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "8fbb6b06a6b93f3eca42463c7b637ca232ebfbdce4f16944e72feb15d5c3cb23"
+    "sha256": "8fbb6b06a6b93f3eca42463c7b637ca232ebfbdce4f16944e72feb15d5c3cb23",
+    "bytes": 537372
   },
   {
     "file": "app-icon-192.png",
@@ -213,7 +236,8 @@
       192
     ],
     "mode": "RGB",
-    "sha256": "7bdbd8bab0d5dd6550705fdb43499e15eb029c242401c2428cb7bbdb9249ae91"
+    "sha256": "7bdbd8bab0d5dd6550705fdb43499e15eb029c242401c2428cb7bbdb9249ae91",
+    "bytes": 93086
   },
   {
     "file": "app-icon-512.png",
@@ -222,7 +246,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "56db1362b8e827176068ce6e67951dea5075de5605569b30b7ead9638743cb9b"
+    "sha256": "56db1362b8e827176068ce6e67951dea5075de5605569b30b7ead9638743cb9b",
+    "bytes": 553297
   },
   {
     "file": "feature-graphic-1024x500.png",
@@ -231,7 +256,8 @@
       500
     ],
     "mode": "RGB",
-    "sha256": "0a961f7cae70ffb79850a1ad18446a8826734aa0fd5122f24f0963576a7d8751"
+    "sha256": "0a961f7cae70ffb79850a1ad18446a8826734aa0fd5122f24f0963576a7d8751",
+    "bytes": 1092834
   },
   {
     "file": "leaderboards/breeding_master.png",
@@ -240,7 +266,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "86ef9765878bda056a1039d20e8c20cbfd337e74170a74e79a3e66e1b62bb03c"
+    "sha256": "86ef9765878bda056a1039d20e8c20cbfd337e74170a74e79a3e66e1b62bb03c",
+    "bytes": 503187
   },
   {
     "file": "leaderboards/collection.png",
@@ -249,7 +276,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "67c5a3b6065defa198082f3dbed6e52b9287f3088eec20df879274a6cd820d5e"
+    "sha256": "67c5a3b6065defa198082f3dbed6e52b9287f3088eec20df879274a6cd820d5e",
+    "bytes": 540568
   },
   {
     "file": "leaderboards/player_level.png",
@@ -258,7 +286,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "49251b20b9ac770ad16a8ca4b94b52f9ed8a24a5349c87333d99044a3d043e68"
+    "sha256": "49251b20b9ac770ad16a8ca4b94b52f9ed8a24a5349c87333d99044a3d043e68",
+    "bytes": 535222
   },
   {
     "file": "leaderboards/safari_captures.png",
@@ -267,7 +296,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "4fd3f048f2ece7bdbcd7595f93157466aa1ed330cfffcc893494a1c4cfdecf27"
+    "sha256": "4fd3f048f2ece7bdbcd7595f93157466aa1ed330cfffcc893494a1c4cfdecf27",
+    "bytes": 530031
   },
   {
     "file": "leaderboards/total_income.png",
@@ -276,169 +306,8 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "bd6272ba85e859ae585de0c4c3a900ff1dc72fdff3fbe46e0ae000bc07c47f92"
-  },
-  {
-    "file": "screenshots/phone-collection.png",
-    "dimensions": [
-      1080,
-      1920
-    ],
-    "mode": "RGBA",
-    "sha256": "2264b9ba2478e5129d70c4b0d89fe7598c113f82b0732ae9da9259be66b55829"
-  },
-  {
-    "file": "screenshots/phone-home.png",
-    "dimensions": [
-      1080,
-      1920
-    ],
-    "mode": "RGBA",
-    "sha256": "335765c2d71658f8d4d118c505ee9ab9cd3b403f4a4a10416807fbc35d811f04"
-  },
-  {
-    "file": "screenshots/phone-play.png",
-    "dimensions": [
-      1080,
-      1920
-    ],
-    "mode": "RGBA",
-    "sha256": "c20671279ae5dc72cda641cce906f197feec71993c88f6c63783dd6274cef5c7"
-  },
-  {
-    "file": "screenshots/raw/phone-collection.png",
-    "dimensions": [
-      1920,
-      1080
-    ],
-    "mode": "RGBA",
-    "sha256": "1e6aa92246981cb007f3ba4695d837c3587d3fbfb603e69f7f0492beb132d991"
-  },
-  {
-    "file": "screenshots/raw/phone-home.png",
-    "dimensions": [
-      1920,
-      1080
-    ],
-    "mode": "RGBA",
-    "sha256": "e93e6841cb7154c78a0c0e23d08cc8d4ca7647040ee358b5dae4532de6a72ac3"
-  },
-  {
-    "file": "screenshots/raw/phone-play.png",
-    "dimensions": [
-      1920,
-      1080
-    ],
-    "mode": "RGBA",
-    "sha256": "cb42d0b3ad63a74811efb3e4b8a514c77cb8cb2aceddf8b82147023b75f2817a"
-  },
-  {
-    "file": "screenshots/raw/tablet-10-collection.png",
-    "dimensions": [
-      1920,
-      1080
-    ],
-    "mode": "RGBA",
-    "sha256": "7bb8d60c62cb03297267f476169bdcd84a842058062897870ac765b0d7bc8d03"
-  },
-  {
-    "file": "screenshots/raw/tablet-10-home.png",
-    "dimensions": [
-      1920,
-      1080
-    ],
-    "mode": "RGBA",
-    "sha256": "d4a7534ec5ab81e3deddc43d8bb00c8ddf3ac134b5b0bd4d89cea3eb44853826"
-  },
-  {
-    "file": "screenshots/raw/tablet-10-play.png",
-    "dimensions": [
-      1920,
-      1080
-    ],
-    "mode": "RGBA",
-    "sha256": "419561ff5e89c8fefa26a85b4191fe5033f8d49a2b2c461a3bc39bd6129c193f"
-  },
-  {
-    "file": "screenshots/raw/tablet-7-collection.png",
-    "dimensions": [
-      1920,
-      1080
-    ],
-    "mode": "RGBA",
-    "sha256": "4867143c49f93bc5dcbb29166e72cc77eb05cf2b754626faf2419b26b122ac51"
-  },
-  {
-    "file": "screenshots/raw/tablet-7-home.png",
-    "dimensions": [
-      1920,
-      1080
-    ],
-    "mode": "RGBA",
-    "sha256": "e7f20a526a2f366f7f5e6c610f80bebf22c5e05416b042c8d6cf807f973ab4b8"
-  },
-  {
-    "file": "screenshots/raw/tablet-7-play.png",
-    "dimensions": [
-      1920,
-      1080
-    ],
-    "mode": "RGBA",
-    "sha256": "b1720838dfbace5e6dc8da72003f9246bf84dfc5d994d50d84120e8d85273c43"
-  },
-  {
-    "file": "screenshots/tablet-10-collection.png",
-    "dimensions": [
-      1080,
-      1920
-    ],
-    "mode": "RGBA",
-    "sha256": "b28324852d36691ad5f80a793284beb47a0ab397d1be9d662cc772b14d3799ff"
-  },
-  {
-    "file": "screenshots/tablet-10-home.png",
-    "dimensions": [
-      1080,
-      1920
-    ],
-    "mode": "RGBA",
-    "sha256": "a411f52fe127e52f6d4c503b29012ea9d51831be3a76f6bf90dc18a29a55f73e"
-  },
-  {
-    "file": "screenshots/tablet-10-play.png",
-    "dimensions": [
-      1080,
-      1920
-    ],
-    "mode": "RGBA",
-    "sha256": "d4bab68d8d1e08505d1911121085739b97e38915c6d47092e63cb23ab514c58e"
-  },
-  {
-    "file": "screenshots/tablet-7-collection.png",
-    "dimensions": [
-      1080,
-      1920
-    ],
-    "mode": "RGBA",
-    "sha256": "ce84e2a132db8159a4d0d6a17e68580b4d2869e4fcfada75e39639e575fd5b5a"
-  },
-  {
-    "file": "screenshots/tablet-7-home.png",
-    "dimensions": [
-      1080,
-      1920
-    ],
-    "mode": "RGBA",
-    "sha256": "a466646462760cc98b72c936512f1de1df1dd7df899d408b6e29fc3ee2ccbd03"
-  },
-  {
-    "file": "screenshots/tablet-7-play.png",
-    "dimensions": [
-      1080,
-      1920
-    ],
-    "mode": "RGBA",
-    "sha256": "4188279e9f453cfed1ba98f9fbaaae8be49ddac3304021adb38e9ecd3dea5cd2"
+    "sha256": "bd6272ba85e859ae585de0c4c3a900ff1dc72fdff3fbe46e0ae000bc07c47f92",
+    "bytes": 541259
   },
   {
     "file": "source_art/companion_1.png",
@@ -447,7 +316,8 @@
       176
     ],
     "mode": "RGBA",
-    "sha256": "829e1bc6ec5ca5244b3a5bf2f70e63cbf993a07841e21cb5749848119a2a6981"
+    "sha256": "829e1bc6ec5ca5244b3a5bf2f70e63cbf993a07841e21cb5749848119a2a6981",
+    "bytes": 1048
   },
   {
     "file": "source_art/companion_2.png",
@@ -456,7 +326,8 @@
       160
     ],
     "mode": "RGBA",
-    "sha256": "07e39a52f19178107336e4f548956cf073fa23449ff58e145092807a3aab390a"
+    "sha256": "07e39a52f19178107336e4f548956cf073fa23449ff58e145092807a3aab390a",
+    "bytes": 1035
   },
   {
     "file": "source_art/hero_creature.png",
@@ -465,6 +336,585 @@
       176
     ],
     "mode": "RGBA",
-    "sha256": "0073e19302c983af4aa8c80914b4da8b376aa50b97e762e501c347bc3ca3d6fc"
+    "sha256": "0073e19302c983af4aa8c80914b4da8b376aa50b97e762e501c347bc3ca3d6fc",
+    "bytes": 1114
+  },
+  {
+    "file": "source_art/round-two-badges/breeder_10-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "dbfe2cff1e8eb0adb00eea1f21ca38ad44a830c08d33ebf04482726f70e22ff0",
+    "bytes": 2644491
+  },
+  {
+    "file": "source_art/round-two-badges/breeder_25-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "1703d2a63dbf500f0f7abeee15d949d3d54464d7dcaaa1eb24258f96b9f13bb7",
+    "bytes": 2843039
+  },
+  {
+    "file": "source_art/round-two-badges/breeding_master-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "b07bff5f162246f6d96664fcf5a1646c428ad1411c09efd99d33716c54016e40",
+    "bytes": 2623258
+  },
+  {
+    "file": "source_art/round-two-badges/collection-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "2ff845eec52408ce83461294b42adcdcda4fefc57cc76961ef5023fa399c5145",
+    "bytes": 2977215
+  },
+  {
+    "file": "source_art/round-two-badges/collection_10-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "7e7b7f350a389b434a72d7a6f442e89cffaa88a6766d424f29cc8f2c25716429",
+    "bytes": 2520417
+  },
+  {
+    "file": "source_art/round-two-badges/collection_100-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "e6b5e5b896e3cd8a3460cee1b5a0bfe1cf283218e7dbf489018c2d74dec5f2d0",
+    "bytes": 2953628
+  },
+  {
+    "file": "source_art/round-two-badges/collection_200-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "7fd6dfcc393232679adc1a1faea1a4e9d5845cf6d10f3f1afe0018a057458ec1",
+    "bytes": 3041770
+  },
+  {
+    "file": "source_art/round-two-badges/collection_25-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "914f3b409d2371435d9b4a2c0dbff519f6ce11fc2cea9e86e8c2bb5db57f9879",
+    "bytes": 2845212
+  },
+  {
+    "file": "source_art/round-two-badges/collection_50-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "35e017cc685c6f734381e025ae46fef770183dd3fe9653366ac267a51bc665af",
+    "bytes": 2652594
+  },
+  {
+    "file": "source_art/round-two-badges/endangered_keeper-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "bee47482d7d3c1a141ed5c0ff4a1839b6d14592d2e1240bc5522193719d44024",
+    "bytes": 2779558
+  },
+  {
+    "file": "source_art/round-two-badges/extinct_revival-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "6c5933bdf34c09ea8042fd77c3f868f1b306e51084fdac8e4d99e2db6c1060aa",
+    "bytes": 2962427
+  },
+  {
+    "file": "source_art/round-two-badges/first_breed-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "0d69addc5adf12aefc9878aa012af517a55f09546f52d57ff760638c7aa721f0",
+    "bytes": 2709552
+  },
+  {
+    "file": "source_art/round-two-badges/first_friend-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "e0956d2eda01e59589b466e5a8b836d7c91334030872d46c5c9d7a9e180e6434",
+    "bytes": 2529090
+  },
+  {
+    "file": "source_art/round-two-badges/first_safari-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "befeda7b22a79e9c47a322997abb47cd214f4ac40f1fa179c960cd19d6675932",
+    "bytes": 2810122
+  },
+  {
+    "file": "source_art/round-two-badges/income_10000-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "201d524abfad89ec7410d080493f4e534d19a56f149aa93c8ba257519ed42a24",
+    "bytes": 2494727
+  },
+  {
+    "file": "source_art/round-two-badges/income_100000-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "27cea2cba0d226a1bceca9e598c5c934902e6350052a248258347a5a33020142",
+    "bytes": 3056326
+  },
+  {
+    "file": "source_art/round-two-badges/income_500-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "2ae5f1f7b1e75c1c7c49e58717f08c6a888ce6a7e6783f05b5bbd791b366cc16",
+    "bytes": 2948069
+  },
+  {
+    "file": "source_art/round-two-badges/level_10-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "f408f5d10252ca100d6fd20030e9f8c2ecd5d0e003da23101406aa2b8be2b5ce",
+    "bytes": 2958486
+  },
+  {
+    "file": "source_art/round-two-badges/level_20-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "4f6e6905b4388a9a4c6c9ec19e3081abbc47dd5ed24a6be0e2a42ad99932bd72",
+    "bytes": 2861263
+  },
+  {
+    "file": "source_art/round-two-badges/level_5-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "b37637509db4628aac5d6efc70cfa325c543d9e0c08e8c616c27029357677a4b",
+    "bytes": 2836602
+  },
+  {
+    "file": "source_art/round-two-badges/player_level-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "1692aa4521ab1e6415b18ba54e07f795649b0c34dd36109f5d3c4754610b164a",
+    "bytes": 2886040
+  },
+  {
+    "file": "source_art/round-two-badges/rare_keeper-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "4d21804195f85edf80a368543d73f8b1f31d07c0c371a9838e263c85eabf0c35",
+    "bytes": 2760626
+  },
+  {
+    "file": "source_art/round-two-badges/safari_100-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "19b17bc19ad3f13116c6b91ee4c70309dc7655e152aa5753f057bc35447480ef",
+    "bytes": 3053095
+  },
+  {
+    "file": "source_art/round-two-badges/safari_25-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "28bfe1d44f098ee9cae7d7b7e9add5b274095478b415b72d5adaa7eb5b3cc3c3",
+    "bytes": 2994642
+  },
+  {
+    "file": "source_art/round-two-badges/safari_5-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "5dabaa03e9e586d0ceb0322fa31a986dad4547925d542bf2e048757762cf92a8",
+    "bytes": 2932147
+  },
+  {
+    "file": "source_art/round-two-badges/safari_captures-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "9c242e357d2fe8e1c7db6a933bd1bec3e52f65de3681ddb17a337d16cbf11549",
+    "bytes": 2792551
+  },
+  {
+    "file": "source_art/round-two-badges/seven_days-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "0b4c572ecc4662b5ba83961df661512a426f152f581a296545beb15638449367",
+    "bytes": 2738385
+  },
+  {
+    "file": "source_art/round-two-badges/total_income-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "0d15ad8afafef24068fd0861fef384ba46fdbb5f3caf1422aead25b6692d2dae",
+    "bytes": 2905908
+  },
+  {
+    "file": "source_art/round-two-biomes/biome-0-meadow-footpath-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "89b16dba7d18881d213645e8fe410ee83b103268ae2e328b10a1538c89efd5bd",
+    "bytes": 3501475
+  },
+  {
+    "file": "source_art/round-two-biomes/biome-1-fern-brook-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "915596efcae3ee429c994cb1bdb2a3c310be7efb4c6792ba4fdb7b289c0d20cc",
+    "bytes": 3591950
+  },
+  {
+    "file": "source_art/round-two-biomes/biome-2-sunstone-ridge-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "2c2950b4b4a1fbe396a806eb7377d5564b8f025623d3052a58a75eb13ff0f9aa",
+    "bytes": 2975350
+  },
+  {
+    "file": "source_art/round-two-biomes/biome-3-moonlit-marsh-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "e6baaf5fd19f2d313329972146d518a01cb9da7c5aa656ac3e9b8bae710fa874",
+    "bytes": 3389530
+  },
+  {
+    "file": "source_art/round-two-biomes/biome-4-tidepool-coast-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "532a92078fbd2f27f900a33b51c9b72d3288434617d04e2e0a3722639cd8cee7",
+    "bytes": 3322314
+  },
+  {
+    "file": "source_art/round-two-biomes/biome-5-copperwood-grove-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "f196370a408b836808f10c45401eb8ce0a389d05591d9ca7748cd3b80281325f",
+    "bytes": 3365988
+  },
+  {
+    "file": "source_art/round-two-biomes/biome-6-frostglass-pass-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "d8121b9eec864314f695df9eb84798ca87e386080fb211474eed061491aece6d",
+    "bytes": 3194567
+  },
+  {
+    "file": "source_art/round-two-biomes/biome-7-starfall-hollow-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "77131181a0e5e5fe9d7d7d4984dcdb800ac3f4cb29c68b2eaf0475263ccf6352",
+    "bytes": 3619212
+  },
+  {
+    "file": "source_art/round-two-branding/app-icon-original.png",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "sha256": "62731ff52ba84e6b5d9242ab8104e340403e57a96a06347432e7638d7ac0ad52",
+    "bytes": 2474264
+  },
+  {
+    "file": "source_art/round-two-branding/feature-original.png",
+    "dimensions": [
+      1796,
+      876
+    ],
+    "mode": "RGB",
+    "sha256": "ac4600fc328bee3a73a7a29056c630243e186e8e6acedd0ff4a7a854996a9549",
+    "bytes": 2939860
+  },
+  {
+    "file": "screenshots-round-two/phone-01-home-after-result-close.png",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "sha256": "0C7CA59376B5DDB2BE2593965D71D2A4AF72D4C9D3CCAA7512303ACBF7858BB5",
+    "bytes": 1042575,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Home after actual exhaustion: 208 coins and 941 XP; genuine three meadows; Visitor Fund separate from purse."
+  },
+  {
+    "file": "screenshots-round-two/phone-02-safari-trails-satchel.png",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "sha256": "604B61C4C3587B3DA8C6349DD723F0193B536DB766184D4B3925DEDD2797AAE1",
+    "bytes": 184573,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Free trail selection and four-lure satchel; legacy Fern Brook legitimately available."
+  },
+  {
+    "file": "screenshots-round-two/phone-03-common-selected-before-hit.png",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "sha256": "A5138FC68AF97B91BAF81C1CC3DB5C6D48F5CA3BCE8C61CC38A2CE6998357C3A",
+    "bytes": 1326653,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Actual Amber Antlers Common stage 1/2 with three lures left; selected live chain, no successful-catch claim."
+  },
+  {
+    "file": "screenshots-round-two/phone-04-journal.png",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "sha256": "DCD6F1C57FBD56F8E4965DA220C9CB89180FEEC7018A78B4C88489EAFC866D5C",
+    "bytes": 149527,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Genuine discovered collection: 17/200 species; 14 outings and 20 safari friends at this frame; bond details accessible."
+  },
+  {
+    "file": "screenshots-round-two/phone-05-real-meadow-cards-scrolled.png",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "sha256": "03F163400A10E4BA9BF2F30BD3FFBE3B0AAECC251954C0BB53347CCB707A0351",
+    "bytes": 151245,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Normal body scroll shows actual Meadow 3, income/bonus cards and unaffordable 770-coin expansion; earlier card headings intentionally above the fold."
+  },
+  {
+    "file": "screenshots-round-two/phone-06-actual-settled-nursery.png",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "sha256": "BAEDD7890804D84A2B2E1A5E8DA1B0F634EF1043F7FE165099AB7C03D9A2505F",
+    "bytes": 160821,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Actual settled Nursery after legitimate Visitor Fund Collect: 50534 coins and 1165 XP, Keeper 5 (95/475). Legacy Ivory Imp egg ready but not hatched; Night Watch recipe disabled with Ivory Imp Lv6/5 and Bramble Sleepwalker Lv2/5. No ad, Hatch or successful-catch claim."
+  },
+  {
+    "file": "screenshots-round-two/7inch-01-home-current.png",
+    "dimensions": [
+      1200,
+      1920
+    ],
+    "sha256": "9EAA652FF907587A661011AF20549E862E3F6576A2B5CF0C32B8D6CCB755A893",
+    "bytes": 1022404,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Home after real Collect, one new meadow and one lure upgrade: 49584 coins, 1200 XP, Keeper 5; four homes and separate Visitor Fund shown."
+  },
+  {
+    "file": "screenshots-round-two/7inch-02-nursery.png",
+    "dimensions": [
+      1200,
+      1920
+    ],
+    "sha256": "5AC39C42782091D1BCD298BCFB8121EBC8BFED9C9007EFF4FA0B852BCEE0AD1D",
+    "bytes": 154333,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Actual Nursery with existing Ivory Imp egg ready but not hatched; Night Watch recipe remains disabled with parent levels 6/5 and 2/5."
+  },
+  {
+    "file": "screenshots-round-two/7inch-03-journal.png",
+    "dimensions": [
+      1200,
+      1920
+    ],
+    "sha256": "D1CEA393E444E5B15BC4A9388C08DAC067F29155D64DD475BFCB227089FFA408",
+    "bytes": 139340,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Actual Journal: 17/200 discovered species, 15 outings, 20 safari friends and six old eggs hatched; no successful new catch asserted."
+  },
+  {
+    "file": "screenshots-round-two/7inch-04-bond-home-detail.png",
+    "dimensions": [
+      1200,
+      1920
+    ],
+    "sha256": "0B01AAB7F0322485094CDB5DBE73FB8ECD0F0BF438636CB4B6F891BAF4BA10E9",
+    "bytes": 137907,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Acorn King Bond & home modal: genuine species level 1, one resident, no duplicate bonds, Meadow Footpath home and Amber Antlers friendship."
+  },
+  {
+    "file": "screenshots-round-two/7inch-05-trails-satchel.png",
+    "dimensions": [
+      1200,
+      1920
+    ],
+    "sha256": "AFF402C40DED9D0A71F8603C0F15227D9F8DB9B1DA48E5EA7A5D42D88F84B628",
+    "bytes": 163008,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Idle trail/satchel menu after the real lure upgrade: five lures per outing; next upgrade 720 coins; Meadow Footpath and Fern Brook available. No new outing taken for this view."
+  },
+  {
+    "file": "screenshots-round-two/7inch-06-meadow-cards.png",
+    "dimensions": [
+      1200,
+      1920
+    ],
+    "sha256": "CEF6B5AAA061E8558770B31C41B92863EDA5DC653BD04EE95AF82B4AD9A31AAD",
+    "bytes": 158863,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Normal Home body scroll: four genuine meadows; full Meadow 1/2 cards show 11.2 and 14.4 coins/min, including actual Meadow 2 Habitat theme +25%."
+  },
+  {
+    "file": "screenshots-round-two/10inch-01-home.png",
+    "dimensions": [
+      1600,
+      2560
+    ],
+    "sha256": "51AEBC50C4DD670331DEBD905084E95CC4B7CDC9BED1DB83D35876CBBB231C22",
+    "bytes": 1486955,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Actual Home after separate income collection, one new meadow and one lure upgrade: 49584 coins, 1200 XP, four homes and independent Visitor Fund."
+  },
+  {
+    "file": "screenshots-round-two/10inch-02-nursery.png",
+    "dimensions": [
+      1600,
+      2560
+    ],
+    "sha256": "D3413AC68F782E26E86D2DCCD90EB35BC57C60EAAB0E76BD86B9E07D134724D3",
+    "bytes": 220672,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Actual Nursery: original Ivory Imp egg remains ready but unhatched; Night Watch breeding disabled with Ivory Imp level 6 and Bramble Sleepwalker level 2."
+  },
+  {
+    "file": "screenshots-round-two/10inch-03-journal.png",
+    "dimensions": [
+      1600,
+      2560
+    ],
+    "sha256": "600000DCFD31B7AAE51C85C87DBA843C12C816AC0CC226AF6C5EF9F4C8D2475B",
+    "bytes": 187925,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Genuine Journal: 17/200 discovered species, 15 outings, 20 safari friends and six historical eggs hatched; no successful new catch asserted."
+  },
+  {
+    "file": "screenshots-round-two/10inch-04-bond-home-detail.png",
+    "dimensions": [
+      1600,
+      2560
+    ],
+    "sha256": "22066D14CAC6EA49A7E909EE1A96A95F08F156EAC41AF38C2810981A609DB507",
+    "bytes": 188797,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Acorn King Bond & home modal: Common species level 1, one resident, zero duplicate bonds, Meadow Footpath home and Amber Antlers friendship."
+  },
+  {
+    "file": "screenshots-round-two/10inch-05-trails-satchel.png",
+    "dimensions": [
+      1600,
+      2560
+    ],
+    "sha256": "B2D57285A59947FAA2D659EFCA49E8CF1021C9C6E4EC49E927BE216EB78ABD02",
+    "bytes": 239321,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Idle Safari menu after actual upgrade: five lures per outing, next lure upgrade 720 coins, Meadow Footpath and Fern Brook Explore cards. No new outing taken for capture."
+  },
+  {
+    "file": "screenshots-round-two/10inch-06-meadow-cards.png",
+    "dimensions": [
+      1600,
+      2560
+    ],
+    "sha256": "6173EA4D3E03F55E87E975D54A19A05B8760DA00C5167E884F05AE17E0FCB9AC",
+    "bytes": 317233,
+    "kind": "ACTUAL_CURRENT_APK_EMULATOR_SCREENSHOT",
+    "caption": "Normal Home body scroll: four real meadows; complete Meadow 1/2 cards show 11.2 and 14.4 coins/min, including actual Meadow 2 Habitat theme +25%."
   }
 ]

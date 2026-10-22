@@ -1,78 +1,47 @@
-PIXEL SAFARI SANCTUARY - LOCAL TEST HANDOFF
-Status: ROUND TWO SOURCE AND ART COMPLETE; NEW EXPORTS, NATIVE QA AND CAPTURES PENDING (2026-10-21).
-The new eight-trail/capture-chain/bond rules and illustrated art passed isolated
-source/UI checks; no new Android/Web export or native verification is claimed.
-Public Round Two pushes remain blocked by approval review despite owner
-authorization, so no Round Two hosted CI result is available.
+PIXEL SAFARI SANCTUARY - ROUND TWO HANDOFF CANDIDATE
+Status: QUALIFIED LOCAL OWNER-TEST HANDOFF. Accepted exports/source CI, actual catch/once-only close/Back/cold scope and18 images; remaining limitations are explicit below.
 
-PRESERVED ORIGINAL PACKAGE - DATED LOCAL REVIEW
-Original status: READY FOR OWNER LOCAL TEST REVIEW (2026-10-20T09:14:25.267994+00:00).
-The APK, QA results and screenshots below belong to the earlier game and do not
-verify the Round Two source, art, migration or new balance. Export Round Two
-candidates to separate output directories; do not replace this original APK.
+SOURCE / EXACT CURRENT ARTIFACTS
+Canonical repository: https://github.com/EthannYakabuski/pixel-safari-sanctuary
+Local HEAD at preparation: e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7
+Accepted export source: e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7
+The recorded local preparation HEAD is the exact accepted export source.
+Android debug APK: build/round-two-e3e6fee4-a1/android/pixel-safari-sanctuary-debug.apk
+SHA256: 8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C (194776259 bytes)
+Web entry: build/round-two-e3e6fee4-a1/web/index.html
+HTML SHA256: FE79D56EC00A86FD7364E4B42EACFF677DF1D62CDAF79977DFD0FD2FD9281100 (5497 bytes)
+Web PCK SHA256: 30F3A1EE902919A4662F867556C9969DC06A6B84E1014CFFC942E88333B7770F (12667364 bytes)
+Both exports exited0 with stable runtime inputs, verified before/after source binding, empty strict error lists and complete matching LICENSE/NOTICE/LICENSES bundles. Keep the full Web sidecars and matching notices. Static export checks do not establish native gameplay or browser interaction.
 
-Open build/android/pixel-safari-sanctuary-test-package.zip for the debug APK plus
-its accompanying license notices. Keep LICENSES with redistributed binaries.
-APK: build/android/game-debug.apk (184,014,475 bytes)
-SHA256: 6163796d0d2327881a77d4725ab861b44dd5dadf75e4e3c0e20482b588b94b5e
-The supplied test build contains ARM64 and x86, minimum API24/target35.
-Source version is identified by hashes in docs/LOCAL_TEST_RESULTS.json.
+BEHAVIOR / ENGINEERING / ART
+Eight curated expedition trails with keeper/outings gates; strict moving-gold-window captures requiring2 to 5 consecutive stages and one returned resident. Unlimited paged meadows, slower fresh progression and40-coin starter purse, lure upgrades, shared species bond levels, level5-parent breeding gates and computed variety/theme/friendship income. Existing coins/XP/rank, residents, placements, meadows, bank, claims, settings and nursery deadlines migrate additively to payloadversion2 at the existing filename; already available trails are grandfathered.
+Isolated source checks:200 model,7344 Round Two,33 headless UI,38 GPU UI and25 eight-biome scene checks plus service smoke; all final tests exited0 with empty stderr. Fixtures covered strict misses/chains, legacy/JSON migration,40 meadows, economy idempotency and7200 curated encounters. All eight biome scenes and Home were visually inspected as synthetic development views.
+38 distinct accepted generated originals: app/feature,23 achievement/5 leaderboard illustrations and eight runtime biome paintings. The 38 accepted originals, exact prompt files and their output hashes are committed under marketing/source_art and mapped by its round-two-manifest.json; final512px badges/64px thumbnails and768px biome textures were reviewed. These are illustrations, not gameplay screenshots.
 
-WHAT WAS READY IN THE ORIGINAL PACKAGE
-The playable game, 200-creature catalog, breeding recipes, enclosures/income,
-local/offline progress, daily gifts, native achievements/leaderboard plugin,
-audio/settings, Android test ads and Web export are present. Production Play
-Games IDs remain disabled until the owner supplies the real configuration.
-Marketing includes store/website copy, app and feature art,23 achievement icons,
-5 leaderboard icons and9 normal-play screenshots with raw images/provenance.
-The retained marketing/screenshots/capture-manifest.json identifies the original
-screenshots; these are historical captures, not Round Two final-build views.
-Current illustrated marketing art and store copy have since been updated.
+CURRENT QUALIFIED NATIVE / IMAGE CHECKPOINT
+Current runtime e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7 / APK 8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C has accepted Android/Web exports and passing [exact source CI](https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39719396352). One actual two-stage Common chain returned one resident with +20 coins/+34 XP once; result close, Home Back and a subsequent cold launch duplicated no reward. Home Back stayed on Home with the process alive, matching source policy; it was not graceful quit. Eighteen unchanged actual images are approved in their earlier selection contexts; their pending-catch language is historical, while the later catch proof is separate. Original display/radios/connectivity, genuine newest progress and stopped backup were verified. Offline remains unverified because the guest never disconnected. Broad native gate stays false for a goldfish VP9 diagnostic and retained earlier Google Mobile Ads callback qualification; no earned-ad, new high-parent breeding wait, auditory/physical-device, production, interactive-Web or general performance acceptance is claimed.
 
-DATED ORIGINAL-PACKAGE VERIFICATION
-184 model assertions,25 headless UI assertions and25 GPU UI assertions passed.
-On this exact APK a real native earned callback granted once and reduced the
-saved egg deadline25seconds. Two legitimate short outings triggered a native
-interstitial. Back closes modals/returns Safari to Home without exiting.
-Actual offline play added69coins/90XP/3outings/2captures; all nine required save
-groups survived a subsequent cold restart. Network/display settings restored.
-See docs/NATIVE_QA.json and docs/LOCAL_TEST_RESULTS.json for exact evidence.
-Web exported successfully; all9 runtime files and packed-file checksums passed.
+ACTUAL CORE / ONCE-ONLY / SAVE RESULTS
+Two actual Secure contacts completed one Common chain; stage one granted no purse/XP/resident. Final catch returned one new resident (catalog id4), +20 coins and +34 XP, captures20-to21 and outings15-to16, with safari cleared. The normal model autoassigned the new resident to previously empty Meadow4, raising passive fund income36.168-to40.968coins/min; this accrual is separate from the fixed catch purse payout.
+One result close, one actual Home Android Back and one cold launch preserved non-clock catch progress without duplicate payout; only bank/last_seen changed. Home Back remained Home with the process alive: source policy, not graceful quit. Cold Home was observed at25.156seconds; this is not general performance acceptance. Final genuine summary:49604coins,1234XP,18species,29residents,lure1,fourmeadows. The newest23-group profile and stopped full backup were verified privately; original1080x1920@420/no overrides and airplaneoff/Wi-Fi/mobileon actualconnectivity were restored.
+The18 approved raw images and exact captions remain unchanged selection-time evidence (six/profile); their pending-catch text is historical and does not override this later actual proof. No new capture set or edited screenshot is claimed.
+Broad native gate remainsFALSE: goldfishVP9 diagnostic and earlierGMA callback qualification retained; final retained sample has zero selectedGodot/ObjectDB/resource/FATAL/ANR terms, not whole-log cleanliness. OfflineUNVERIFIED: actualnetworknevernone; no appfailure conclusion. No nativeearnedAD/newhighparentbreedwait/auditory/physical/production/interactiveWeb/performance/gracefulaudioexit claim.
+Successor archive names are verified separately: build/round-two-e3e6fee4-a1/packages/pixel-safari-sanctuary-android-test-8b60db64.zip and pixel-safari-sanctuary-round-two-complete-8b60db64.zip in the same directory. Check sibling PACKAGE-RECEIPT.json and internal PACKAGE-MANIFEST.json for actual creation, full hashes and final doc/source identities. Private logs/saves/backups/signing material are excluded.
 
-TEST LIMITS AND OWNER WORK
-The phone and logical7/10-inch layouts use one Android11/API30 x86 emulator.
-All screenshots are actual1080x1920 framebuffers; tablet names describe logical
-size/density overrides, not physical tablets or upscaled images. Rapid resizing
-caused a SystemUI ANR; affected frames were rejected and clean recaptures used.
-Production IDs/backend, real Google login/ad configuration, release signing,
-current store eligibility/privacy/audience details, physical-device checks and
-human gameplay/balance/content review remain owner work. Google test ads and
-disabled production Play Games do not establish production acceptance.
+PRESERVED ORIGINAL / HISTORICAL QUALIFICATIONS
+Original APK stays unchanged at build/android/game-debug.apk.
+SHA256: 6163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E (184014475 bytes).
+Preserve its old test ZIPs, build/web outputs, reports, screenshots/manifests and private evidence. Original native QA applies only to this hash. Current R2 builds use the separately versioned paths above; a CI artifact is another binary.
+Original APK native evidence includes a real once-only nursery acceleration, ordinary outings/interstitial, Back and offline progress. Its retained nine screenshots are all1080x1920 actual pixels under historical logical-profile tests; they are not final Round Two views. Genuine elapsed passive income and UTC rollover can change the load result; compare stable fields separately and disclose legitimate deltas.
+Dated passing CI baseline: 7e365ffff2dfee813bd219e21f507c8d3395641f
+https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39525423937
+Runtime source is public; exact source CI https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39719396352 passed. The final document/capture commit is separate from the unchanged export source and requires its own exact CI result. Pages, Library and Google Play settings are unchanged.
 
-CURRENT REPOSITORY AND CONTINUATION - 2026-10-21
-Public source: https://github.com/EthannYakabuski/pixel-safari-sanctuary
-Recorded passing CI baseline: 7e365ffff2dfee813bd219e21f507c8d3395641f
-CI PASS: https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39525423937
-The original local QA APK identified above is retained unchanged; CI artifacts
-are separate builds and have not received that native verification. This
-earlier repository consolidation did not rebuild that APK. The later Round Two
-runtime/art changes require new Android/Web builds, native regression and new
-final-build captures before a replacement local handoff can be marked ready.
-Pages deployment remains disabled. No Library or Google Play publication
-is included. Physical devices, audible Android sound, interactive Web and
-production service configurations still require their stated verification.
+CONTINUATION / SERVICES / LIMITS
+Start a focused task in this canonical repository. Read AGENTS.md, README.md, HANDOFF.txt, docs/ROUND_TWO.md and docs/PLATFORM_SETUP.md. Inspect current Git status/diff/branch/origin and preserve edits; earlier chat is not assumed. Isolate all test user data and shared pending-service storage.
+Map the 23 achievement and 5 leaderboard symbolic key definitions from game/catalog.json in platform/config.json. Supply the matching numeric PGS game_id in JSON and Android export_presets.cfg; owner OAuth/signing/package/tester setup is required before enabling currently disabled/blank PGS.
+AdMob unit IDs come from platform/config.json. Manifest App ID comes separately from Godot ProjectSettings admob/general/android/app_id in project.godot; JSON admob.app_id is reference-only. test_mode changes wording, not production requests or test-device registration. Keep official sample IDs for development; signing/credentials stay outside Git.
+Godot4.5.1 Compatibility, Android primary/Web secondary, no Windows distribution. minAPI24/targetAPI35 is an actual engine test constraint, not current Play eligibility. Current native scope is qualified as described above. One emulator's logical tablet profiles do not establish physical-device acceptance. Audio output is disabled; audible Android, interactive Web/audio/WebGL, production services/consent, human balance/content and long sessions remain unverified. Owner supplies production IDs/backend/signing, current release/privacy/audience/contact declarations and Google Play publication. Preserve Apache2.0 original-code license and all third-party notices. Creature Mixer assets retain their custom non-NFT/non-blockchain terms; they are not relabeled CC0.
 
-Use this repository root as the sole active game project. For a new Codex
-task, read AGENTS.md, README.md, this handoff and docs/PLATFORM_SETUP.md,
-inspect Git status/diff and specify the desired update. Previous chats and
-archival staging copies are not required or assumed context. Original local
-folders and private evidence are retained separately; do not copy private
-notes/logs or older unsanitized tracked-document versions into commits.
-
-IDs: game/catalog.json defines 23 achievements and 5 leaderboards;
-fill the same symbolic mappings in platform/config.json. The numeric PGS
-game ID also belongs in export_presets.cfg. AdMob manifest App ID belongs
-in project.godot via admob/general/android/app_id; JSON app_id alone is
-insufficient. test_mode changes wording only, not the configured ad requests.
-Keep sample IDs for development and read the complete platform setup before
-production configuration. Supply signing keys/credentials outside Git.
+PRESERVED ORIGINAL TEST ARCHIVE
+The original build/android/pixel-safari-sanctuary-test-package.zip remains the dated original-APK test package. Keep it and the original build/android/game-debug.apk (SHA2566163796D0D2327881A77D4725AB861B44DD5DADF75E4E3C0E20482B588B94B5E) unchanged; neither verifies the Round Two successor.

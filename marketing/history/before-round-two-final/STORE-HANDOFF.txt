@@ -1,0 +1,25 @@
+STORE AND SOURCE HANDOFF - PIXEL SAFARI SANCTUARY
+
+Artwork/copy includes app icons, illustrative1024x500 feature art,23 achievement
+and5 leaderboard icons, short/long descriptions, category/tags and website copy.
+Third-party assets/plugins retain their supplied licenses; keep LICENSES with builds.
+
+Nine actual normal-play Android emulator screenshots are included. Their public
+paths/hashes/dimensions and tested APK identity appear in screenshots/capture-manifest.json.
+Portrait PNGs are1080x1920; raw1920x1080 originals are retained. The declared90-degree
+orientation correction is the only transformation. No crop, resize, decoration or
+fabricated gameplay is applied. Logical tablet overrides use the same emulator,
+not physical tablets or larger actual framebuffers. AI operators inspected the
+frames; human/physical-device acceptance remains unverified.
+
+Dated local native verification includes one real earned nursery reward with a
+25-second deadline reduction, between-round interstitial, Android Back, nine-group
+save retention, offline progress and network/display restoration. See docs/NATIVE_QA.json.
+This does not establish production services, every creative or an unearned-close branch.
+
+Public source: https://github.com/EthannYakabuski/pixel-safari-sanctuary
+The first hosted CI run failed during Android SDK setup; the workflow correction
+is separate from existing local results. No successful corrected hosted run is
+claimed. Live Pages activation remains held. Owner handles production IDs/backend,
+consent, signing, current release eligibility, privacy/support/audience/Data safety,
+physical-device/human playtesting and Google Play submission/publication.

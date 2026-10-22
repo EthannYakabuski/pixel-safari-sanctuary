@@ -1,5 +1,9 @@
 # Round Two rules and save contract
 
+## Current qualified native checkpoint
+
+Current runtime `e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7` / APK `8B60DB643829B3333E31E1AEDBBD6DFB2AE133E680F464F48128221F76D5559C` has accepted Android/Web exports and passing [exact source CI](https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/39719396352). One actual two-stage Common chain returned one resident with +20 coins/+34 XP once; result close, Home Back and a subsequent cold launch duplicated no reward. Home Back stayed on Home with the process alive, matching source policy; it was not graceful quit. Eighteen unchanged actual images are approved in their earlier selection contexts; their pending-catch language is historical, while the later catch proof is separate. Original display/radios/connectivity, genuine newest progress and stopped backup were verified. Offline remains unverified because the guest never disconnected. Broad native gate stays false for a goldfish VP9 diagnostic and retained earlier Google Mobile Ads callback qualification; no earned-ad, new high-parent breeding wait, auditory/physical-device, production, interactive-Web or general performance acceptance is claimed.
+
 The game remains Godot 4.5.1 Compatibility, Android primary and Web secondary. Test AdMob units and disabled production Play Games placeholders are unchanged. Follow `PLATFORM_SETUP.md` before configuring services.
 
 ## Player loop
@@ -24,4 +28,4 @@ Version 1 migration retains coins, total XP, exact previously earned keeper rank
 
 Run `tests/model_test.gd`, `tests/round_two_test.gd`, `tests/ui_test.gd` and `platform/tests/services_smoke.gd` with isolated process-local user-data directories. The Round Two suite checks malformed saves, legacy migration, JSON numeric reloads, reward idempotency, strict misses, chain stages, 40 meadows, progression gates and 7,200 curated encounter samples. UI tests exercise pointer scrolling/navigation, chain return, nursery callbacks, meadow paging and explicit rarity/level cards.
 
-Desktop/offscreen and fixture tests do not establish native-device, production service or auditory validation. Original local QA binaries belong to the earlier source revision. Round Two Android/Web rebuilds, native gameplay/ad/Back/offline/save regression, final screenshots and refreshed handoff must be tied to their new exact source and artifact hashes before being marked ready. Keep private fixtures, logs, player data and old APKs outside public tracked documentation.
+Desktop/offscreen and fixture tests do not establish native-device, production service or auditory validation. Original local QA binaries belong to the earlier source revision. Accepted exports, exact source CI and the eighteen image-only views are recorded in the current checkpoint above. The actual catch, once-only close/Back/cold scope and remaining limitations are recorded in docs/NATIVE_QA.json and HANDOFF.txt. Keep private fixtures, logs, player data and old APKs outside public tracked documentation.
