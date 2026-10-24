@@ -120,9 +120,23 @@ func _run() -> void:
 	click.button_index = MOUSE_BUTTON_LEFT
 	click.pressed = true
 	click.position = game.wild_view.slot_position(0) * (game.wild_view.size / Vector2(480, 410))
+	var state_before_inspection = JSON.stringify(game.model.state)
+	var initial_offers = [game.model.safari_species(0), game.model.safari_species(1), game.model.safari_species(2)]
 	game.wild_view._gui_input(click)
-	check(game.selected_slot == 0 and not game.capture_button.disabled, "touch/mouse selects creature and enables catch")
-	check(game.safari_lure_label.text == "3 LURES LEFT", "selecting a creature immediately refreshes the spent-lure counter")
+	check(game.selected_slot == 0 and not game.capture_button.disabled and game.capture_button.visible and game.capture_button.text == "Capture", "touch/mouse inspection reveals explicit Capture")
+	check(JSON.stringify(game.model.state) == state_before_inspection, "inspection changes no save/offer/lure/capture state")
+	check("Bond level" in game.safari_info.text and "Home:" in game.safari_info.text, "inspection displays ownership/bond/rarity/home metadata")
+	game._select_creature(1)
+	check(game.selected_slot == 1 and [game.model.safari_species(0), game.model.safari_species(1), game.model.safari_species(2)] == initial_offers, "selecting another creature does not reroll the clearing")
+	game._skip_safari()
+	await process_frame
+	check(game.selected_slot == -1 and not game.capture_button.visible and int(game.model.state.safari.lures) == 3, "Skip refreshes clearing, hides unselected Capture and spends one lure")
+	check(game.safari_skip_button.text == "Skip clearing - 1 lure", "second skip visibly costs one lure")
+	game._select_creature(0)
+	check(game.model.capture_window().is_empty(), "selection after Skip still only inspects")
+	check(game.safari_lure_label.text == "3 LURES LEFT" and game.model.capture_window().is_empty(), "inspection spends no lure and does not start the minigame")
+	game._attempt_capture()
+	check(game.safari_lure_label.text == "2 LURES LEFT", "explicit Capture begins the chain and refreshes spent-lure counter")
 	var required_hits = int(game.model.capture_window().required)
 	for hit in range(required_hits):
 		var window = game.model.capture_window()

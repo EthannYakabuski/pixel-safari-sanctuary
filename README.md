@@ -71,3 +71,7 @@ Android artifact.
 Public repository: [Pixel Safari Sanctuary](https://github.com/EthannYakabuski/pixel-safari-sanctuary). The public repository contains the earlier published baseline; the completed Round Two source, art and continuation updates are committed locally while their public push remains blocked. Prebuilt exports, real saves, private QA records, credentials and signing material stay outside the published source history. Local artifact availability is described in `HANDOFF.txt`; a fresh clone does not contain the original debug APK.
 
 Original work is Apache-2.0; assets, fonts, engine and plugins retain their own terms in `LICENSES/`, `NOTICE` and source notices. Creature Mixer assets, where used, have custom non-NFT/non-blockchain terms and are not CC0.
+
+## Round Four update
+
+See [gift and safari rules](docs/ROUND_FOUR.md) for 100x daily rewards, Rare gifts on days 3/5/7, non-mutating creature inspection, explicit Capture and per-expedition Fibonacci lure skips. Existing native acceptance applies to the binaries named in HANDOFF; source tests do not establish new device acceptance.

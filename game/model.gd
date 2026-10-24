@@ -26,7 +26,11 @@ const ZONE_POOLS = [
 ]
 const ZONE_WEIGHTS = [[1.0,0.0,0.0,0.0],[0.90,0.10,0.0,0.0],[0.74,0.22,0.04,0.0],[0.63,0.28,0.09,0.0],[0.48,0.32,0.18,0.02],[0.35,0.36,0.25,0.04],[0.25,0.36,0.32,0.07],[0.17,0.34,0.37,0.12]]
 const MEADOW_PAIRS = [[0,1],[2,3],[4,5],[6,7],[80,81],[88,89],[96,97],[104,105],[145,146],[153,154],[178,179],[187,188]]
-const DAILY_COINS = [60, 90, 130, 180, 250, 350, 600]
+const DAILY_COINS = [6000, 9000, 13000, 18000, 25000, 35000, 60000]
+const DAILY_RARE_DAYS = [3, 5, 7]
+const DAILY_XP_MULTIPLIER = 100
+const QUEST_COINS = 12000
+const QUEST_XP = 3500
 const RARITIES = ["Common", "Uncommon", "Rare", "Endangered", "Extinct"]
 var catalog: Dictionary = {}
 var state: Dictionary = {}
@@ -45,7 +49,8 @@ func fresh_state(now: int) -> Dictionary:
 		"bank": 0.0, "last_seen": now, "last_daily": -1, "streak": 0, "login_days": 0,
 		"stats": {"outings": 0, "captures": 0, "breeds": 0, "income": 0, "best_outing": 0},
 		"achievements": {}, "nursery": [], "safari": {}, "sound": true,
-		"quest_day": -1, "quest_baseline": 0, "quest_claimed": false}
+		"quest_day": -1, "quest_baseline": 0, "quest_claimed": false,
+		"daily_gift_seed": randi(), "last_daily_gift": {}}
 
 func species(id: int) -> Dictionary:
 	return catalog.get("creatures", [])[clampi(id, 0, catalog.get("creatures", []).size() - 1)]
@@ -201,7 +206,7 @@ func add_creature(id: int) -> void:
 
 func start_safari(habitat: int, seed_value: int) -> bool:
 	if not state.safari.is_empty() or not zone_available(habitat): return false
-	state.safari = {"habitat": habitat, "seed": seed_value, "lures": lure_capacity(), "capacity": lure_capacity(), "caught": [], "attempts": 0, "started": clock, "capture": {}, "legacy": false}
+	state.safari = {"habitat": habitat, "seed": seed_value, "lures": lure_capacity(), "capacity": lure_capacity(), "caught": [], "attempts": 0, "started": clock, "capture": {}, "legacy": false, "skips": 0, "skipped_lures": 0, "encounter_round": 0}
 	return true
 
 func zone_available(index: int) -> bool:
@@ -235,7 +240,29 @@ func safari_species(slot: int) -> int:
 	if state.safari.is_empty() or slot < 0 or slot > 2: return 0
 	var active: Dictionary = state.safari.get("capture", {})
 	if not active.is_empty() and int(active.slot) == slot: return int(active.id)
-	return _encounter_id(int(state.safari.habitat), int(state.safari.seed), slot, int(state.safari.attempts))
+	return _encounter_id(int(state.safari.habitat), int(state.safari.seed), slot, int(state.safari.get("encounter_round", state.safari.attempts)))
+
+func safari_skip_cost() -> int:
+	if state.safari.is_empty(): return 0
+	var current = 1
+	var following = 1
+	for index in range(int(state.safari.get("skips", 0))):
+		var next = current + following
+		current = following
+		following = next
+	return current
+
+func can_skip_safari() -> bool:
+	return not state.safari.is_empty() and state.safari.caught.is_empty() and state.safari.capture.is_empty() and int(state.safari.lures) >= safari_skip_cost()
+
+func skip_safari() -> bool:
+	if not can_skip_safari(): return false
+	var cost = safari_skip_cost()
+	state.safari.lures -= cost
+	state.safari.skipped_lures = int(state.safari.get("skipped_lures", 0)) + cost
+	state.safari.skips = int(state.safari.get("skips", 0)) + 1
+	state.safari.encounter_round = int(state.safari.get("encounter_round", state.safari.attempts)) + 1
+	return true
 
 func _encounter_id(habitat: int, seed_value: int, slot: int, attempts: int) -> int:
 	var rng = RandomNumberGenerator.new()
@@ -254,7 +281,7 @@ func _encounter_id(habitat: int, seed_value: int, slot: int, attempts: int) -> i
 func begin_capture(slot: int) -> bool:
 	if state.safari.is_empty() or not state.safari.caught.is_empty() or slot < 0 or slot > 2: return false
 	var active: Dictionary = state.safari.capture
-	if not active.is_empty() and int(active.slot) == slot: return true
+	if not active.is_empty(): return int(active.slot) == slot
 	if int(state.safari.lures) <= 0: return false
 	var id = safari_species(slot)
 	state.safari.lures -= 1
@@ -280,6 +307,7 @@ func tap_capture(marker: float) -> String:
 	# A miss can NEVER turn into a random capture. UI and model use this same window.
 	if not is_finite(marker) or marker < float(window.left) or marker > float(window.right):
 		state.safari.capture = {}
+		state.safari.encounter_round = int(state.safari.get("encounter_round", state.safari.attempts)) + 1
 		return "miss"
 	state.safari.capture.stage += 1
 	if int(state.safari.capture.stage) < int(state.safari.capture.required): return "stage"
@@ -360,17 +388,34 @@ func next_daily_day() -> int:
 		return int(state.streak) % 7 + 1
 	return 1
 
-func claim_daily() -> int:
-	if not daily_available():
-		return 0
+func daily_reward(day: int) -> Dictionary:
+	if day < 1 or day > 7: return {}
+	return {"day": day, "coins": 0 if day in DAILY_RARE_DAYS else int(DAILY_COINS[day - 1]), "xp": day * 5 * DAILY_XP_MULTIPLIER, "rare_creature": day in DAILY_RARE_DAYS}
+
+func claim_daily() -> Dictionary:
+	if not daily_available(): return {}
 	var day = next_daily_day()
+	var reward = daily_reward(day)
+	var creature = -1
+	if reward.rare_creature:
+		var candidates: Array[int] = []
+		for entry in catalog.creatures:
+			# Nursery-exclusive species keep their breeding route; all wild Rare species can visit.
+			if int(entry.rarity) == 2 and not entry.breeding_only: candidates.append(int(entry.id))
+		if candidates.is_empty(): return {}
+		var rng = RandomNumberGenerator.new()
+		rng.seed = int(state.get("daily_gift_seed", state.last_seen)) + today() * 997 + int(state.login_days) * 7253
+		creature = candidates[rng.randi_range(0, candidates.size() - 1)]
 	state.streak = day
 	state.last_daily = today()
 	state.login_days += 1
-	var amount = int(DAILY_COINS[day - 1])
-	state.coins += amount
-	add_xp(day * 5)
-	return amount
+	state.coins += int(reward.coins)
+	if creature >= 0: add_creature(creature)
+	add_xp(int(reward.xp))
+	reward["creature"] = creature
+	reward["utc_day"] = today()
+	state.last_daily_gift = reward.duplicate(true)
+	return reward
 
 func refresh_quest() -> void:
 	if today() > int(state.quest_day):
@@ -385,8 +430,8 @@ func claim_quest() -> bool:
 	if state.quest_claimed or quest_progress() < 3:
 		return false
 	state.quest_claimed = true
-	state.coins += 120
-	add_xp(35)
+	state.coins += QUEST_COINS
+	add_xp(QUEST_XP)
 	return true
 
 func stat_value(key: String) -> int:
@@ -441,6 +486,13 @@ func load_from(path: String, now: int) -> bool:
 		return false
 	state = incoming.duplicate(true)
 	if int(state.version) == 1: _migrate_legacy()
+	# Optional additive fields preserve existing v2 saves, balances, claims and active chains.
+	if not state.has("daily_gift_seed"): state.daily_gift_seed = int(state.last_seen) % 4294967296
+	if not state.has("last_daily_gift"): state.last_daily_gift = {}
+	if not state.safari.is_empty():
+		if not state.safari.has("skips"): state.safari.skips = 0
+		if not state.safari.has("skipped_lures"): state.safari.skipped_lures = 0
+		if not state.safari.has("encounter_round"): state.safari.encounter_round = int(state.safari.attempts)
 	clock = maxi(now, int(state.last_seen))
 	tick(clock)
 	return true
@@ -474,6 +526,15 @@ func valid_save(value: Variant) -> bool:
 	if not value.owned is Dictionary or not value.pens is Array or not value.nursery is Array or not value.stats is Dictionary or not value.safari is Dictionary or not value.achievements is Dictionary: return false
 	if not _whole(value.coins) or not _whole(value.xp, 0, 2147483647) or not _number(value.bank, 0.0, 250000.0): return false
 	if not value.sound is bool or not value.quest_claimed is bool: return false
+	if value.has("daily_gift_seed") and not _whole(value.daily_gift_seed, 0, 4294967295): return false
+	if value.has("last_daily_gift"):
+		var gift: Variant = value.last_daily_gift
+		if not gift is Dictionary: return false
+		if not gift.is_empty():
+			if not _whole(gift.get("day"), 1, 7) or not _whole(gift.get("utc_day"), 0, 2932896): return false
+			if not _whole(gift.get("coins")) or not _whole(gift.get("xp")) or not _whole(gift.get("creature"), -1, catalog.creatures.size() - 1): return false
+			if not gift.get("rare_creature") is bool: return false
+			if int(gift.creature) >= 0 and int(species(int(gift.creature)).rarity) != 2: return false
 	if not _whole(value.last_seen, 0, 253402300799) or not _whole(value.last_daily, -1, 2932896) or not _whole(value.quest_day, -1, 2932896): return false
 	if not _whole(value.streak, 0, 7) or not _whole(value.login_days) or not _whole(value.quest_baseline): return false
 	for key in ["outings", "captures", "breeds", "income", "best_outing"]:
@@ -516,7 +577,20 @@ func valid_save(value: Variant) -> bool:
 		else:
 			if not outing.get("capture") is Dictionary or not outing.get("legacy") is bool: return false
 			if not _whole(outing.get("capacity"), 1, 12) or not _whole(outing.get("lures"), 0, int(outing.capacity)) or not _whole(outing.get("attempts"), 0, int(outing.capacity)): return false
-			if int(outing.lures) + int(outing.attempts) != int(outing.capacity): return false
+			var spent_skipping = outing.get("skipped_lures", 0)
+			var skip_count = outing.get("skips", 0)
+			if not _whole(spent_skipping, 0, int(outing.capacity)) or not _whole(skip_count, 0, int(outing.capacity)): return false
+			var expected_spend = 0
+			var first = 1
+			var second = 1
+			for skip in range(int(skip_count)):
+				expected_spend += first
+				var next = first + second
+				first = second
+				second = next
+			if expected_spend != int(spent_skipping): return false
+			if not _whole(outing.get("encounter_round", outing.attempts), 0, int(outing.attempts) + int(skip_count)): return false
+			if int(outing.lures) + int(outing.attempts) + int(spent_skipping) != int(outing.capacity): return false
 			if not outing.get("caught") is Array or outing.caught.size() > (6 if outing.legacy else 1) or outing.caught.size() > int(outing.attempts): return false
 			var active: Dictionary = outing.capture
 			if not active.is_empty():

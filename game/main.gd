@@ -20,6 +20,7 @@ var safari_time_label: Label
 var safari_lure_label: Label
 var wild_view: Control
 var capture_button: Button
+var safari_skip_button: Button
 var safari_info: Label
 var selected_slot = -1
 var meadow_page = 0
@@ -437,11 +438,14 @@ func _daily() -> void:
 		var day_label = _label("DAY %d" % day, 15, INK if day == next else MUTED)
 		day_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		row.add_child(day_label)
-		row.add_child(_label("%d coins" % Model.DAILY_COINS[day - 1], 17))
+		var reward = model.daily_reward(day)
+		row.add_child(_label("Rare creature" if reward.rare_creature else "%d coins" % int(reward.coins), 17))
 	var claim = _button("Claim day %d gift" % next if model.daily_available() else "Gift collected today", func():
-		var amount = model.claim_daily()
+		var reward = model.claim_daily()
 		_close_modal()
-		_toast("A gift of %d coins. Glad you are here!" % amount)
+		if not reward.is_empty():
+			if int(reward.creature) >= 0: _toast("Rare gift: %s joined your sanctuary! +%d XP" % [model.species(int(reward.creature)).name, int(reward.xp)])
+			else: _toast("A gift of %d coins and %d XP. Glad you are here!" % [int(reward.coins), int(reward.xp)])
 		_check_progress()
 		_render(), "gold")
 	claim.disabled = not model.daily_available()
@@ -477,16 +481,16 @@ func _safari() -> void:
 			box.add_child(depart)
 		var quest = _card()
 		quest.add_child(_label("TODAY'S FIELD NOTE", 12, MUTED))
-		quest.add_child(_paragraph("Bring home 3 creatures today. 120 coins + 35 XP.", 16, INK))
+		quest.add_child(_paragraph("Bring home 3 creatures today. %d coins + %d XP." % [Model.QUEST_COINS, Model.QUEST_XP], 16, INK))
 		quest.add_child(_label("%d / 3 friends brought home" % mini(3, model.quest_progress()), 15, MUTED))
 		var claim = _button("Claim field-note reward" if not model.state.quest_claimed else "Field note complete", func():
-			if model.claim_quest(): _toast("Field note complete! +120 coins +35 XP")
+			if model.claim_quest(): _toast("Field note complete! +%d coins +%d XP" % [Model.QUEST_COINS, Model.QUEST_XP])
 			_check_progress()
 			_render(), "gold")
 		claim.disabled = model.state.quest_claimed or model.quest_progress() < 3
 		quest.add_child(claim)
 		return
-	_section(str(Model.ZONES[int(model.state.safari.habitat)].name), "Tap a creature. Land EVERY stage inside gold; a miss never captures it.")
+	_section(str(Model.ZONES[int(model.state.safari.habitat)].name), "Tap a creature to inspect it, then choose Capture. Land EVERY stage inside gold.")
 	var top = HBoxContainer.new()
 	body.add_child(top)
 	safari_time_label = _label("", 20)
@@ -502,9 +506,12 @@ func _safari() -> void:
 	wild_view.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	wild_view.creature_selected.connect(_select_creature)
 	body.add_child(wild_view)
-	safari_info = _paragraph("Choose a creature. Common chains need 2 hits; endangered chains need 5.", 16, INK)
+	safari_skip_button = _button("Skip this clearing", _skip_safari, "soft")
+	body.add_child(safari_skip_button)
+	safari_info = _paragraph("Choose a creature to see its rarity, bond level and collection details.", 16, INK)
 	body.add_child(safari_info)
-	capture_button = _button("Choose a creature", _attempt_capture, "gold")
+	capture_button = _button("Capture", _attempt_capture, "gold")
+	capture_button.visible = false
 	capture_button.disabled = true
 	body.add_child(capture_button)
 	body.add_child(_paragraph("One resident per expedition. Your satchel lets you try again if a chain breaks.", 14))
@@ -516,7 +523,20 @@ func _update_capture_labels() -> void:
 	if is_instance_valid(safari_lure_label) and not model.state.safari.is_empty():
 		safari_lure_label.text = "%d LURES LEFT" % int(model.state.safari.lures)
 	var window = model.capture_window()
-	if window.is_empty() or not is_instance_valid(capture_button): return
+	if is_instance_valid(safari_skip_button) and not model.state.safari.is_empty():
+		safari_skip_button.text = "Skip clearing - %d lure%s" % [model.safari_skip_cost(), "" if model.safari_skip_cost() == 1 else "s"]
+		safari_skip_button.disabled = not model.can_skip_safari()
+	if not is_instance_valid(capture_button): return
+	capture_button.visible = selected_slot >= 0
+	if window.is_empty():
+		if selected_slot >= 0 and not model.state.safari.is_empty():
+			var id = model.safari_species(selected_slot)
+			var entry = model.species(id)
+			var owned = model.count(id)
+			safari_info.text = "%s - %s\n%s - Bond level %d\nHome: %s - %d gold-window hits to capture" % [entry.name, Model.RARITIES[int(entry.rarity)], "Not yet collected" if owned == 0 else "%d resident%s collected" % [owned, "" if owned == 1 else "s"], model.species_level(id), Model.ZONES[model.species_biome(id)].name, 2 + int(entry.rarity)]
+			capture_button.text = "Capture"
+			capture_button.disabled = int(model.state.safari.lures) <= 0
+		return
 	var creature = model.species(int(window.id))
 	safari_info.text = "%s · %s\nStage %d/%d · land in gold" % [creature.name, Model.RARITIES[int(creature.rarity)], int(window.stage) + 1, int(window.required)]
 	capture_button.text = "Secure stage %d / %d" % [int(window.stage) + 1, int(window.required)]
@@ -530,18 +550,27 @@ func _start_safari(habitat: int) -> void:
 		_reset_page_scroll()
 
 func _select_creature(slot: int) -> void:
-	if selected_slot == slot and not model.capture_window().is_empty(): return
-	if not model.begin_capture(slot): return
+	if model.state.safari.is_empty() or slot < 0 or slot > 2 or not model.capture_window().is_empty(): return
+	# Inspection changes no model state, offer, lure or capture stage.
 	selected_slot = slot
-	capture_phase = -PI * 0.5
 	wild_view.selected = slot
 	_update_capture_labels()
+
+func _skip_safari() -> void:
+	if not model.skip_safari(): return
+	selected_slot = -1
 	_save()
+	_render()
 
 func _attempt_capture() -> void:
 	if selected_slot < 0 or model.state.safari.is_empty(): return
 	var window = model.capture_window()
-	if window.is_empty(): return
+	if window.is_empty():
+		if model.begin_capture(selected_slot):
+			capture_phase = -PI * 0.5
+			_update_capture_labels()
+			_save()
+		return
 	var id = int(window.id)
 	var result = model.tap_capture((sin(capture_phase) + 1.0) * 0.5)
 	if result == "stage":
