@@ -4,7 +4,7 @@
 
 The Android preset now defaults to **AAB** with Gradle, minimum API **24** and target API **35**. ARM64, x86 and x86_64 are selected; the [Round 4 Android guide](docs/ROUND_FOUR_ANDROID.md) explains the native ABI-pair validator and release-owner steps. These are current preset choices, not permanent engine restrictions.
 
-Round 4 exact-source hosted CI and affected native acceptance are pending in this dated continuation snapshot; consult `HANDOFF.txt` for later source-bound results. An ABI-validated debug AAB is test-signed and does not establish Google Play acceptance. Dated APK hashes and screenshots below retain their original build provenance. This round does not start new games.
+Round Four public source `8403a38f173210c307217d6a928a7dc132d71f35` has [passing exact-commit hosted CI](https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/40125619333); accepted debug AAB/Web exports are listed in `HANDOFF.txt`. Affected native acceptance remains pending. An ABI-validated debug AAB is test-signed and does not establish Google Play acceptance. Dated APK hashes and screenshots below retain their original build provenance. This round does not start new games.
 
 A little sanctuary. A world of curious creatures.
 
@@ -14,7 +14,7 @@ Current runtime `e3e6fee4a8b9ebaff87f68951150e7cdb32c64a7` / APK `8B60DB643829B3
 
 ## Play
 
-Choose a free safari trail, tap a creature, and land every consecutive hit inside the moving gold window. A miss always breaks the chain; rarity changes its speed, width and required stages. One successful chain returns one resident. Duplicate captures raise that species' shared bond level, and both parents need level 5 before breeding. Browse six meadows per page, inspect their computed income, and use the field guide's Bond & home view to plan combinations. See [the Round Two rules and migration contract](docs/ROUND_TWO.md).
+Choose a free safari trail, tap a creature to inspect it, press Capture, and land every consecutive hit inside the moving gold window. A miss always breaks the chain; rarity changes its speed, width and required stages. One successful chain returns one resident. Duplicate captures raise that species' shared bond level, and both parents need level 5 before breeding. Browse six meadows per page, inspect their computed income, and use the field guide's Bond & home view to plan combinations. See [the Round Two rules and migration contract](docs/ROUND_TWO.md).
 
 The game supports touch and mouse input, portrait layouts, offline/local progress, achievements and player progression. Web play keeps Android-only ads and Google Play Games features unavailable without blocking the game. Rewarded benefits require the real earned-reward callback; the browser does not grant simulated ad rewards.
 
@@ -74,7 +74,7 @@ Android artifact.
 
 ## Public source and local artifacts
 
-Public repository: [Pixel Safari Sanctuary](https://github.com/EthannYakabuski/pixel-safari-sanctuary). Round 4 source updates are committed locally; verify the current remote and exact-commit CI before treating them as published. Prebuilt exports, real saves, private QA records, credentials and signing material stay outside the published source history. Local artifact availability is described in `HANDOFF.txt`; a fresh clone does not contain the original debug APK.
+Public repository: [Pixel Safari Sanctuary](https://github.com/EthannYakabuski/pixel-safari-sanctuary). Round Four source `8403a38f173210c307217d6a928a7dc132d71f35` is public and its [exact-commit hosted CI](https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/40125619333) passed. Prebuilt exports, real saves, private QA records, credentials and signing material stay outside the published source history. Local artifact availability is described in `HANDOFF.txt`; a fresh clone does not contain the original debug APK.
 
 Original work is Apache-2.0; assets, fonts, engine and plugins retain their own terms in `LICENSES/`, `NOTICE` and source notices. Creature Mixer assets, where used, have custom non-NFT/non-blockchain terms and are not CC0.
 

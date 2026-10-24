@@ -1,3 +1,23 @@
+ROUND FOUR - QUALIFIED EXPORT-ONLY TEST HANDOFF
+Current Round Four features: Daily/quest rewards increase, selected Rare daily residents persist once, encounter details precede explicit Capture, and Skip clearing uses visible Fibonacci lure costs.
+Updated 2026-10-24. Affected Round Four native gameplay and current Android screenshot acceptance remain pending. Earlier native APKs/captures retain only their original named source/build provenance.
+Verified public source: 8403a38f173210c307217d6a928a7dc132d71f35
+Exact-commit hosted CI: SUCCESS - https://github.com/EthannYakabuski/pixel-safari-sanctuary/actions/runs/40125619333
+Android AAB: build/round-four-aab-001/pixel-safari-sanctuary-debug.aab
+AAB SHA256: 69E75133727F1A8D434CA568AEB78C231F83709689E34300DB165E52BA7990CB
+AAB as-built source: 05653e3c46c9e1e265b34a0f909783a7def3eba0
+Web: build/round-four-web-002/index.html
+Web HTML SHA256: 8DC9BFEE1C1BE6DB9A05C553B5C0E2D06CB13333BF732D8E490772AE42C1FE4D
+Web as-built source: 8403a38f173210c307217d6a928a7dc132d71f35
+Qualified export-test ZIP: build/round-four-export-only-69e75133-web002/packages/pixel-safari-sanctuary-round-four-export-test.zip
+ZIP SHA256: A3844CFBBBDD44D5FC4FB2C5CD00FC6341561CE4D0420D1C2725121C53E27B0F
+The existing package passed CRC and every-member size/SHA256 checks, carries complete notices, and omits screenshots. It preserves its frozen component bytes and their separate as-built source identities; a later documentation/UID commit does not rebuild or relabel them.
+The AAB is debug/test signed; release signing, physical-device play, audible output, production services and Google Play acceptance are not established.
+Limited interactive Web checks in an isolated browser profile on the frozen Web export verified stable encounter metadata and the same three offers; lures remained 4 while selecting creatures. Skip clearing spent one lure (4 to 3), replaced the offers and cleared selection; inspection kept three lures. Explicit Capture spent one lure (3 to 2) and started Stage 1 of 2 with Skip disabled. One genuine Secure-stage attempt missed; natural 90-second expiry returned zero residents, coins and XP. Successful capture/completed-chain payout, actual future daily gifts and native behavior remain unverified. Missing symbol glyphs, a partially scrolled Capture card at 720x1280 and aborted startup resource requests remain qualified; no blanket clean-log or native-touch/readability claim follows.
+Still required: successful completed capture and once-only payout/close/reload checks, actual future daily gift paths, affected Android/native encounter/Skip/Capture checks, real SDK callbacks/ad return and banked-save behavior on the new binary, materially changed current-build Android captures, intended physical-device, audible-output and production-service testing.
+No new Round Four Android screenshots are accepted. Current native work is parked; browser frames are not Android/store captures. Earlier native evidence is not transferred to these frozen exports.
+
+PRESERVED EARLIER HANDOFF / DATED EVIDENCE — each passage retains its named source/build scope; current qualification above supersedes earlier readiness statements.
 PIXEL SAFARI SANCTUARY - ROUND TWO HANDOFF CANDIDATE
 Status: QUALIFIED LOCAL OWNER-TEST HANDOFF. Accepted exports/source CI, actual catch/once-only close/Back/cold scope and18 images; remaining limitations are explicit below.
 
