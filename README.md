@@ -1,5 +1,11 @@
 # Pixel Safari Sanctuary
 
+## Round 4 build continuation (2026-10-24)
+
+The Android preset now defaults to **AAB** with Gradle, minimum API **24** and target API **35**. ARM64, x86 and x86_64 are selected; the [Round 4 Android guide](docs/ROUND_FOUR_ANDROID.md) explains the native ABI-pair validator and release-owner steps. These are current preset choices, not permanent engine restrictions.
+
+Round 4 exact-source hosted CI and affected native acceptance are pending in this dated continuation snapshot; consult `HANDOFF.txt` for later source-bound results. An ABI-validated debug AAB is test-signed and does not establish Google Play acceptance. Dated APK hashes and screenshots below retain their original build provenance. This round does not start new games.
+
 A little sanctuary. A world of curious creatures.
 
 Explore eight expedition trails and bring home one creature by completing every stage of its capture chain. Grow an expandable sanctuary with no meadow-count limit; repeated captures raise species bonds, income and level-gated breeding. Discover 200 creatures across five rarity tiers, build habitat and friendship bonuses, and claim a seven-day login reward.
@@ -25,10 +31,10 @@ godot --headless --path . --script tests/round_two_test.gd
 godot --headless --path . --script tests/ui_test.gd
 godot --headless --path . --script platform/tests/services_smoke.gd
 godot --headless --path . --export-release Web build/round-two-candidate/web/index.html
-godot --headless --path . --install-android-build-template --export-debug Android build/round-two-candidate/android/pixel-safari-sanctuary-debug.apk
+godot --headless --path . --install-android-build-template --export-debug Android build/round-two-candidate/android/pixel-safari-sanctuary-debug.aab
 ```
 
-Create the separate build/round-two-candidate/web and build/round-two-candidate/android directories before exporting; preserve the original build/android/game-debug.apk and its matching package unchanged. The Android application ID is `com.ethannyakabuski.pixelsafari`. Debug APKs include ARM64 and x86 for the supplied test environment. Exported debug builds are for testing; Google Play publication and final release signing remain with the human owner.
+Create the separate build/round-two-candidate/web and build/round-two-candidate/android directories before exporting; preserve the original build/android/game-debug.apk and its matching package unchanged. The Android application ID is `com.ethannyakabuski.pixelsafari`. The default debug AAB includes ARM64, x86 and x86_64 for the configured device families. Exported debug builds are for testing; Google Play publication and final release signing remain with the human owner.
 
 ## Integration and handoff
 
