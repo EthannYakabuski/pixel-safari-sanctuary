@@ -44,7 +44,7 @@ Store text, app/achievement/leaderboard icons, feature art and screenshot proven
 
 ## CI and Web
 
-GitHub Actions imports resources, runs game/service tests with strict error checks, exports Web and an Android debug APK, and uploads artifacts with the accompanying license notices. **Pages deployment is disabled**; this workflow does not publish a live site or submit to Google Play. Current build/test status is recorded below and in `HANDOFF.txt`. A passing run does not verify production services, physical devices or browser interaction.
+GitHub Actions imports resources, runs game/service tests with strict error checks, exports Web and validates an Android debug AAB, and uploads artifacts with the accompanying license notices. **Pages deployment is disabled**; this workflow does not publish a live site or submit to Google Play. Current build/test status is recorded below and in `HANDOFF.txt`. A passing run does not verify production services, physical devices or browser interaction.
 
 ## Continue development
 
@@ -74,7 +74,7 @@ Android artifact.
 
 ## Public source and local artifacts
 
-Public repository: [Pixel Safari Sanctuary](https://github.com/EthannYakabuski/pixel-safari-sanctuary). The public repository contains the earlier published baseline; the completed Round Two source, art and continuation updates are committed locally while their public push remains blocked. Prebuilt exports, real saves, private QA records, credentials and signing material stay outside the published source history. Local artifact availability is described in `HANDOFF.txt`; a fresh clone does not contain the original debug APK.
+Public repository: [Pixel Safari Sanctuary](https://github.com/EthannYakabuski/pixel-safari-sanctuary). Round 4 source updates are committed locally; verify the current remote and exact-commit CI before treating them as published. Prebuilt exports, real saves, private QA records, credentials and signing material stay outside the published source history. Local artifact availability is described in `HANDOFF.txt`; a fresh clone does not contain the original debug APK.
 
 Original work is Apache-2.0; assets, fonts, engine and plugins retain their own terms in `LICENSES/`, `NOTICE` and source notices. Creature Mixer assets, where used, have custom non-NFT/non-blockchain terms and are not CC0.
 
