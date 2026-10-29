@@ -46,7 +46,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          timeout 60s godot --headless --path . --script platform/tests/services_smoke.gd 2>&1 | tee /tmp/services-test.log
+          service_data="$(mktemp -d)"
+          XDG_DATA_HOME="$service_data/data" XDG_CONFIG_HOME="$service_data/config" \
+            timeout 60s godot --headless --path . --script platform/tests/services_smoke.gd 2>&1 | tee /tmp/services-test.log
           if grep -Eq 'SCRIPT ERROR|Parse Error|ERROR:|Assertion failed' /tmp/services-test.log; then
             exit 1
           fi
@@ -61,7 +63,9 @@ jobs:
           fi
           for script in "${game_tests[@]}"; do
             log="/tmp/game-$(basename "$script").log"
-            timeout 120s godot --headless --path . --script "$script" 2>&1 | tee "$log"
+            test_data="$(mktemp -d)"
+            XDG_DATA_HOME="$test_data/data" XDG_CONFIG_HOME="$test_data/config" DOTS_TEST_ROOT="$test_data" \
+              timeout 120s godot --headless --path . --script "$script" 2>&1 | tee "$log"
             if grep -Eq 'SCRIPT ERROR|Parse Error|ERROR:|Assertion failed' "$log"; then
               exit 1
             fi

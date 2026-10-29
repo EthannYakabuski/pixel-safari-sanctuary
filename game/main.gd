@@ -39,6 +39,9 @@ var save_failed = false
 var nursery_rows: Array = []
 var nursery_reward_button: Button
 var nursery_reward_status: Label
+var creature_reward_buttons: Array[Button] = []
+var creature_reward_pending = -1
+var creature_reward_serial = 0
 
 func _ready() -> void:
 	var catalog = JSON.parse_string(FileAccess.get_file_as_string("res://game/catalog.json"))
@@ -77,7 +80,7 @@ func _ready() -> void:
 	if is_instance_valid(_services()) and _services().has_signal("menu_bottom_reserve_changed"):
 		_services().connect("menu_bottom_reserve_changed", _apply_banner_layout)
 	if is_instance_valid(_services()) and _services().has_signal("availability_changed"):
-		_services().connect("availability_changed", _update_nursery_rows)
+		_services().connect("availability_changed", _on_service_availability_changed)
 	get_viewport().size_changed.connect(_apply_banner_layout)
 	_render()
 	_check_progress()
@@ -158,19 +161,27 @@ func _create_shell() -> void:
 	add_child(toast_label)
 	_apply_banner_layout()
 
-func _apply_banner_layout(reserve_override: float = -1.0) -> void:
+func _apply_banner_layout(reserve_override: float = -1.0, top_reserve_override: float = -1.0) -> void:
 	if not is_instance_valid(ui): return
 	var reserve := reserve_override
 	var service := _services()
 	if reserve < 0.0:
 		reserve = float(service.call("menu_bottom_reserve", self)) if is_instance_valid(service) and service.has_method("menu_bottom_reserve") else 0.0
+		if is_instance_valid(service) and service.has_method("safari_bottom_reserve"):
+			reserve = maxf(reserve, float(service.call("safari_bottom_reserve", self)))
+	var top_reserve := top_reserve_override
+	if top_reserve < 0.0:
+		top_reserve = float(service.call("safari_top_reserve", self)) if is_instance_valid(service) and service.has_method("safari_top_reserve") else 0.0
+	ui.offset_top = 16.0 + maxf(0.0, top_reserve)
 	var baseline := 92.0 if OS.get_name() == "Android" else 18.0
 	var inset := maxf(baseline, 18.0 + maxf(0.0, reserve))
 	ui.offset_bottom = -inset
 	if is_instance_valid(toast_label):
 		toast_label.offset_top = -(inset + 124.0)
 		toast_label.offset_bottom = -(inset + 72.0)
-	if is_instance_valid(modal_panel): modal_panel.offset_bottom = -maxf(70.0, 18.0 + maxf(0.0, reserve))
+	if is_instance_valid(modal_panel):
+		modal_panel.offset_top = maxf(70.0, 16.0 + maxf(0.0, top_reserve))
+		modal_panel.offset_bottom = -maxf(70.0, 18.0 + maxf(0.0, reserve))
 
 
 func _label(text_value: String, font_size: int = 17, color_value: Color = INK) -> Label:
@@ -276,8 +287,10 @@ func _render() -> void:
 	nursery_rows = []
 	nursery_reward_button = null
 	nursery_reward_status = null
+	creature_reward_buttons = []
 	_refresh_header()
 	_service("set_menu_visible", [model.state.safari.is_empty()])
+	_service("set_safari_visible", [not model.state.safari.is_empty()])
 	_apply_banner_layout()
 	match page:
 		"home": _home()
@@ -601,7 +614,8 @@ func _finish_safari() -> void:
 	_render()
 	_reset_page_scroll()
 	if result.get("completed", true):
-		_service("round_finished")
+		# The model's saved total makes the fifth-outing cadence survive relaunch.
+		_service("round_finished", [int(model.state.stats.outings)])
 	var box = _open_modal("Welcome home, explorer.")
 	box.add_child(_paragraph("%d resident%s safely brought home. +%d coins and +%d XP." % [result.caught.size(), "" if result.caught.size() == 1 else "s", int(result.coins), int(result.xp)], 18, INK))
 	var row = HFlowContainer.new()
@@ -715,6 +729,40 @@ func _can_reward() -> bool:
 	var service = _services()
 	return service != null and service.has_method("can_reward") and bool(service.call("can_reward"))
 
+func _on_service_availability_changed() -> void:
+	_update_nursery_rows()
+	_refresh_creature_reward_buttons()
+
+func _refresh_creature_reward_buttons() -> void:
+	for button in creature_reward_buttons:
+		if is_instance_valid(button):
+			button.disabled = creature_reward_pending >= 0 or not model.can_reward_unlock(int(button.get_meta("creature_id"))) or not _can_reward()
+
+func _reward_creature(id: int) -> void:
+	if creature_reward_pending >= 0 or not model.can_reward_unlock(id):
+		return
+	if not _can_reward():
+		_toast("No rewarded ad is ready. You can keep exploring normally.")
+		return
+	creature_reward_pending = id
+	creature_reward_serial += 1
+	var serial: int = creature_reward_serial
+	_refresh_creature_reward_buttons()
+	_service("reward_requested", ["collection_unlock_%d" % id, func(granted: bool):
+		if creature_reward_pending != id or serial != creature_reward_serial:
+			return
+		creature_reward_pending = -1
+		if granted and model.claim_reward_unlock(id):
+			_check_progress()
+			_sound("capture")
+			_render()
+			_toast("Reward earned. %s joined your sanctuary!" % model.species(id).name)
+		elif granted:
+			_toast("This friend is already discovered. No duplicate resident was added.")
+		else:
+			_toast("No reward earned. Your collection is unchanged.")
+		_refresh_creature_reward_buttons()])
+
 func _reward_nursery() -> void:
 	if not _can_reward() or not model.state.nursery.any(func(egg: Dictionary) -> bool: return int(egg.ready_at) > model.clock):
 		return
@@ -729,6 +777,7 @@ func _reward_nursery() -> void:
 
 func _journal() -> void:
 	_section("Your living field guide.", "%d of 200 species discovered. Duplicate captures grow species levels and income." % model.collection_size())
+	body.add_child(_paragraph("Tap an undiscovered Common, Uncommon or Rare silhouette to watch a rewarded ad and welcome that friend. Endangered and Extinct creatures cannot be discovered this way.", 14))
 	var summary = _card()
 	summary.add_child(_label("THE STORY SO FAR", 12, MUTED))
 	summary.add_child(_paragraph("%d outings  \u00b7  %d safari friends  \u00b7  %d eggs hatched" % [int(model.state.stats.outings), int(model.state.stats.captures), int(model.state.stats.breeds)], 16, INK))
@@ -755,8 +804,26 @@ func _journal() -> void:
 			grid.add_child(cell)
 			var portrait = _sprite(int(creature.id), 72)
 			portrait.modulate = Color.WHITE if model.count(int(creature.id)) > 0 else Color(0.17, 0.27, 0.22, 0.22)
-			cell.add_child(portrait)
-			var name_label = _paragraph(str(creature.name) if model.count(int(creature.id)) > 0 else ("Nursery" if creature.breeding_only else "Undiscovered"), 10, MUTED)
+			if model.can_reward_unlock(int(creature.id)):
+				var reward_id := int(creature.id)
+				var discover := _button("", func(): _reward_creature(reward_id), "soft")
+				discover.name = "RewardCreature%d" % reward_id
+				discover.set_meta("creature_id", reward_id)
+				discover.custom_minimum_size = Vector2(95, 96)
+				discover.tooltip_text = "Watch a rewarded ad to discover this %s creature." % Model.RARITIES[rarity].to_lower()
+				portrait.mouse_filter = Control.MOUSE_FILTER_IGNORE
+				discover.add_child(portrait)
+				portrait.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+				portrait.offset_left = 8
+				portrait.offset_top = 8
+				portrait.offset_right = -8
+				portrait.offset_bottom = -8
+				cell.add_child(discover)
+				creature_reward_buttons.append(discover)
+			else:
+				cell.add_child(portrait)
+			var locked_label := "Watch ad" if model.can_reward_unlock(int(creature.id)) else ("Nursery" if creature.breeding_only else "Undiscovered")
+			var name_label = _paragraph(str(creature.name) if model.count(int(creature.id)) > 0 else locked_label, 10, MUTED)
 			name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 			name_label.custom_minimum_size = Vector2(95, 32)
 			cell.add_child(name_label)
@@ -766,6 +833,7 @@ func _journal() -> void:
 				var detail = _button("Bond & home", func(): _species_details(this_id), "soft")
 				detail.add_theme_font_size_override("font_size", 10)
 				cell.add_child(detail)
+	_refresh_creature_reward_buttons()
 
 func _species_details(id: int) -> void:
 	var creature = model.species(id)

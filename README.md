@@ -1,5 +1,11 @@
 # Pixel Safari Sanctuary
 
+## Round Five: economy and collection discovery
+
+Meadow upgrades now cost 25x their earlier prices, and new meadows cost 100x. Existing purchases and balances remain intact. During a Safari the Android banner uses the top safe area; menus keep their bottom banner. Interstitial opportunities follow every fifth completed outing. Unowned Common, Uncommon and Rare field-guide silhouettes offer one resident after an actual earned rewarded-ad callback; Endangered and Extinct species are excluded. Ad discoveries do not count as Safari captures or grant coins/XP. See [the rules and acceptance limits](docs/ROUND_FIVE.md).
+
+Current tests/builds and real-device qualifications are tracked in `HANDOFF.txt`. Older artifact hashes and screenshots below describe their named earlier builds.
+
 ## Round 4 build continuation (2026-10-24)
 
 The Android preset now defaults to **AAB** with Gradle, minimum API **24** and target API **35**. ARM64, x86 and x86_64 are selected; the [Round 4 Android guide](docs/ROUND_FOUR_ANDROID.md) explains the native ABI-pair validator and release-owner steps. These are current preset choices, not permanent engine restrictions.
@@ -38,7 +44,7 @@ Create the separate build/round-two-candidate/web and build/round-two-candidate/
 
 ## Integration and handoff
 
-AdMob is wired with Google's official Android test app/ad-unit IDs. Banner placement is on menus; interstitial opportunities occur every two completed rounds; rewarded offers grant their benefit only after the native earned-reward event. Consent-unavailable/no-fill conditions leave normal gameplay available. Google Play Games integration is prepared with local pending achievements/scores and symbolic ID maps; production setup is disabled until the owner supplies real IDs and configures the required console setup. Credentials and signing keys stay outside Git. See platform/config.json and docs/PLATFORM_SETUP.md.
+AdMob is wired with Google's official Android test app/ad-unit IDs. Menus keep a bottom banner and active Safaris use a top banner; interstitial opportunities occur after every fifth completed outing; rewarded offers grant their benefit only after the native earned-reward event. Consent-unavailable/no-fill conditions leave normal gameplay available. Google Play Games integration is prepared with local pending achievements/scores and symbolic ID maps; production setup is disabled until the owner supplies real IDs and configures the required console setup. Credentials and signing keys stay outside Git. See platform/config.json and docs/PLATFORM_SETUP.md.
 
 Store text, app/achievement/leaderboard icons, feature art and screenshot provenance are in marketing/. The human owner performs final backend configuration and testing, human playtesting and Google Play publication. Current build/verification status is recorded in HANDOFF.txt; do not infer production service verification from local or mocked tests.
 

@@ -11,6 +11,7 @@ var _ads_ready := false
 var _pgs_ready := false
 var _signed_in := false
 var _menu_visible := true
+var _safari_visible := false
 var _round_count := 0
 var _banner: AdView
 var _interstitial: InterstitialAd
@@ -50,7 +51,7 @@ func _ready() -> void:
 	_refresh_consent()
 
 func _process(delta: float) -> void:
-	if OS.get_name() != "Android" or not _menu_visible:
+	if OS.get_name() != "Android" or not (_menu_visible or _safari_visible):
 		return
 	_menu_metric_elapsed += delta
 	if _menu_metric_elapsed >= 0.5:
@@ -64,18 +65,35 @@ func _notification(what: int) -> void:
 ## Bottom margin in reference-local units. Use the unscaled owner/root when
 ## fitting a child stage, to avoid feeding a stage's changed scale back into itself.
 func menu_bottom_reserve(reference: CanvasItem = null) -> float:
-	if OS.get_name() != "Android" or not _menu_visible:
+	if OS.get_name() != "Android" or not _menu_visible or _safari_visible:
 		return 0.0
 	var metrics := _read_menu_metrics()
 	return _menu_reserve_from_pixels(metrics.native_banner_pixels, metrics.safe_bottom_pixels, metrics.density, _menu_pixels_per_unit(reference))
+
+func safari_top_reserve(reference: CanvasItem = null) -> float:
+	if OS.get_name() != "Android" or not _safari_visible:
+		return 0.0
+	var metrics := _read_menu_metrics()
+	return _menu_reserve_from_pixels(metrics.native_banner_pixels, metrics.safe_top_pixels, metrics.density, _menu_pixels_per_unit(reference))
+
+func safari_bottom_reserve(reference: CanvasItem = null) -> float:
+	if OS.get_name() != "Android" or not _safari_visible:
+		return 0.0
+	var metrics := _read_menu_metrics()
+	return ceilf((metrics.safe_bottom_pixels + 12.0 * metrics.density) / _menu_pixels_per_unit(reference))
+
+func banner_position() -> AdPosition:
+	return AdPosition.TOP if _safari_visible else AdPosition.BOTTOM
 
 func menu_layout_metrics(reference: CanvasItem = null) -> Dictionary:
 	if OS.get_name() != "Android":
 		return {"active": false, "reserve": 0.0}
 	var metrics := _read_menu_metrics()
-	metrics["active"] = _menu_visible
+	metrics["active"] = _menu_visible or _safari_visible
+	metrics["banner_at_top"] = _safari_visible
 	metrics["pixels_per_local_unit"] = _menu_pixels_per_unit(reference)
 	metrics["reserve"] = menu_bottom_reserve(reference)
+	metrics["top_reserve"] = safari_top_reserve(reference)
 	return metrics
 
 static func _menu_reserve_from_pixels(native_banner_pixels: float, safe_bottom_pixels: float, density: float, pixels_per_local_unit: float) -> float:
@@ -113,10 +131,16 @@ func _read_menu_metrics() -> Dictionary:
 	# than assuming a zero/underreported deficit means no bottom obstruction.
 	var immersive := DisplayServer.window_get_mode() in [DisplayServer.WINDOW_MODE_FULLSCREEN, DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN]
 	var safe_bottom := _menu_safe_bottom_pixels(window_size.y, screen_size.y, safe_area.end.y, safe_area.size.y, density, immersive)
+	var safe_top := _safari_safe_top_pixels(safe_area.position.y, safe_area.size.y, window_size.y, density)
 	var native_height := 0.0
 	if is_instance_valid(_banner):
 		native_height = maxf(0.0, float(_banner.get_height_in_pixels()))
-	return {"window_pixels": window_size, "screen_pixels": screen_size, "safe_area_pixels": safe_area, "dpi": dpi, "density": density, "native_banner_pixels": native_height, "safe_bottom_pixels": safe_bottom, "viewport_units": get_viewport().get_visible_rect().size, "menu_visible": _menu_visible}
+	return {"window_pixels": window_size, "screen_pixels": screen_size, "safe_area_pixels": safe_area, "dpi": dpi, "density": density, "native_banner_pixels": native_height, "safe_bottom_pixels": safe_bottom, "safe_top_pixels": safe_top, "viewport_units": get_viewport().get_visible_rect().size, "menu_visible": _menu_visible, "safari_visible": _safari_visible}
+
+static func _safari_safe_top_pixels(safe_top: float, safe_height: float, window_height: float, density: float) -> float:
+	if safe_height <= 0.0 or safe_top > window_height * 0.5:
+		return 24.0 * density
+	return maxf(0.0, safe_top)
 
 static func _menu_safe_bottom_pixels(window_height: float, screen_height: float, safe_end_y: float, safe_height: float, density: float, immersive: bool) -> float:
 	# Insets can be unavailable during startup. An empty rectangle must not
@@ -132,7 +156,8 @@ func _refresh_menu_metrics() -> void:
 	var metrics := _read_menu_metrics()
 	metrics["reference"] = "root_viewport"
 	metrics["pixels_per_local_unit"] = _menu_pixels_per_unit(null)
-	metrics["reserve"] = _menu_reserve_from_pixels(metrics.native_banner_pixels, metrics.safe_bottom_pixels, metrics.density, metrics.pixels_per_local_unit) if _menu_visible else 0.0
+	metrics["reserve"] = _menu_reserve_from_pixels(metrics.native_banner_pixels, metrics.safe_bottom_pixels, metrics.density, metrics.pixels_per_local_unit) if _menu_visible and not _safari_visible else 0.0
+	metrics["top_reserve"] = _menu_reserve_from_pixels(metrics.native_banner_pixels, metrics.safe_top_pixels, metrics.density, metrics.pixels_per_local_unit) if _safari_visible else 0.0
 	var key := JSON.stringify(metrics)
 	if key == _menu_metric_key:
 		return
@@ -206,8 +231,16 @@ func _ad_id(kind: String) -> String:
 
 func set_menu_visible(visible: bool) -> void:
 	_menu_visible = visible
+	_update_banner_visibility()
+
+func set_safari_visible(visible: bool) -> void:
+	_safari_visible = visible
+	_update_banner_visibility()
+
+func _update_banner_visibility() -> void:
 	if is_instance_valid(_banner):
-		if visible:
+		_banner.set_position(banner_position())
+		if _menu_visible or _safari_visible:
 			_banner.show()
 		else:
 			_banner.hide()
@@ -216,7 +249,7 @@ func set_menu_visible(visible: bool) -> void:
 func _load_banner() -> void:
 	if not _ads_ready or _ad_id("banner").is_empty():
 		return
-	_banner = AdView.new(_ad_id("banner"), AdSize.BANNER, AdPosition.BOTTOM)
+	_banner = AdView.new(_ad_id("banner"), AdSize.BANNER, banner_position())
 	var listener := AdListener.new()
 	listener.on_ad_loaded = func() -> void:
 		set_menu_visible(_menu_visible)
@@ -225,7 +258,7 @@ func _load_banner() -> void:
 	_banner.ad_listener = listener
 	_banner.load_ad(AdRequest.new())
 	_refresh_menu_metrics()
-	if not _menu_visible:
+	if not (_menu_visible or _safari_visible):
 		_banner.hide()
 
 func _load_interstitial() -> void:
@@ -246,9 +279,15 @@ func _load_interstitial() -> void:
 	callback.on_ad_failed_to_load = func(error: LoadAdError) -> void: _set_notice("Interstitial unavailable: " + error.message)
 	InterstitialAdLoader.new().load(_ad_id("interstitial"), AdRequest.new(), callback)
 
-func round_finished() -> void:
-	_round_count += 1
-	if _round_count % 2 != 0 or _interstitial_showing or _reward_showing:
+static func interstitial_due(completed_outings: int) -> bool:
+	return completed_outings > 0 and completed_outings % 5 == 0
+
+func round_finished(completed_outings: int = -1) -> void:
+	var next_count := completed_outings if completed_outings >= 0 else _round_count + 1
+	if next_count <= _round_count:
+		return
+	_round_count = next_count
+	if not interstitial_due(_round_count) or _interstitial_showing or _reward_showing:
 		return
 	if is_instance_valid(_interstitial):
 		_interstitial_showing = true

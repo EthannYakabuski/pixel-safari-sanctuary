@@ -4,6 +4,8 @@ const SAVE_VERSION = 2
 const SAFARI_DURATION = 90
 const MAX_LURE_LEVEL = 8
 const BREED_LEVEL = 5
+const MEADOW_UPGRADE_PRICE_MULTIPLIER = 25
+const MEADOW_EXPANSION_PRICE_MULTIPLIER = 100
 const ZONES = [
     {"name": "Meadow Footpath", "level": 1, "outings": 0, "description": "Eight familiar common friends. Build bonds before venturing further.", "color": "c9dcb1"},
     {"name": "Fern Brook", "level": 3, "outings": 15, "description": "Shaded streams and the first uncommon visitors.", "color": "aacdb8"},
@@ -157,7 +159,7 @@ func collect_income() -> int:
 	return amount
 
 func upgrade_cost(index: int) -> int:
-	return 220 * int(state.pens[index].level) * int(state.pens[index].level)
+	return MEADOW_UPGRADE_PRICE_MULTIPLIER * 220 * int(state.pens[index].level) * int(state.pens[index].level)
 
 func upgrade_pen(index: int) -> bool:
 	if index < 0 or index >= state.pens.size() or int(state.pens[index].level) >= 5:
@@ -171,7 +173,7 @@ func upgrade_pen(index: int) -> bool:
 	return true
 
 func new_pen_cost() -> int:
-	return int(minf(9000000000000.0, 180.0 + pow(float(state.pens.size()), 1.45) * 120.0))
+	return MEADOW_EXPANSION_PRICE_MULTIPLIER * int(minf(9000000000000.0, 180.0 + pow(float(state.pens.size()), 1.45) * 120.0))
 
 func add_pen() -> bool:
 	if int(state.coins) < new_pen_cost():
@@ -203,6 +205,21 @@ func add_creature(id: int) -> void:
 		if pen.residents.size() < 2 + int(pen.level) - 1:
 			pen.residents.append(id)
 			break
+
+func can_reward_unlock(id: int) -> bool:
+	# The species lookup normally clamps IDs; reward eligibility must reject an
+	# invalid ID rather than accidentally falling back to a starter creature.
+	if id < 0 or id >= catalog.get("creatures", []).size() or count(id) > 0:
+		return false
+	return int(species(id).rarity) in [0, 1, 2]
+
+func claim_reward_unlock(id: int) -> bool:
+	if not can_reward_unlock(id):
+		return false
+	# An ad discovery grants one resident, not safari captures, XP or coins.
+	# Checking ownership again makes duplicate/late callbacks harmless.
+	add_creature(id)
+	return true
 
 func start_safari(habitat: int, seed_value: int) -> bool:
 	if not state.safari.is_empty() or not zone_available(habitat): return false

@@ -105,7 +105,8 @@ func _initialize() -> void:
 	check(model.add_pen(), "resident-move fixture buys its second meadow")
 	check(not model.assign(0, 1), "one individual cannot occupy two pens")
 	check(model.remove_resident(0, 0) and model.assign(0, 1), "resident moves between pens")
-	model.state.coins = 100000
+	# This fixture tests unlimited capacity, not the newly increased economy.
+	model.state.coins = 1000000000
 	check(model.upgrade_pen(0) and model.pen_capacity(0) == 3, "pen upgrade increases capacity")
 	while model.state.pens.size() < 12:
 		check(model.add_pen(), "expand enclosure")

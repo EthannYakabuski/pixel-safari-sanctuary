@@ -1,5 +1,11 @@
 # Android integrations and build handoff
 
+## Round Five Safari banner and rewarded discovery
+
+Read [Round Five rules and qualified tests](ROUND_FIVE.md). `set_safari_visible(true)` selects `AdPosition.TOP` on the same native AdView; `set_menu_visible` retains menu visibility and `AdPosition.BOTTOM` when Safari ends. `safari_top_reserve(reference)` uses `ceil((max(native_height,50*density)+safe_top+12*density)/pixels_per_local_unit)`. `safari_bottom_reserve` reserves navigation/safe-bottom plus padding, without a second bottom banner. Viewport, loading and resume changes use the existing geometry-change signal. The shell and modals stay below the top reserve. Source calculations are not proof of actual SDK placement.
+
+`round_finished(completed_outings)` receives the saved absolute total at the existing once-only return boundary and creates an interstitial opportunity only at positive multiples of five. Missing/unavailable ads never block play. Field-guide discovery uses `reward_requested("collection_unlock_<species id>", callback)` and grants only after `callback(true)`, with a second rarity/ownership check and request token guard. It accepts only unowned Common/Uncommon/Rare species. Existing service IDs/test units and consent handling are unchanged.
+
 ## Current Round 4 Android export
 
 The preset currently uses minimum API **24** / target API **35**, Gradle **AAB**, and ARM64, x86 and x86_64. These settings are configurable choices, not a fixed Godot target-SDK limit. Follow the [Round 4 Android guide](ROUND_FOUR_ANDROID.md); create a new unused output directory, export a debug `.aab`, then run `tools/verify_android_bundle.py` on the actual bundle.
@@ -16,8 +22,8 @@ This project targets Godot **4.5.1 Compatibility**, Android (API35 target, min24
 
 `Services` is the game-facing adapter. Its Android implementation calls the supplied Poing AdMob **5.1.0** and Godot Play Games Services **3.4.0** packages. The Web/editor implementation never simulates a successful rewarded ad. Gameplay, saves, achievements and best scores continue locally.
 
-- Menu banner: native 320x50dp banner anchored at the screen bottom. Menu UI consumes `Services.menu_bottom_reserve(reference)` and listens to `menu_bottom_reserve_changed`; gameplay calls `set_menu_visible(false)`.
-- Interstitials: every second completed round/outage/job, when an ad is loaded; no added fixed-time throttle. Failed/unavailable ads do not prevent play.
+- Banner: native 320x50dp at the menu bottom, or Safari top while `set_safari_visible(true)`. UI consumes menu-bottom, Safari-top and navigation-bottom reserves and listens to `menu_bottom_reserve_changed`. Web/editor keep no pretend ad.
+- Interstitials: every fifth completed Safari outing, when an ad is loaded; no added fixed-time throttle. Failed/unavailable ads do not prevent play.
 - Rewarded: opt-in, available only after a real native rewarded ad loads; benefits granted only on the earned-reward callback, once per request. Dismissal/failure grants nothing.
 - Consent: refresh UMP consent at Android launch, show a required form, and initialize advertising only after `OBTAINED` or `NOT_REQUIRED`. A privacy-options action is exposed. Without configured/available consent information, requests pause and gameplay continues. Google's sample AdMob app does not prove the publisher's eventual privacy-message configuration; this requires human final configuration/testing.
 - Play Games: disabled until real app configuration is provided. Local unlocks and best scores are retained in `user://platform_pending_v1.json` and resubmitted idempotently after sign-in. Only the configured symbolic keys map to remote IDs.

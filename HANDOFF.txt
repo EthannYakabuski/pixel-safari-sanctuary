@@ -1,3 +1,16 @@
+ROUND FIVE - SAFARI ECONOMY / AD DISCOVERY SOURCE UPDATE
+Updated 2026-10-29. Current rules and acceptance limits: docs/ROUND_FIVE.md.
+
+A: Upgrade prices 25x. B: Expansion prices 100x. C: Active Safari top banner with safe shell/modal reservation, menu bottom placement preserved. D: Saved absolute completed-outing totals gate interstitial opportunities at 5/10/15 with no per-capture or duplicate-return trigger. E: Common/Uncommon/Rare unowned silhouettes request an opt-in earned ad; only that species is granted once. Protected tiers, unavailable/dismissed/failed and duplicate callbacks cannot grant a resident. Ad discovery leaves Safari capture counts, coins and XP unchanged.
+
+Verified local source checks, Godot 4.5.1 Compatibility/headless with fresh process-isolated profiles: strict import; Round Five 1,005 checks; model 200; Round Two 7,344; Round Four 145; UI 40; platform callback/safe-area smoke. All passed with zero strict engine/script/parse/assertion errors. The new suite includes all 200 species, 168 eligible locked silhouettes on a fresh profile, exact price/deduction and save checks, request-specific success/failure/duplicate callbacks, completed-outing cadence, and actual Control/header/capture rectangles across 540x960, 600x960 and 800x1280 synthetic viewports. Callback/geometry fixtures do not constitute native-ad evidence.
+
+Publication/build qualification: match the exact current source commit to its GitHub Actions run before accepting hosted exports. No new local Android/Web export or native run is claimed by this source-check record. Frozen artifacts below are unchanged earlier builds, not Round Five binaries. Native top-banner placement, real ad callback/return, affected touch, new-build save/offline, audible/physical-device and production-service acceptance remain separate device checks. Web/editor cannot earn simulated ad rewards.
+
+Service IDs, export/signing settings, genuine profiles/backups and other apps are preserved. Read the dated evidence below only for its named source/binary.
+
+PRESERVED PRE-ROUND-FIVE HANDOFF / DATED ARTIFACT HISTORY
+
 ROUND FOUR - QUALIFIED EXPORT-ONLY TEST HANDOFF
 Current Round Four features: Daily/quest rewards increase, selected Rare daily residents persist once, encounter details precede explicit Capture, and Skip clearing uses visible Fibonacci lure costs.
 Updated 2026-10-24. Affected Round Four native gameplay and current Android screenshot acceptance remain pending. Earlier native APKs/captures retain only their original named source/build provenance.
