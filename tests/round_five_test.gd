@@ -125,6 +125,11 @@ func _test_native_adapter_contract() -> void:
 	service.round_finished(10)
 	check(service._round_count == 10, "absolute saved outing totals retain cadence after a new session")
 	service._round_count = 0
+	var readiness_events := [0]
+	service.availability_changed.connect(func(): readiness_events[0] += 1)
+	service._interstitial_showing = true
+	service._interstitial_closed()
+	check(not service._interstitial_showing and readiness_events[0] == 1, "interstitial dismissal notifies the visible field guide to refresh reward readiness")
 
 func _settle() -> void:
 	await process_frame

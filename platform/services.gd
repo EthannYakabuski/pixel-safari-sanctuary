@@ -291,6 +291,7 @@ func round_finished(completed_outings: int = -1) -> void:
 		return
 	if is_instance_valid(_interstitial):
 		_interstitial_showing = true
+		availability_changed.emit()
 		_interstitial.show()
 	elif _ads_ready:
 		_load_interstitial()
@@ -301,6 +302,7 @@ func _interstitial_closed() -> void:
 		_interstitial.destroy()
 	_interstitial = null
 	_load_interstitial()
+	availability_changed.emit()
 
 func _load_rewarded() -> void:
 	if not _ads_ready or _ad_id("rewarded").is_empty():
