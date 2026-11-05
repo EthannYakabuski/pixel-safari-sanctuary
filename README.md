@@ -1,5 +1,9 @@
 # Pixel Safari Sanctuary
 
+## Web hosting
+
+The CI deployment target is [Pixel Safari Sanctuary](https://ethannyakabuski.github.io/pixel-safari-sanctuary/). After a successful main-branch build/deployment, `build-info.json` at that URL identifies the served source commit. See [hosting, controls and iframe notes](docs/WEB_PAGES.md); successful exports are separate from browser/gameplay acceptance.
+
 ## Round Five: economy and collection discovery
 
 Meadow upgrades now cost 25x their earlier prices, and new meadows cost 100x. Existing purchases and balances remain intact. During a Safari the Android banner uses the top safe area; menus keep their bottom banner. Interstitial opportunities follow every fifth completed outing. Unowned Common, Uncommon and Rare field-guide silhouettes offer one resident after an actual earned rewarded-ad callback; Endangered and Extinct species are excluded. Ad discoveries do not count as Safari captures or grant coins/XP. See [the rules and acceptance limits](docs/ROUND_FIVE.md).
@@ -50,7 +54,7 @@ Store text, app/achievement/leaderboard icons, feature art and screenshot proven
 
 ## CI and Web
 
-GitHub Actions imports resources, runs game/service tests with strict error checks, exports Web and validates an Android debug AAB, and uploads artifacts with the accompanying license notices. **Pages deployment is disabled**; this workflow does not publish a live site or submit to Google Play. Current build/test status is recorded below and in `HANDOFF.txt`. A passing run does not verify production services, physical devices or browser interaction.
+GitHub Actions imports resources, runs game/service tests with strict error checks, exports Web and validates an Android debug AAB, and uploads artifacts with the accompanying license notices. The tested `main` Web artifact deploys to GitHub Pages; see [Web hosting and embedding](docs/WEB_PAGES.md). It does not submit to Google Play. Current build/test status is recorded below and in `HANDOFF.txt`. A passing run does not verify production services, physical devices or browser interaction.
 
 ## Continue development
 

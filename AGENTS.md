@@ -35,5 +35,5 @@ Read `docs/ROUND_FIVE.md` before changing these rules. The focused `tests/round_
 
 - Stage only reviewed project files. Private QA originals, raw logs, saves, backups, signing material, credentials, generated SDK builds and prebuilt exports stay out of published history. Ignore rules do not protect already tracked paths; inspect each diff.
 - Preserve `LICENSE`, `NOTICE`, `LICENSES/` and asset/plugin terms. Retain notices with distributed binaries.
-- Pages deployment remains disabled; no Library change or Google Play publication is part of ordinary updates. Production configuration, real-service/physical-device testing and human acceptance remain owner work.
+- The explicit 2026-11-05 request authorizes this repository's tested `main` Web artifact to deploy to GitHub Pages. Read `docs/WEB_PAGES.md`; preserve the strict build/test dependency and source-revision metadata. No website, Library or Google Play publication change is implied. Production services, physical-device testing and human acceptance remain separate.
 - Work on the requested game/update. This focused continuation covers Round 5 in this repository only; do not start new games.
