@@ -1,0 +1,260 @@
+{
+  "schema_checked": "2026-11-12",
+  "game": "Pixel Safari Sanctuary",
+  "achievement_count": 23,
+  "standard_count": 23,
+  "incremental_count": 0,
+  "initial_state": "Revealed",
+  "points_total": 1165,
+  "points_remaining": 835,
+  "zip_filename": "pixel-safari-sanctuary-achievements-google-play.zip",
+  "zip_bytes": 12197537,
+  "zip_sha256": "ce8a983def1079599144f2394ced0dee18eb70db32195bfa31160f1ccab27bc7",
+  "zip_member_count": 25,
+  "catalog_sha256": "8561cc9c632307a62fe53505472028c4140fdfa6477cfa30aea4834ebdbb3d7a",
+  "services_sha256": "8f08a0b1cdb5aaee72637f0712727a39f608f3dfc574494a155af0c760e5661b",
+  "source_text_hash_line_endings": "LF",
+  "comma_normalizations": [
+    {
+      "key": "income_10000",
+      "source_name": "Bustling Sanctuary",
+      "import_name": "Bustling Sanctuary",
+      "source_description": "Collect 10,000 enclosure coins.",
+      "import_description": "Collect 10000 enclosure coins."
+    },
+    {
+      "key": "income_100000",
+      "source_name": "Wildlife Destination",
+      "import_name": "Wildlife Destination",
+      "source_description": "Collect 100,000 enclosure coins.",
+      "import_description": "Collect 100000 enclosure coins."
+    }
+  ],
+  "validated": [
+    "CSV headerless UTF-8; seven/two fields",
+    "flat allowlisted archive",
+    "complete unique key/name/icon mapping",
+    "catalog order and text (documented comma normalization)",
+    "points limits and total",
+    "standard type matches unlock-only code",
+    "ZIP CRC and every archived byte",
+    "PNG dimensions/chunk CRC/decompression/filter",
+    "original icon SHA256 matches archive",
+    "member and archive size limits"
+  ],
+  "icons": [
+    {
+      "filename": "first_friend.png",
+      "bytes": 475016,
+      "sha256": "2e92084ee72bf7de458fa0ba1a35a40e1f6e2d750a4b5a9005b3ee72d0e544fb",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "collection_10.png",
+      "bytes": 480267,
+      "sha256": "05db0e3e8f514cf505df2f951238337db859778b54c217ab3b82e46712f01d8b",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "collection_25.png",
+      "bytes": 514426,
+      "sha256": "7bd535b8e54915ab09889bc1869edd5e13393dd0f31d5652a2eabe9058fe00bb",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "collection_50.png",
+      "bytes": 481973,
+      "sha256": "c40a31d47e826ffea4a83c487be1cb900a7ec5ac8a117729338a8683870aa918",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "collection_100.png",
+      "bytes": 558255,
+      "sha256": "150db087fa2200ea7025e6d9acdb75dead3b409aacf582a6b81c2e86bc4029e8",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "collection_200.png",
+      "bytes": 562451,
+      "sha256": "29089bf81aba58914246cc5bf85577296e543d2903242e270ef1d10d8ac561e0",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "first_safari.png",
+      "bytes": 525739,
+      "sha256": "ce807fca9ab367a808c67108cec74b4a65fca8e9df6cb0e2601b12ccb401e9c1",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "safari_5.png",
+      "bytes": 559693,
+      "sha256": "e85c375c30bc8571fec019647007d23224566a2ee72c3a11c44e2d0c759f3375",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "safari_25.png",
+      "bytes": 540456,
+      "sha256": "ab05fa183387b9cf482cd3b91fec534ac48217cefee1cad1bd074531fd0500ad",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "safari_100.png",
+      "bytes": 551431,
+      "sha256": "a77842bba8c58826b905868c58729797191daf6a601417129e55375e1e91954c",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "rare_keeper.png",
+      "bytes": 515138,
+      "sha256": "3c444ab65e534be308b1d28fac013ca672b05ad89313fb63b2eca1b749e2fe30",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "endangered_keeper.png",
+      "bytes": 527716,
+      "sha256": "3dbfb59f13f9a817afc73389bb028f0b58b83ca5522e4b9772e0c56d114fe3eb",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "extinct_revival.png",
+      "bytes": 559044,
+      "sha256": "f282326dbaa1670228ce64de5de99121f65702ab11084f1876a8e0190a5affa2",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "first_breed.png",
+      "bytes": 516293,
+      "sha256": "46b65062e9045f70f13b7420b48926226bd9c43828f8012117e272bdb36d540c",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "breeder_10.png",
+      "bytes": 527068,
+      "sha256": "e38ca0d9a117ab8bd17893de43bf03ab77beffae9f7ee3ea872851b416fec72d",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "breeder_25.png",
+      "bytes": 543001,
+      "sha256": "a8dc94c098dc17a1edd46ead694f8f6e32e71d71d90f0e2f52d5df5ca178b05b",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "income_500.png",
+      "bytes": 540876,
+      "sha256": "7919a70906dedf42e854f6d07ddf2988c8c3652c8131cd570f055fc43be19923",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "income_10000.png",
+      "bytes": 494394,
+      "sha256": "dd5defdc90844ed3a6cf903e5cb6af88a414c94268658fbe931cc15780b9f89a",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "income_100000.png",
+      "bytes": 548971,
+      "sha256": "5a91731e9eb3c62bad1c1e0e1893194fac7fb7bd2dc2143e5417c0271a5499cc",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "level_5.png",
+      "bytes": 538150,
+      "sha256": "f58e5c5f68624c0c05b3597270f451a19fd9f250a7857835bdce7c5ca6126706",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "level_10.png",
+      "bytes": 560420,
+      "sha256": "a2f67ac4c9233dfd47d666618d1491a8b88dd202f9bf24960296cd2e0f5a1069",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "level_20.png",
+      "bytes": 531905,
+      "sha256": "6d05a76acbab5636d747da52dc532c939f3c23fe2e5c0f08f4a27196ef2ded6b",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "filename": "seven_days.png",
+      "bytes": 537372,
+      "sha256": "8fbb6b06a6b93f3eca42463c7b637ca232ebfbdce4f16944e72feb15d5c3cb23",
+      "width": 512,
+      "height": 512,
+      "bit_depth": 8,
+      "color_type": 2
+    }
+  ],
+  "play_console_uploaded": false,
+  "play_console_acceptance_tested": false,
+  "sources": [
+    "https://developer.android.com/games/pgs/integrate-achievements#zip-file-guidelines",
+    "https://developer.android.com/games/pgs/achievements#points_and_experience_points"
+  ]
+}

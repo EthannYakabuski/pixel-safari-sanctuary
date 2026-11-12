@@ -1,0 +1,29 @@
+{
+  "slug": "pixel-safari-sanctuary",
+  "title": "Pixel Safari Sanctuary",
+  "points": {
+    "first_friend": 10,
+    "collection_10": 15,
+    "collection_25": 25,
+    "collection_50": 40,
+    "collection_100": 75,
+    "collection_200": 150,
+    "first_safari": 10,
+    "safari_5": 20,
+    "safari_25": 40,
+    "safari_100": 75,
+    "rare_keeper": 30,
+    "endangered_keeper": 50,
+    "extinct_revival": 100,
+    "first_breed": 20,
+    "breeder_10": 50,
+    "breeder_25": 100,
+    "income_500": 10,
+    "income_10000": 40,
+    "income_100000": 100,
+    "level_5": 25,
+    "level_10": 50,
+    "level_20": 100,
+    "seven_days": 30
+  }
+}
